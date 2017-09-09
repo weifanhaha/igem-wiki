@@ -1,0 +1,85 @@
+body {
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.header * {
+  box-sizing: border-box; }
+
+.navbar {
+  background-color: #07082b;
+  padding: 10px 20px 10px 30px; }
+
+.home {
+  height: 72px;
+  float: left;
+  position: relative; }
+  .home img {
+    height: 100%;
+    display: block; }
+    .home img:hover span {
+      display: inline-block; }
+  .home span {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 72px;
+    padding: 0 20px;
+    width: 100px;
+    color: #b3b3b3; }
+    .home span i {
+      margin-left: 0.5em; }
+    .home span:hover img {
+      display: none; }
+  .home:hover img {
+    display: none; }
+  .home:hover span {
+    display: inline-block; }
+
+.menu {
+  float: right; }
+
+.menu > li {
+  float: left; }
+
+.menu > li > a {
+  line-height: 72px;
+  padding: 24px 16px;
+  margin-right: 5px;
+  position: relative; }
+  .menu > li > a i {
+    padding-left: 0.5em; }
+  .menu > li > a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: #b3b3b3;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s; }
+
+.menu > li:hover > a:after {
+  width: 100%; }
+.menu > li:hover a {
+  color: #b3b3b3; }
+
+.u-block {
+  display: block; }
+
+.u-cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */

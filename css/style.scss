@@ -1,0 +1,114 @@
+// Variables
+$primary-color: #07082b;
+$light-grey: #b3b3b3;
+
+
+// Reset
+body{
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.header *{
+  box-sizing: border-box;
+}
+
+// Components
+.navbar{
+  background-color: $primary-color;
+  padding: 10px 20px 10px 30px;
+}
+
+.home{
+  height: 72px;
+  float: left;
+  position: relative;
+  img{
+    height: 100%;
+    display: block;
+    &:hover span{
+      display: inline-block;
+    }
+  }
+  span{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 72px;
+    padding: 0 20px;
+    width: 100px;
+    color: $light-grey;
+
+    i{
+      margin-left: 0.5em;
+    }
+
+    &:hover img{
+      display: none;
+    }
+  }
+  &:hover{
+    img{ display: none;}
+    span{ display: inline-block;}
+  }
+}
+
+.menu{
+  // float: left;
+  float: right;
+}
+
+.menu > li{
+  float: left;
+}
+
+.menu > li > a{
+  line-height: 72px;
+  padding: 24px 16px;
+  margin-right: 5px;
+  position: relative;
+
+  i{
+    padding-left: 0.5em;
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: $light-grey;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+  }
+}
+.menu > li:hover{
+  > a:after{ width: 100%; }
+  a{ color: $light-grey;}
+}
+
+
+
+// Utility
+.u-block{
+  display: block;
+}
+.u-cf:after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
