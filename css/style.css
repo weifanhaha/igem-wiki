@@ -145,6 +145,8 @@ header * {
   #hamburger.dropdown .col-sm-2 {
     padding-left: 10px;
     padding-right: 10px; }
+  #hamburger.dropdown hr {
+    width: 90%; }
 
 .u-block {
   display: block; }
