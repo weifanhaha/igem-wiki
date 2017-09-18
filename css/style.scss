@@ -1,11 +1,25 @@
+// google font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 // Variables
+// Colors
 $primary-color: #07082b;
-$light-grey: #b3b3b3;
+$secondary-color: #365285;
+$mid-grey: #b3b3b3;
+$light-grey: #d3d3d3;
+
+// Fonts
+$lg-font: 28px;
+$mid-font: 18px;
+$sm-font: 18px;
 
 
 // Reset
 body{
   width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu';
 }
 
 *{
@@ -16,14 +30,27 @@ body{
 a{
   text-decoration: none;
   color: white;
+  &:hover{
+    text-decoration: none;
+  }
 }
 
-.header *{
-  box-sizing: border-box;
+li{ list-style-type:none; }
+ul{ margin-bottom: 0;}
+
+header{
+  *{
+    box-sizing: border-box;
+  }
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
 }
 
 // Components
 .navbar{
+  position: relative;
   background-color: $primary-color;
   padding: 10px 20px 10px 30px;
 }
@@ -34,6 +61,9 @@ a{
   position: relative;
   img{
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     &:hover span{
       display: inline-block;
@@ -46,8 +76,9 @@ a{
     left: 0;
     line-height: 72px;
     padding: 0 20px;
-    width: 100px;
-    color: $light-grey;
+    width: 150px;
+    color: $mid-grey;
+    font-size: $mid-font;
 
     i{
       margin-left: 0.5em;
@@ -63,8 +94,37 @@ a{
   }
 }
 
+// Dropdown
+.dropdown{
+  position: absolute;
+  top: 100%;
+  width: 100vw;
+  padding: 40px;
+  background-color: $light-grey;
+  color: $primary-color;
+  font-size: $mid-font;
+  display: none;
+
+  .submenu{
+    padding-right: 50px;
+  }
+
+  .dropdown-title{
+    font-size: $lg-font;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  li>a{
+    color: $primary-color;
+    &:hover{
+      color: $secondary-color;
+    }
+  }
+}
+
+// Menu
 .menu{
-  // float: left;
   float: right;
 }
 
@@ -77,6 +137,7 @@ a{
   padding: 24px 16px;
   margin-right: 5px;
   position: relative;
+  font-size: $mid-font;
 
   i{
     padding-left: 0.5em;
@@ -87,7 +148,7 @@ a{
     position: absolute;
     width: 0%;
     height: 5px;
-    background-color: $light-grey;
+    background-color: $mid-grey;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -96,9 +157,42 @@ a{
 }
 .menu > li:hover{
   > a:after{ width: 100%; }
-  a{ color: $light-grey;}
+  > a{ color: $mid-grey;}
 }
 
+.menu .dropdown{
+  left: 0px;
+  width: 100vw;
+  .col-sm-3{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.menu > li:hover .dropdown{
+  display: flex;
+}
+
+// Hamburger
+#ham-icon{
+  position: absolute;
+  right: 50px;
+  top: 25px;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  .fa-times{
+    display: none;
+  }
+}
+
+#hamburger.dropdown{
+  right: 0;
+  .col-sm-2{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 
 // Utility
@@ -112,3 +206,26 @@ a{
   height: 0;
   visibility: hidden;
 }
+
+.imgBox{
+  position: relative;
+  overflow: hidden;
+  // Default ratio is 4:3
+  .imgBox-inner{
+    width: 100%;
+    padding-top: 75%;
+    height: 0;
+    .image{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+}
+
