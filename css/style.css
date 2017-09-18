@@ -36,11 +36,12 @@ header * {
 .home {
   height: 72px;
   float: left;
-  position: relative; }
+  position: relative;
+  padding-right: 20px; }
   .home img {
-    height: 100%;
+    height: 90%;
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 0;
     display: block; }
     .home img:hover span {
@@ -51,10 +52,10 @@ header * {
     top: 0;
     left: 0;
     line-height: 72px;
-    padding: 0 20px;
+    padding: 0 10px;
     width: 150px;
     color: #b3b3b3;
-    font-size: 18px; }
+    font-size: 20px; }
     .home span i {
       margin-left: 0.5em; }
     .home span:hover img {
@@ -68,25 +69,29 @@ header * {
   position: absolute;
   top: 100%;
   width: 100vw;
-  padding: 40px;
+  padding: 20px;
   background-color: #d3d3d3;
   color: #07082b;
-  font-size: 18px;
+  font-size: 20px;
   display: none; }
   .dropdown .submenu {
     padding-right: 50px; }
+    .dropdown .submenu hr {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1.5px solid black;
+      width: 80%; }
   .dropdown .dropdown-title {
-    font-size: 28px;
-    border-bottom: 2px solid;
-    padding-bottom: 10px;
-    margin-bottom: 10px; }
+    font-size: 24px; }
   .dropdown li > a {
     color: #07082b; }
     .dropdown li > a:hover {
       color: #365285; }
 
 .menu {
-  float: right; }
+  float: right;
+  padding-left: 50px; }
 
 .menu > li {
   float: left; }
@@ -96,7 +101,7 @@ header * {
   padding: 24px 16px;
   margin-right: 5px;
   position: relative;
-  font-size: 18px; }
+  font-size: 20px; }
   .menu > li > a i {
     padding-left: 0.5em; }
   .menu > li > a:after {

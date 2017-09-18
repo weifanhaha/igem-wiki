@@ -9,8 +9,8 @@ $mid-grey: #b3b3b3;
 $light-grey: #d3d3d3;
 
 // Fonts
-$lg-font: 28px;
-$mid-font: 18px;
+$lg-font: 24px;
+$mid-font: 20px;
 $sm-font: 18px;
 
 
@@ -59,10 +59,11 @@ header{
   height: 72px;
   float: left;
   position: relative;
+  padding-right: 20px;
   img{
-    height: 100%;
+    height: 90%;
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 0;
     display: block;
     &:hover span{
@@ -75,7 +76,7 @@ header{
     top: 0;
     left: 0;
     line-height: 72px;
-    padding: 0 20px;
+    padding: 0 10px;
     width: 150px;
     color: $mid-grey;
     font-size: $mid-font;
@@ -99,7 +100,7 @@ header{
   position: absolute;
   top: 100%;
   width: 100vw;
-  padding: 40px;
+  padding: 20px;
   background-color: $light-grey;
   color: $primary-color;
   font-size: $mid-font;
@@ -107,13 +108,17 @@ header{
 
   .submenu{
     padding-right: 50px;
+    hr{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1.5px solid black;
+      width: 80%;
+    }
   }
 
   .dropdown-title{
     font-size: $lg-font;
-    border-bottom: 2px solid;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
   }
   li>a{
     color: $primary-color;
@@ -126,6 +131,7 @@ header{
 // Menu
 .menu{
   float: right;
+  padding-left: 50px;
 }
 
 .menu > li{
