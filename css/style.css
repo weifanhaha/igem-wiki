@@ -98,7 +98,7 @@ header * {
 
 .menu > li > a {
   line-height: 72px;
-  padding: 24px 16px;
+  padding: 36px 16px;
   margin-right: 5px;
   position: relative;
   font-size: 20px; }
@@ -110,7 +110,7 @@ header * {
     width: 0%;
     height: 5px;
     background-color: #b3b3b3;
-    bottom: -10px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.3s; }
@@ -172,5 +172,7 @@ header * {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
+  .imgBox .img-4-5 {
+    padding-top: 80%; }
 
 /*# sourceMappingURL=style.css.map */

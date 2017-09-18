@@ -140,7 +140,7 @@ header{
 
 .menu > li > a{
   line-height: 72px;
-  padding: 24px 16px;
+  padding: 36px 16px;
   margin-right: 5px;
   position: relative;
   font-size: $mid-font;
@@ -155,7 +155,7 @@ header{
     width: 0%;
     height: 5px;
     background-color: $mid-grey;
-    bottom: -10px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.3s;
@@ -231,6 +231,11 @@ header{
       background-size: cover;
       background-position: center;
     }
+  }
+
+  // Different ratios
+  .img-4-5{
+    padding-top: 80%;
   }
 
 }
