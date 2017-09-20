@@ -7,6 +7,7 @@ $primary-color: #07082b;
 $secondary-color: #365285;
 $mid-grey: #b3b3b3;
 $light-grey: #d3d3d3;
+$note-blue: #556b7e;
 
 // Fonts
 $lg-font: 24px;
@@ -25,6 +26,7 @@ body{
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #header a{
@@ -250,4 +252,68 @@ ul.menu{
   }
 
 }
+
+// For note page
+
+.main-container{
+  width: 100%;
+  padding: 50px 15%;
+  background-color: $light-grey;
+  min-height: 100vh;
+}
+
+.main-content{
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 80px 50px;
+  min-height: 100vh;
+}
+
+.text-area{
+  margin-bottom: 80px;
+  h1{
+    text-align: center;
+  }
+  p{
+    font-weight: 500;
+  }
+}
+
+
+
+.pdfbtn{
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative;
+  i{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.pdf-container{
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
