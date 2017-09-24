@@ -23,8 +23,10 @@ li {
 ul {
   margin-bottom: 0; }
 
-header * {
-  box-sizing: border-box; }
+header {
+  z-index: 99; }
+  header * {
+    box-sizing: border-box; }
 
 .row {
   margin-left: 0;
@@ -59,7 +61,7 @@ header * {
     padding: 30px 10px;
     width: 150px;
     color: #b3b3b3;
-    font-size: 20px; }
+    font-size: 18px; }
     .home span i {
       margin-left: 0.5em; }
     .home span:hover img {
@@ -73,10 +75,10 @@ header * {
   position: absolute;
   top: 100%;
   width: 100vw;
-  padding: 20px;
+  padding: 30px;
   background-color: #d3d3d3;
   color: #07082b;
-  font-size: 20px;
+  font-size: 18px;
   display: none; }
   .dropdown .submenu {
     padding-right: 50px; }
@@ -87,7 +89,7 @@ header * {
       border-top: 1.5px solid black;
       width: 80%; }
   .dropdown .dropdown-title {
-    font-size: 24px; }
+    font-size: 22px; }
   .dropdown li > a {
     color: #07082b; }
     .dropdown li > a:hover {
@@ -105,7 +107,7 @@ ul.menu {
   padding: 36px 16px;
   margin-right: 5px;
   position: relative;
-  font-size: 20px; }
+  font-size: 18px; }
   .menu > li > a i {
     padding-left: 0.5em; }
   .menu > li > a:after {
@@ -185,23 +187,37 @@ ul.menu {
   .imgBox .img-4-5 {
     padding-top: 80%; }
 
-.main-container {
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: 200vh; }
+  .bg-container img {
+    width: 100%;
+    margin-top: -45px; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 50px 15%;
-  background-color: #d3d3d3;
-  min-height: 100vh; }
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
 
 .main-content {
   background-color: white;
   width: 80%;
   margin-left: 10%;
   padding: 80px 50px;
-  min-height: 100vh; }
+  min-height: 180vh;
+  z-index: 10; }
 
 .text-area {
   margin-bottom: 80px; }
   .text-area h1 {
-    text-align: center; }
+    text-align: center;
+    font-family: 'Cookie'; }
   .text-area p {
     font-weight: 500; }
 
