@@ -17,9 +17,6 @@ header a {
     color: white;
     text-decoration: none; }
 
-li {
-  list-style-type: none; }
-
 ul {
   margin-bottom: 0; }
 
@@ -27,6 +24,8 @@ header {
   z-index: 99; }
   header * {
     box-sizing: border-box; }
+  header li {
+    list-style-type: none; }
 
 .row {
   margin-left: 0;
@@ -94,6 +93,10 @@ header {
     color: #07082b; }
     .dropdown li > a:hover {
       color: #365285; }
+  .dropdown li {
+    list-style-type: none; }
+    .dropdown li:hover:not(.dropdown-title) {
+      list-style-type: circle; }
 
 ul.menu {
   float: left;

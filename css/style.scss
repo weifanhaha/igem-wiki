@@ -39,7 +39,6 @@ header a{
   }
 }
 
-li{ list-style-type:none; }
 ul{ margin-bottom: 0;}
 
 header{
@@ -47,6 +46,8 @@ header{
   *{
     box-sizing: border-box;
   }
+  li{ list-style-type:none; }
+
 }
 .row{
   margin-left: 0;
@@ -131,6 +132,12 @@ header{
     color: $primary-color;
     &:hover{
       color: $secondary-color;
+    }
+  }
+  li{
+    list-style-type: none;
+    &:hover:not(.dropdown-title){
+      list-style-type: circle;
     }
   }
 }
