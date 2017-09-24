@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Arizonia");
 body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu'; }
+  font-family: 'Ubuntu' !important; }
 
 * {
   margin: 0;
@@ -212,16 +213,19 @@ ul.menu {
   background-color: white;
   width: 80%;
   margin-left: 10%;
-  padding: 80px 50px;
+  padding: 50px;
   min-height: 180vh;
   z-index: 10; }
 
 .text-area {
   margin-bottom: 80px; }
   .text-area h1 {
-    text-align: center;
-    font-family: 'Cookie'; }
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center; }
   .text-area p {
+    font-size: 18px;
     font-weight: 500; }
 
 .pdfbtn {
@@ -244,5 +248,10 @@ ul.menu {
   text-align: center;
   height: 90vh;
   display: none; }
+
+#HQ_page .text-area p {
+  font-size: 18px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
 
 /*# sourceMappingURL=style.css.map */
