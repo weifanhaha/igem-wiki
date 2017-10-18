@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Protocols</title>
+    <title>Medal</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="bg-container">
-      <img src="http://2017.igem.org/wiki/images/6/6f/T--CSMU_NCHU_Taiwan--labbook.png">
+      <img src="http://2017.igem.org/wiki/images/9/9b/T--CSMU_NCHU_Taiwan--medal_bg.png">
       <div class="my-main-container">
         <div class="main-content">
           <div class="text-area">
@@ -20,17 +20,19 @@
 
           </div>
           <div class="pdf-area">
-            <span class="pdfbtn" id="protocol-btn-1">Test Strip<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="protocol-1">
-              <object data="" type="application/pdf" width="100%" height="100%">
-                <p>Alternative text - include a link <a href="">to the PDF!</a></p>
-              </object>
+            <span class="pdfbtn" id="medal-btn-1">Bronze<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="ul-container" id="medal-1">
+              <ul>
+                <li>Registered for iGEM, planned to attend the Giant Jamboree</li>
+                <li>Documented our project</li>
+                <li>Documented our project</li>
+                <li>Documented our project</li>
+                <li>Documented our project</li>
+                <li>Documented our project</li>
+              </ul>
             </div>
-            <span class="pdfbtn" id="protocol-btn-2">Antidote<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="protocol-2">
-              <object data="" type="application/pdf" width="100%" height="100%">
-                <p>Alternative text - include a link <a href="">to the PDF!</a></p>
-              </object>
+            <span class="pdfbtn" id="medal-btn-2">Sliver<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="ul-container" id="medal-2">
             </div>
           </div>
         </div>
@@ -41,13 +43,13 @@
 
   </body>
   <script type="text/javascript">
-    $('#protocol-btn-1').on('click', function(){
-      $('#protocol-1').slideToggle("slow");
+    $('#medal-btn-1').on('click', function(){
+      $('#medal-1').slideToggle("slow");
       $('.bg-container').css('max-height','500vh')
       $('.main-content').css('min-height','200vh')
     });
-    $('#protocol-btn-2').on('click', function(){
-      $('#protocol-2').slideToggle("slow");
+    $('#medal-btn-2').on('click', function(){
+      $('#medal-2').slideToggle("slow");
       $('.bg-container').css('max-height','500vh')
       $('.main-content').css('min-height','200vh')
     });
