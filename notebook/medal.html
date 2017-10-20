@@ -25,14 +25,46 @@
               <ul>
                 <li>Registered for iGEM, planned to attend the Giant Jamboree</li>
                 <li>Documented our project</li>
-                <li>Documented our project</li>
-                <li>Documented our project</li>
-                <li>Documented our project</li>
-                <li>Documented our project</li>
+                <li>Attributed our work correctly
+                  <a href="#">
+                    <span>See more<i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                  </a>
+                </li>
+                <li>Created and documented Parts page on the Registry</li>
+                <li>Submitted DNA samples to the Registry</li>
+                <li>Completed safety forms about our lab, about our project and our final safety form</li>
+                <li>Completed the judging form</li>
+                <li>Complete interlab study</li>
               </ul>
             </div>
             <span class="pdfbtn" id="medal-btn-2">Sliver<i class="fa fa-caret-down" aria-hidden="true"></i></span>
             <div class="ul-container" id="medal-2">
+              <ul>
+                <li>Validated part
+                  <a href="#">
+                    <span>See more<i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                  </a>
+                </li>
+                <li>Collaboration
+                  <a href="#">
+                    <span>See more<i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                  </a>
+                </li>
+                <li>Human Practices</li> <!-- see more -->
+              </ul>
+            </div>
+            <span class="pdfbtn" id="medal-btn-3">Gold<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="ul-container" id="medal-3">
+              <ul>
+                <li>Integrated Human Practices
+                  <a href="#">
+                    <span>See more<i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                  </a>
+                </li>
+                <li>Improve previous part or project</li>
+                <li>Model our project and document on our wiki the assumptions, relevant data and results</li> <!-- see more -->
+                <li>Demonstrate; Be able to convince the judges our project actually works, comply with IGEM safety rules and regulations</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -50,6 +82,11 @@
     });
     $('#medal-btn-2').on('click', function(){
       $('#medal-2').slideToggle("slow");
+      $('.bg-container').css('max-height','500vh')
+      $('.main-content').css('min-height','200vh')
+    });
+    $('#medal-btn-3').on('click', function(){
+      $('#medal-3').slideToggle("slow");
       $('.bg-container').css('max-height','500vh')
       $('.main-content').css('min-height','200vh')
     });

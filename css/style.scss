@@ -338,13 +338,43 @@ ul.menu{
   text-align: center;
   height: auto;
   display: none;
-  ul{
-    text-align: left;
-    padding: 20px 50px;
-    margin-top: -20px;
-    border: #556b7e solid 2px;
-    font-size: $lg-font;
-    // list-style-image: url(../img/header/logo.png);
+}
+.ul-container ul{
+  text-align: left;
+  padding: 20px 50px;
+  margin-top: -20px;
+  border: #556b7e solid 2px;
+  font-size: $lg-font;
+  li{
+    list-style: none;
+    padding: 10px;
+    &:before{
+      content: '';
+      display: inline-block;
+      height: 1em;
+      width: 2em;
+      background-size: 1em;
+      background-image: url(../img/circle.png);
+      background-repeat: no-repeat;
+    }
+    a{
+      text-decoration: none;
+      color: #000;
+      &:visited, &:hover, &:focus{
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    span{
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    i{
+      padding-left: 10px;
+    }
   }
 }
 

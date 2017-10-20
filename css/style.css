@@ -254,12 +254,38 @@ ul.menu {
   text-align: center;
   height: auto;
   display: none; }
-  .ul-container ul {
-    text-align: left;
-    padding: 20px 50px;
-    margin-top: -20px;
-    border: #556b7e solid 2px;
-    font-size: 22px; }
+
+.ul-container ul {
+  text-align: left;
+  padding: 20px 50px;
+  margin-top: -20px;
+  border: #556b7e solid 2px;
+  font-size: 22px; }
+  .ul-container ul li {
+    list-style: none;
+    padding: 10px; }
+    .ul-container ul li:before {
+      content: '';
+      display: inline-block;
+      height: 1em;
+      width: 2em;
+      background-size: 1em;
+      background-image: url(../img/circle.png);
+      background-repeat: no-repeat; }
+    .ul-container ul li a {
+      text-decoration: none;
+      color: #000; }
+      .ul-container ul li a:visited, .ul-container ul li a:hover, .ul-container ul li a:focus {
+        color: #000;
+        text-decoration: none; }
+    .ul-container ul li span {
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer; }
+    .ul-container ul li i {
+      padding-left: 10px; }
 
 #HQ_page .text-area p {
   font-size: 18px;
