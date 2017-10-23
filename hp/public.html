@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Public</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-container">
+      <img src="http://2017.igem.org/wiki/images/b/b1/T--CSMU_NCHU_Taiwan--public.png">
+      <div class="my-main-container">
+        <h1 class="hp-title">-Public Engagement &amp;Education-</h1>
+        <div class="hp-main-content">
+          <div class="text-area">
+            <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio aliquid distinctio ex. Quae, provident, iure. Officia, quidem quos nam esse sequi nisi ab ullam deleniti. Fugit ut iste, aperiam quam repudiandae sit quo, nihil officiis illo nemo, temporibus, aspernatur porro cupiditate numquam magnam fuga voluptas ipsam voluptatibus facere pariatur?</p>
+
+          </div>
+          <div class="pdf-area">
+            <span class="pdfbtn brown-btn" id="public-btn-1">Youth Education<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="pdf-container" id="public-1">
+              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
+              </object>
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-2">Syntetic Biology Workshop<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="pdf-container" id="public-2">
+              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
+              </object>
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-3">Street Interview<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="pdf-container" id="public-3">
+              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
+              </object>
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-4">Booth<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="pdf-container" id="public-4">
+              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
+              </object>
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-5">Card Game<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="pdf-container" id="public-5">
+              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
+              </object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    $('#public-btn-1').on('click', function(){
+      $('#public-1').slideToggle("slow");
+      $('.bg-container').css('max-height','500vh')
+      $('.main-content').css('min-height','200vh')
+    });
+    $('#public-btn-2').on('click', function(){
+      $('#public-2').slideToggle("slow");
+      $('.bg-container').css('max-height','500vh')
+      $('.main-content').css('min-height','200vh')
+    });
+    $('#public-btn-3').on('click', function(){
+      $('#public-3').slideToggle("slow");
+      $('.bg-container').css('max-height','500vh')
+      $('.main-content').css('min-height','200vh')
+    });
+    $('#public-btn-4').on('click', function(){
+      $('#public-4').slideToggle("slow");
+      $('.bg-container').css('max-height','500vh')
+      $('.main-content').css('min-height','200vh')
+    });
+    $('#public-btn-5').on('click', function(){
+      $('#public-5').slideToggle("slow");
+      $('.bg-container').css('max-height','500vh')
+      $('.main-content').css('min-height','200vh')
+    });
+</script>
+</html>

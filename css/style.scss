@@ -11,7 +11,7 @@ $light-grey: #d3d3d3;
 $note-blue: #556b7e;
 
 // Fonts
-$title-font: 48px;
+$title-font: 60px;
 $lg-font: 22px;
 $mid-font: 18px;
 $sm-font: 16px;
@@ -223,6 +223,256 @@ ul.menu{
   }
 }
 
+// for path btn
+
+  .path-btns{
+    position: fixed;
+    width: 250px;
+    top: 200px;
+    left: 225px;
+    .path-dot{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: #fff;
+      top: 5px;
+      left: 27px;
+      border: 5px solid #385e66;
+      cursor: pointer;
+      &.active{
+        background-color: #385e66;
+      }
+      &:hover{
+        transition: all .3s;
+        transform: scale(1.2);
+      }
+    }
+  }
+  .path{
+    height: 65px;
+    display: flex;
+    .pathSvg{
+      display: block;
+    }
+    .pathWord{
+      padding-right: 10%;
+      p{
+        font-weight: 700;
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+    .path-btn{
+      cursor: pointer;
+      fill: #fff;
+      &.path-active{
+        fill: #385e66;
+      }
+    }
+  }
+
+// For pdf page
+
+.bg-container{
+  overflow: hidden;
+  position: relative;
+  max-height: 200vh;
+   >img{
+    width: 100%;
+    margin-top: -45px;
+  }
+}
+
+.my-main-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden;
+}
+
+.main-content{
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10;
+}
+
+.text-area{
+  margin-bottom: 80px;
+  h1{
+    font-size: $title-font;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p{
+    font-size: $lg-font;
+    font-weight: 500;
+  }
+}
+
+// for modeling
+.m-text-area{
+  padding-left: 225px;
+  h2{
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important;
+  }
+}
+
+.m-block{
+  img{
+    width: 100%;
+  }
+}
+
+.pdfbtn{
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative;
+  i{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.brown-btn{
+  background-color: #603813;
+}
+
+// for hp
+.hp-title{
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: $title-font;
+  font-weight: 700;
+  font-family: 'Arizonia' !important;
+  margin-bottom: 1rem;
+}
+
+.hp-main-content{
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  margin-top: 750px;
+  min-height: 300vh;
+  z-index: 10;
+}
+
+.pdf-container{
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none;
+}
+
+.ul-container{
+  width: 100%;
+  text-align: center;
+  height: auto;
+  display: none;
+}
+
+.ul-container ul.medal{
+  li{
+    list-style: none;
+      &:before{
+      content: '';
+      display: inline-block;
+      height: 1em;
+      width: 2em;
+      background-size: 1em;
+      background-image: url(../img/circle.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.ul-container ul{
+  text-align: left;
+  padding: 20px 50px;
+  margin-top: -20px;
+  margin-left: 0;
+  border: #556b7e solid 2px;
+  font-size: $lg-font;
+  li{
+    padding: 10px;
+    list-style: disc;
+    a{
+      text-decoration: none;
+      color: #000;
+      &:visited, &:hover, &:focus{
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    span{
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    i{
+      padding-left: 10px;
+    }
+  }
+}
+
+// top btn
+.top{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  img{
+    width: 100%;
+  }
+}
+
+// cover the default setting
+#HQ_page .text-area p{
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+// home page
+#home-img{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  background-image: url('../img/home-img.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+#home-cover{
+  padding: 0 10%;
+}
+
 
 // Utility
 .u-block{
@@ -263,140 +513,7 @@ ul.menu{
 
 }
 
-// For note page
-
-.bg-container{
-  overflow: hidden;
-  position: relative;
-  max-height: 200vh;
-   img{
-    width: 100%;
-    margin-top: -45px;
-  }
-}
-
-.my-main-container{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 50px 7%;
-  min-height: 200vh;
-  overflow: hidden;
-}
-
-.main-content{
-  background-color: white;
-  width: 80%;
-  margin-left: 10%;
-  padding: 50px;
-  min-height: 180vh;
-  z-index: 10;
-}
-
-.text-area{
-  margin-bottom: 80px;
-  h1{
-    font-size: $title-font;
-    font-weight: 700;
-    font-family: 'Arizonia' !important;
-    text-align: center;
-  }
-  p{
-    font-size: $lg-font;
-    font-weight: 500;
-  }
-}
-
-.pdfbtn{
-  width: 100%;
-  margin: 20px 0 10px 0;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #556b7e;
-  color: white;
+img.center{
   display: block;
-  position: relative;
-  i{
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  margin: 0 auto;
 }
-
-.pdf-container{
-  width: 100%;
-  text-align: center;
-  height: 90vh;
-  display: none;
-}
-
-.ul-container{
-  width: 100%;
-  text-align: center;
-  height: auto;
-  display: none;
-}
-.ul-container ul{
-  text-align: left;
-  padding: 20px 50px;
-  margin-top: -20px;
-  border: #556b7e solid 2px;
-  font-size: $lg-font;
-  li{
-    list-style: none;
-    padding: 10px;
-    &:before{
-      content: '';
-      display: inline-block;
-      height: 1em;
-      width: 2em;
-      background-size: 1em;
-      background-image: url(../img/circle.png);
-      background-repeat: no-repeat;
-    }
-    a{
-      text-decoration: none;
-      color: #000;
-      &:visited, &:hover, &:focus{
-        color: #000;
-        text-decoration: none;
-      }
-    }
-    span{
-      background-color: #fadd3a;
-      padding: 1px 10px;
-      border-radius: 5px;
-      margin-left: 20px;
-      cursor: pointer;
-    }
-    i{
-      padding-left: 10px;
-    }
-  }
-}
-
-// cover the default setting
-#HQ_page .text-area p{
-  font-size: 18px;
-  font-family: 'Ubuntu';
-  font-weight: 500;
-}
-
-// home page
-#home-img{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 10;
-  background-image: url('../img/home-img.png');
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-}
-#home-cover{
-  padding: 0 22.5%;
-}
-

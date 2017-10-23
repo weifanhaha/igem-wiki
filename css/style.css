@@ -162,6 +162,205 @@ ul.menu {
   #hamburger.dropdown hr {
     width: 90%; }
 
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+    .path .pathWord p {
+      font-weight: 700;
+      text-align: left;
+      font-size: 16px; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: 200vh; }
+  .bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.text-area {
+  margin-bottom: 80px; }
+  .text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+
+.m-text-area {
+  padding-left: 225px; }
+  .m-text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.m-block img {
+  width: 100%; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.brown-btn {
+  background-color: #603813; }
+
+.hp-title {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Arizonia' !important;
+  margin-bottom: 1rem; }
+
+.hp-main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  margin-top: 750px;
+  min-height: 300vh;
+  z-index: 10; }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none; }
+
+.ul-container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  display: none; }
+
+.ul-container ul.medal li {
+  list-style: none; }
+  .ul-container ul.medal li:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 2em;
+    background-size: 1em;
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat; }
+
+.ul-container ul {
+  text-align: left;
+  padding: 20px 50px;
+  margin-top: -20px;
+  margin-left: 0;
+  border: #556b7e solid 2px;
+  font-size: 22px; }
+  .ul-container ul li {
+    padding: 10px;
+    list-style: disc; }
+    .ul-container ul li a {
+      text-decoration: none;
+      color: #000; }
+      .ul-container ul li a:visited, .ul-container ul li a:hover, .ul-container ul li a:focus {
+        color: #000;
+        text-decoration: none; }
+    .ul-container ul li span {
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer; }
+    .ul-container ul li i {
+      padding-left: 10px; }
+
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+
+#home-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  background-image: url("../img/home-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#home-cover {
+  padding: 0 10%; }
+
 .u-block {
   display: block; }
 
@@ -191,118 +390,8 @@ ul.menu {
   .imgBox .img-4-5 {
     padding-top: 80%; }
 
-.bg-container {
-  overflow: hidden;
-  position: relative;
-  max-height: 200vh; }
-  .bg-container img {
-    width: 100%;
-    margin-top: -45px; }
-
-.my-main-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 50px 7%;
-  min-height: 200vh;
-  overflow: hidden; }
-
-.main-content {
-  background-color: white;
-  width: 80%;
-  margin-left: 10%;
-  padding: 50px;
-  min-height: 180vh;
-  z-index: 10; }
-
-.text-area {
-  margin-bottom: 80px; }
-  .text-area h1 {
-    font-size: 48px;
-    font-weight: 700;
-    font-family: 'Arizonia' !important;
-    text-align: center; }
-  .text-area p {
-    font-size: 22px;
-    font-weight: 500; }
-
-.pdfbtn {
-  width: 100%;
-  margin: 20px 0 10px 0;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #556b7e;
-  color: white;
+img.center {
   display: block;
-  position: relative; }
-  .pdfbtn i {
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%); }
-
-.pdf-container {
-  width: 100%;
-  text-align: center;
-  height: 90vh;
-  display: none; }
-
-.ul-container {
-  width: 100%;
-  text-align: center;
-  height: auto;
-  display: none; }
-
-.ul-container ul {
-  text-align: left;
-  padding: 20px 50px;
-  margin-top: -20px;
-  border: #556b7e solid 2px;
-  font-size: 22px; }
-  .ul-container ul li {
-    list-style: none;
-    padding: 10px; }
-    .ul-container ul li:before {
-      content: '';
-      display: inline-block;
-      height: 1em;
-      width: 2em;
-      background-size: 1em;
-      background-image: url(../img/circle.png);
-      background-repeat: no-repeat; }
-    .ul-container ul li a {
-      text-decoration: none;
-      color: #000; }
-      .ul-container ul li a:visited, .ul-container ul li a:hover, .ul-container ul li a:focus {
-        color: #000;
-        text-decoration: none; }
-    .ul-container ul li span {
-      background-color: #fadd3a;
-      padding: 1px 10px;
-      border-radius: 5px;
-      margin-left: 20px;
-      cursor: pointer; }
-    .ul-container ul li i {
-      padding-left: 10px; }
-
-#HQ_page .text-area p {
-  font-size: 18px;
-  font-family: 'Ubuntu';
-  font-weight: 500; }
-
-#home-img {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 10;
-  background-image: url("../img/home-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-
-#home-cover {
-  padding: 0 22.5%; }
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

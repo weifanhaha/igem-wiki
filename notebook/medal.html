@@ -15,7 +15,7 @@
       <div class="my-main-container">
         <div class="main-content">
           <div class="text-area">
-            <h1>Protocols</h1>
+            <h1>Medal Criteria</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio aliquid distinctio ex. Quae, provident, iure. Officia, quidem quos nam esse sequi nisi ab ullam deleniti. Fugit ut iste, aperiam quam repudiandae sit quo, nihil officiis illo nemo, temporibus, aspernatur porro cupiditate numquam magnam fuga voluptas ipsam voluptatibus facere pariatur?</p>
 
           </div>
@@ -55,7 +55,7 @@
             </div>
             <span class="pdfbtn" id="medal-btn-3">Gold<i class="fa fa-caret-down" aria-hidden="true"></i></span>
             <div class="ul-container" id="medal-3">
-              <ul>
+              <ul class="ul-medal">
                 <li>Integrated Human Practices
                   <a href="#">
                     <span>See more<i class="fa fa-caret-right" aria-hidden="true"></i></span>
@@ -69,6 +69,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
     </div>
 
 
@@ -89,6 +92,9 @@
       $('#medal-3').slideToggle("slow");
       $('.bg-container').css('max-height','500vh')
       $('.main-content').css('min-height','200vh')
+    });
+    $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
     });
 </script>
 </html>
