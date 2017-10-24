@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Social media</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="hp-bg-container">
+      <img src="http://2017.igem.org/wiki/images/6/66/T--CSMU_NCHU_Taiwan--social_media.png">
+      <div class="hp-main-container">
+        <h1 class="hp-title">-Social media-</h1>
+        <div class="hp-main-content">
+          <div class="text-area">
+            <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio aliquid distinctio ex. Quae, provident, iure. Officia, quidem quos nam esse sequi nisi ab ullam deleniti. Fugit ut iste, aperiam quam repudiandae sit quo, nihil officiis illo nemo, temporibus, aspernatur porro cupiditate numquam magnam fuga voluptas ipsam voluptatibus facere pariatur?</p>
+
+          </div>
+          <div class="pdf-area">
+            <span class="pdfbtn brown-btn" id="media-btn-1">Facebook<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="ul-container" id="media-1">
+              <ul class="ul-brown">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam impedit eum qui tempore ab hic iure quae doloribus fuga, incidunt tempora quibusdam repellendus numquam aliquid vero eos rerum doloremque! Ratione quasi eligendi, nemo eum, modi commodi ab quis porro sequi. Ex expedita at quisquam earum nesciunt. Corporis totam, atque fuga.</p>
+                <img src="" alt="">
+                <p>Example of what we post:</p>
+                <li>lists</li>
+                <img src="" alt="">
+                <li>lists</li>
+                <img src="" alt="">
+                <li>lists</li>
+                <img src="" alt="">
+                <li>lists</li>
+                <img src="" alt="">
+                <li>lists</li>
+                <img src="" alt="">
+              </ul>
+
+              </div>
+            </div>
+            <span class="pdfbtn brown-btn" id="media-btn-2">Facebook<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="ul-container" id="media-2">
+              <ul class="ul-brown">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, illo. Repellendus dolorum tempora omnis quasi consectetur temporibus, nostrum possimus cum quas harum, explicabo obcaecati ipsa, in animi ex dolor esse debitis quaerat? Odit delectus iure, deserunt et? Provident tenetur sit neque ad, odit quas at, placeat repellendus totam modi vero.</p>
+                <img src="" alt="">
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+$(document).ready(function(){
+
+      for( var i = 1; i < 3; i++){
+        $('#media-btn-' + i).click( toggleContainer(i) );
+      }
+
+      $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
+
+});
+
+function toggleContainer(i){
+   return function(){
+      if($('#media-'+i).is(":visible")){
+        $('#media-'+i).slideToggle(500);
+      }
+      // else{
+      //   $('.img-container:visible').slideToggle(500);
+      //   $('#media-'+i).slideToggle(500);
+      // }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+
+</script>
+</html>

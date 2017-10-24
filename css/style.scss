@@ -397,7 +397,7 @@ ul.menu{
   width: 80%;
   margin-left: 10%;
   padding: 50px;
-  margin-top: 750px;
+  margin-top: 600px;
   min-height: 300vh;
   z-index: 10;
 }
@@ -447,6 +447,9 @@ ul.menu{
   margin-left: 0;
   border: #556b7e solid 2px;
   font-size: $lg-font;
+  &.ul-brown{
+    border: #603813 solid 2px;
+  }
   li{
     padding: 10px;
     list-style: disc;

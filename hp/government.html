@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Government</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="hp-bg-container">
+      <img src="http://2017.igem.org/wiki/images/c/cb/T--CSMU_NCHU_Taiwan--government.png">
+      <div class="hp-main-container">
+        <h1 class="hp-title">-Government-</h1>
+        <div class="hp-main-content">
+          <div class="text-area">
+            <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio aliquid distinctio ex. Quae, provident, iure. Officia, quidem quos nam esse sequi nisi ab ullam deleniti. Fugit ut iste, aperiam quam repudiandae sit quo, nihil officiis illo nemo, temporibus, aspernatur porro cupiditate numquam magnam fuga voluptas ipsam voluptatibus facere pariatur?</p>
+          </div>
+          <div class="pdf-area">
+            <span class="pdfbtn brown-btn" id="govern-btn-1">Food Industry Research &amp; Development Institute<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="govern-1">
+              <img class="center" src="http://2017.igem.org/wiki/images/d/d6/T--CSMU_NCHU_Taiwan--government01.png" alt="" style="width: 90%; margin-top: -30px;">
+            </div>
+            <span class="pdfbtn brown-btn" id="govern-btn-2">Congressman of Taiwan<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="govern-2">
+              <img class='center' src="../img/hp/congressman.jpg" style="width:60%" alt="">
+              <img style="width: 90%;" class="center" src="http://2017.igem.org/wiki/images/d/d6/T--CSMU_NCHU_Taiwan--government02.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+$(document).ready(function(){
+
+      for( var i = 1; i < 3; i++){
+        $('#govern-btn-' + i).click( toggleContainer(i) );
+      }
+
+      $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
+
+});
+
+function toggleContainer(i){
+   return function(){
+      if($('#govern-'+i).is(":visible")){
+        $('#govern-'+i).slideToggle(500);
+      }
+      else{
+        $('.img-container:visible').slideToggle(500);
+        $('#govern-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+
+</script>
+</html>
