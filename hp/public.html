@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Public</title>
+    <title>Engagement</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -10,9 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="bg-container">
+    <div class="hp-bg-container">
       <img src="http://2017.igem.org/wiki/images/b/b1/T--CSMU_NCHU_Taiwan--public.png">
-      <div class="my-main-container">
+      <div class="hp-main-container">
         <h1 class="hp-title">-Public Engagement &amp;Education-</h1>
         <div class="hp-main-content">
           <div class="text-area">
@@ -22,61 +22,61 @@
           </div>
           <div class="pdf-area">
             <span class="pdfbtn brown-btn" id="public-btn-1">Youth Education<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="public-1">
-              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
-              </object>
+            <div class="img-container" id="public-1">
+              <img src="http://2017.igem.org/wiki/images/2/21/T--CSMU_NCHU_Taiwan--public01.png" alt="">
             </div>
             <span class="pdfbtn brown-btn" id="public-btn-2">Syntetic Biology Workshop<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="public-2">
-              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
-              </object>
+            <div class="img-container" id="public-2">
+              <img src="http://2017.igem.org/wiki/images/5/5b/T--CSMU_NCHU_Taiwan--public02.png" alt="">
             </div>
             <span class="pdfbtn brown-btn" id="public-btn-3">Street Interview<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="public-3">
-              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
-              </object>
+            <div class="img-container" id="public-3">
+              <img src="http://2017.igem.org/wiki/images/b/b5/T--CSMU_NCHU_Taiwan--public03.png" alt="">
             </div>
             <span class="pdfbtn brown-btn" id="public-btn-4">Booth<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="public-4">
-              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
-              </object>
+            <div class="img-container" id="public-4">
+              <img src="http://2017.igem.org/wiki/images/0/0c/T--CSMU_NCHU_Taiwan--public04.png" alt="">
             </div>
             <span class="pdfbtn brown-btn" id="public-btn-5">Card Game<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="public-5">
-              <object data="http://2017.igem.org/wiki/images/3/3c/T--CSMU_NCHU_Taiwan--pdftest1.pdf" type="application/pdf" width="100%" height="100%">
-              </object>
+            <div class="img-container" id="public-5">
+              <img src="http://2017.igem.org/wiki/images/0/00/T--CSMU_NCHU_Taiwan--public05.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+
 
   </body>
   <script type="text/javascript">
-    $('#public-btn-1').on('click', function(){
-      $('#public-1').slideToggle("slow");
-      $('.bg-container').css('max-height','500vh')
-      $('.main-content').css('min-height','200vh')
+$(document).ready(function(){
+
+      for( var i = 1; i < 6; i++){
+        $('#public-btn-' + i).click( toggleContainer(i) );
+      }
+
+      $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
     });
-    $('#public-btn-2').on('click', function(){
-      $('#public-2').slideToggle("slow");
-      $('.bg-container').css('max-height','500vh')
+
+});
+
+function toggleContainer(i){
+   return function(){
+      if($('#public-'+i).is(":visible")){
+        $('#public-'+i).slideToggle(500);
+      }
+      else{
+        $('.img-container:visible').slideToggle(500);
+        $('#public-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
       $('.main-content').css('min-height','200vh')
-    });
-    $('#public-btn-3').on('click', function(){
-      $('#public-3').slideToggle("slow");
-      $('.bg-container').css('max-height','500vh')
-      $('.main-content').css('min-height','200vh')
-    });
-    $('#public-btn-4').on('click', function(){
-      $('#public-4').slideToggle("slow");
-      $('.bg-container').css('max-height','500vh')
-      $('.main-content').css('min-height','200vh')
-    });
-    $('#public-btn-5').on('click', function(){
-      $('#public-5').slideToggle("slow");
-      $('.bg-container').css('max-height','500vh')
-      $('.main-content').css('min-height','200vh')
-    });
+  }
+}
+
 </script>
 </html>

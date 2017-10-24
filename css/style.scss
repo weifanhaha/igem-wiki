@@ -368,6 +368,30 @@ ul.menu{
   margin-bottom: 1rem;
 }
 
+.hp-bg-container{
+  overflow: hidden;
+  position: relative;
+  max-height: 200vh;
+  background-color:#fdf8e3;
+   >img{
+    width: 100%;
+    margin-top: -45px;
+  }
+}
+
+
+.hp-main-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden;
+}
+
+
 .hp-main-content{
   background-color: white;
   width: 80%;
@@ -376,6 +400,15 @@ ul.menu{
   margin-top: 750px;
   min-height: 300vh;
   z-index: 10;
+}
+
+.img-container{
+  width: 100%;
+  text-align: center;
+  display: none;
+  img{
+    width: 100%;
+  }
 }
 
 .pdf-container{
