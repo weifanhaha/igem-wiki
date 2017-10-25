@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Human Practices</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="hp-bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/8/8c/T--CSMU_NCHU_Taiwan--hp_bg.png">
+      <div class="hp-main-container">
+        <h1 class="hp-title">-Human Practices-</h1>
+        <div class="hp-main-content" style="min-height:100px; margin-top:750px;">
+          <div class="text-area">
+            <div class="row">
+              <div class="col-sm-6 hp-img-block b-border r-border">
+                <img src="http://2017.igem.org/wiki/images/d/dd/T--CSMU_NCHU_Taiwan--hp-01.png" style="width: 100%;">
+                <a href="#">
+                  <span>See more <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+              <div class="col-sm-6 hp-img-block b-border">
+                <img src="http://2017.igem.org/wiki/images/e/e3/T--CSMU_NCHU_Taiwan--hp-02.png" style="width: 100%;">
+                <a href="#">
+                  <span>See more <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 hp-img-block b-border r-border">
+                <img src="http://2017.igem.org/wiki/images/f/f5/T--CSMU_NCHU_Taiwan--hp-03.png" style="width: 100%;">
+                <a href="#">
+                  <span>See more <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+              <div class="col-sm-6 hp-img-block b-border">
+                <img src="http://2017.igem.org/wiki/images/0/03/T--CSMU_NCHU_Taiwan--hp-04.png" style="width: 100%;">
+                <a href="#">
+                  <span>See more <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 hp-img-block b-border r-border">
+                <img src="http://2017.igem.org/wiki/images/8/82/T--CSMU_NCHU_Taiwan--hp-05.png" style="width: 100%;">
+                <a href="#">
+                  <span>See more <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+              <div class="col-sm-6 hp-img-block b-border">
+                <img src="http://2017.igem.org/wiki/images/f/f0/T--CSMU_NCHU_Taiwan--hp-06.png" style="width: 100%;">
+                <a href="#">
+                  <span>See more <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 hp-img-block r-border">
+                <img src="http://2017.igem.org/wiki/images/2/24/T--CSMU_NCHU_Taiwan--hp-07.png" style="width: 100%;">
+              </div>
+              <div class="col-sm-6 hp-img-block">
+                <img src="http://2017.igem.org/wiki/images/c/c1/T--CSMU_NCHU_Taiwan--hp-08.png" style="width: 100%;">
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+$(document).ready(function(){
+
+      for( var i = 1; i < 3; i++){
+        $('#govern-btn-' + i).click( toggleContainer(i) );
+      }
+
+      $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
+
+});
+
+function toggleContainer(i){
+   return function(){
+      if($('#govern-'+i).is(":visible")){
+        $('#govern-'+i).slideToggle(500);
+      }
+      else{
+        $('.img-container:visible').slideToggle(500);
+        $('#govern-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+
+</script>
+</html>

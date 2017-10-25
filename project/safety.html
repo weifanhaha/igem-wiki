@@ -1,0 +1,281 @@
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Inter Lab</title>
+  </head>
+
+
+
+<!--
+<div class="column full_size">
+
+
+<h1> Safety </h1>
+<p>Please visit <a href="http://2017.igem.org/Safety">the main Safety page</a> to find this year's safety requirements & deadlines, and to learn about safe & responsible research in iGEM.</p>
+
+<p>On this page of your wiki, you should write about how you are addressing any safety issues in your project. The wiki is a place where you can <strong>go beyond the questions on the safety forms</strong>, and write about whatever safety topics are most interesting in your project. (You do not need to copy your safety forms onto this wiki page.)</p>
+
+</div>
+
+
+<div class="column full_size">
+<h5>Safe Project Design</h5>
+
+<p>Does your project include any safety features? Have you made certain decisions about the design to reduce risks? Write about them here! For example:</p>
+
+<ul>
+<li>Choosing a non-pathogenic chassis</li>
+<li>Choosing parts that will not harm humans / animals / plants</li>
+<li>Substituting safer materials for dangerous materials in a proof-of-concept experiment</li>
+<li>Including an "induced lethality" or "kill-switch" device</li>
+</ul>
+
+</div>
+
+<div class="column half_size">
+<h5>Safe Lab Work</h5>
+
+<p>What safety procedures do you use every day in the lab? Did you perform any unusual experiments, or face any unusual safety issues? Write about them here!</p>
+
+</div>
+
+<div class="column half_size">
+<h5>Safe Shipment</h5>
+
+<p>Did you face any safety problems in sending your DNA parts to the Registry? How did you solve those problems?</p>
+</div>
+-->
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+
+
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: 200vh; }
+  .bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.text-area {
+  margin-bottom: 80px; }
+  .text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+
+.m-block img {
+  width: 100%; }
+
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+  .path .path-word-sm {
+    font-size: 12px; }
+#HQ_page .path .pathWord p {
+      font-weight: 700;
+      text-align: left !important; 
+      font-size: 16px;
+}
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+ .text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+</style>
+
+<body>
+    <div class="bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/4/4d/T--CSMU_NCHU_Taiwan--safety.png">
+      <div class="my-main-container">
+        <div class="main-content">
+          <div class="text-area">
+            <h1>Safety</h1>
+            <h2  id = "s-general">General Concern and Regulation of Biosafety</h2>
+            <img class="center" src="http://2017.igem.org/wiki/images/0/05/T--CSMU_NCHU_Taiwan--safety-overview.png" alt="" style="width: 30%; margin-bottom: 20px;">
+            <p> All experiments of our iGEM project were conducted in the Biosafety Level-1 laboratories under the regulation of Environmental Safety and Health Center of Chung Shan Medical University. The emergency exit and basic risk assessment are the first thing to check of everyday prior to the experiment.
+</p>
+            <div class="row">
+              <div class="col-sm-6" style="padding-left: 0px; padding-right: 10px;">
+                <img src="http://2017.igem.org/wiki/images/4/48/T--CSMU_NCHU_Taiwan--safety-train.png" alt="" class="center" style="width: 60%; margin-bottom: 20px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et amet modi rem. Laudantium voluptates blanditiis alias quas sed excepturi magni quo porro tempore illo odio sequi, animi aperiam eos mollitia.</p>
+              </div>
+              <div class="col-sm-6" style="padding-left: 10px; padding-right: 0px;">
+                <img src="http://2017.igem.org/wiki/images/f/f7/T--CSMU_NCHU_Taiwan--safety-MSDS.png" alt="" class="center" style="width: 60%; margin-bottom: 20px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et amet modi rem. Laudantium voluptates blanditiis alias quas sed excepturi magni quo porro tempore illo odio sequi, animi aperiam eos mollitia.</p>
+              </div>
+            </div>
+            <img src="http://2017.igem.org/wiki/images/f/f7/T--CSMU_NCHU_Taiwan--safety-MSDS.png" alt="" class="center" style="width: 30%; margin-bottom: 20px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas in earum at laborum a deserunt tempore consequuntur, alias dolore possimus voluptatibus dicta, sint quibusdam amet aliquid maxime, impedit. Quaerat veritatis fugiat aut unde quo eaque nihil dicta officia deserunt qui saepe placeat aspernatur quisquam corporis esse, nobis nemo. Cumque, excepturi.</p>
+            <img src="http://2017.igem.org/wiki/images/a/a8/T--CSMU_NCHU_Taiwan--safety-line.png" alt="">
+            <h2 id = "s-legal">Legal</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolorum, nam inventore alias ex at quia fuga est harum assumenda, molestias temporibus? Autem corporis unde iure ex, reprehenderit adipisci atque cupiditate architecto omnis eius beatae veniam est distinctio perspiciatis cumque ratione. Minima, ducimus, aliquam. Officiis ex odio quos cupiditate, cum iure. Delectus vero, enim dolorum, inventore repudiandae voluptatem consequuntur, expedita non id, voluptatum eos cumque ipsum! Error, quo illo culpa laborum alias amet nemo placeat possimus. Sunt obcaecati nisi eius itaque, commodi nesciunt aliquid in ab ex, quo doloremque illum harum quos labore distinctio consectetur molestiae fugit hic veniam pariatur.</p>
+            <img src="http://2017.igem.org/wiki/images/a/a8/T--CSMU_NCHU_Taiwan--safety-line.png" alt="">
+            <h2 id = "s-consider">Safety Considerations</h2>
+            <img class="center" src="http://2017.igem.org/wiki/images/0/05/T--CSMU_NCHU_Taiwan--safety-overview.png" alt="" style="width: 30%; margin-bottom: 20px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eveniet illo ea omnis nihil. Accusamus ut quo, quasi eos nostrum perspiciatis esse. In reprehenderit consequatur, pariatur laboriosam optio amet maxime? Ipsam ex rerum aperiam delectus tenetur est iusto facere eos necessitatibus nesciunt fugiat, id asperiores reprehenderit odio perferendis quae quam, nihil molestias itaque temporibus excepturi impedit ut magnam minus. Tenetur sit odio nam facere exercitationem fugiat, distinctio iure eveniet ipsum nesciunt amet dicta autem velit at provident explicabo dignissimos vero quidem ab incidunt! Quis nulla ducimus vel omnis recusandae eius, aliquid ab, autem eaque at tempore in voluptatem. Ad eum aliquid esse molestias exercitationem expedita dolorem corporis itaque recusandae quasi, laboriosam pariatur voluptatem quisquam repellat nihil consequatur quod dolores velit porro alias culpa sit unde, magni eos! Excepturi, laudantium consectetur sequi non ut, nesciunt illo aliquam, quas dignissimos cumque sint ea ullam. Deserunt a, nostrum error amet, quae harum quasi distinctio? Aliquid expedita consequatur, consectetur magni non magnam similique sapiente aut. Quaerat, commodi. Adipisci quo soluta provident ut sunt perferendis quis ducimus doloribus saepe officiis hic distinctio obcaecati pariatur exercitationem quas quam voluptas tempore voluptates aspernatur, veritatis corporis. Soluta, ipsa iure. Pariatur iste, earum at dicta. A commodi sapiente nostrum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="path-btns" style="left:0;">
+      <div class="path">
+        <div class="pathSvg">
+          <svg width="80" height = "70">
+            <rect x ="36" y="20" width="6" height="50" style="fill:#385e66"/>
+          </svg>
+        </div>
+        <div id="s-general-btn" class="path-dot"></div>
+        <div class="pathWord path-word-sm">
+          <p>General Concern and Regulation of Biosafety</p>
+        </div>
+      </div>
+      <div class="path">
+        <div class="pathSvg">
+          <svg width="80" height = "70">
+            <rect x ="36" y="20" width="6" height="50" style="fill:#385e66"/>
+          </svg>
+        </div>
+        <div id="s-legal-btn" class="path-dot" style="top: 69px"></div>
+        <div class="pathWord path-word-sm">
+          <p>Legal</p>
+        </div>
+      </div>
+      <div class="path">
+        <div class="pathSvg">
+          <svg width="80" height = "70">
+            <rect x ="36" y="20" width="0" height="50" style="fill:#385e66"/>
+          </svg>
+        </div>
+        <div id="s-consider-btn" class="path-dot" style="top: 132px"></div>
+        <div class="pathWord path-word-sm">
+          <p>Safety <br>Considerations</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $("#s-general-btn").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#s-general").offset().top
+      }, 500);
+    });
+    $("#s-legal-btn").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#s-legal").offset().top
+      }, 500);
+    });
+    $("#s-consider-btn").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#s-consider").offset().top
+      }, 800);
+    });
+
+    $(document).ready(function(){
+        $("#s-general-btn").css('background-color', '#385e66');
+        var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+
+            s_general_pos = $("#s-general").offset().top -100
+            s_legal_pos = $("#s-legal").offset().top -100
+            s_consider_pos = $("#s-consider").offset().top -100
+
+            // overview
+            if(scroll_pos < s_legal_pos) {
+                $(".path-dot").css('background-color', '#fff')
+                $("#s-general-btn").css('background-color', '#385e66');
+            // legal
+            } else if(scroll_pos < s_consider_pos){
+              if(scroll_pos >= s_legal_pos){
+                $(".path-dot").css('background-color', '#fff')
+                $("#s-legal-btn").css('background-color', '#385e66');}
+            }
+
+            //consider
+            else if( scroll_pos >= s_consider_pos) {
+                $(".path-dot").css('background-color', '#fff')
+                $("#s-consider-btn").css('background-color', '#385e66');
+            }
+        });
+    });
+
+  </script>
+
+</html>

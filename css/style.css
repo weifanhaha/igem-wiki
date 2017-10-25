@@ -361,6 +361,64 @@ ul.menu {
     .ul-container ul li i {
       padding-left: 10px; }
 
+.path-tags{
+  position: fixed;
+  left: 20%;
+  top: 200px;
+}
+.path-tags ul{
+  color: #006837;
+  list-style: none;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+}
+
+.path-tags span{
+    color: #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.hp-img-block{
+  position: relative;
+  height: 550px;
+  overflow: hidden
+}
+
+.hp-img-block.r-border{
+  border-right: 2px dashed #603813;
+} 
+
+.hp-img-block.b-border{
+  border-bottom: 2px dashed #603813;
+} 
+
+.hp-img-block span{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fadd3a;
+  padding: 1px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer; 
+}
+
+.hp-img-block a,
+.hp-img-block a:visited,
+.hp-img-block a:hover,
+.hp-img-block a:focus{
+    text-decoration: none;
+    color: #000; 
+}
+
+
 .top {
   position: fixed;
   right: 50px;
@@ -371,10 +429,16 @@ ul.menu {
   .top img {
     width: 100%; }
 
+
+
+
 #HQ_page .text-area p {
   font-size: 22px;
   font-family: 'Ubuntu';
   font-weight: 500; }
+
+  #HQ_page  .path .path-word-sm {
+    font-size: 12px; }
 
 #home-img {
   width: 100%;
@@ -423,3 +487,10 @@ img.center {
   margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
+h2, h3, h4, h5, h6, p{
+  color: #000;
+font-family: 'Ubuntu';
+}
+h2{
+  font-size:24px;
+}
