@@ -77,10 +77,10 @@ function toggleContainer(i){
       if($('#media-'+i).is(":visible")){
         $('#media-'+i).slideToggle(500);
       }
-      // else{
-      //   $('.img-container:visible').slideToggle(500);
-      //   $('#media-'+i).slideToggle(500);
-      // }
+      else{
+        // $('.img-container:visible').slideToggle(500);
+        $('#media-'+i).slideToggle(500);
+      }
       $('.hp-bg-container').css('max-height','none')
       $('.main-content').css('min-height','200vh')
   }
