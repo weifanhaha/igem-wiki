@@ -149,6 +149,15 @@ img.center {
     z-index: 1;
     font-size: 20px;
 }
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
 
 </style>
 
@@ -268,8 +277,8 @@ img.center {
       </div>
       <div class="path-tags">
         <ul>
-          <span>Software tools</span>
-          <a href="">
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Software/App">
+            <span>Software tools</span>
             <img src="http://2017.igem.org/wiki/images/2/26/T--CSMU_NCHU_Taiwan--app-tag.png" style="position: fixed; top: 190px; width: 170px;">
           </a>
           <li id="NCBI-btn" class="tag-btn">- NCBI</li>
@@ -280,30 +289,32 @@ img.center {
           <li id="PMV-btn" class="tag-btn">- PMV</li>
           <li id="PubChem-btn" class="tag-btn">- PubChem</li>
           <li id="PyRx-btn" class="tag-btn">- PyRx</li>
+          <br>
+          <a href="#"><p>APP</p></a>
         </ul>
-        <br>
-        <p>APP</p>
       </div>
     </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div> 
   </body>
   <script type="text/javascript">
     $(document).ready(function(){
-      console.log('hi')
+      $('.top').on('click', function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+      });
 
       $("ul>li#NCBI-btn").click(function() {
-      console.log('click')
         $('html, body').animate({
             scrollTop: $("#app-NCBI").offset().top
         }, 500);
       });
       $("#RaptorX-btn").click(function() {
-      console.log('click')
         $('html, body').animate({
             scrollTop: $("#app-RaptorX").offset().top
         }, 500);
       });
       $("#Uniprot-btn").click(function() {
-      console.log('click')
         $('html, body').animate({
             scrollTop: $("#app-Uniprot").offset().top
         }, 500);

@@ -1,0 +1,253 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>APP</title>
+  </head>
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+
+
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: 200vh; }
+  .bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.m-text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+.m-text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+
+.m-block img {
+  width: 100%; }
+
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+  .path .path-word-sm {
+    font-size: 12px; }
+#HQ_page .path .pathWord p {
+      font-weight: 700;
+      text-align: left !important; 
+      font-size: 16px;
+}
+#HQ_page .m-text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+ .m-text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.m-text-area {
+  padding-left: 225px; }
+  .m-text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.path-tags{
+  position: fixed;
+  left: 18%;
+  top: 200px;
+}
+.path-tags ul{
+  color: #006837;
+  list-style: none;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+}
+
+.path-tags span{
+    color: #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 20px;
+}
+.m-block span{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fadd3a;
+  padding: 1px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer; 
+}
+
+.m-block a,
+.m-block a:visited,
+.m-block a:hover,
+.m-block a:focus{
+    text-decoration: none;
+    color: #000; 
+}
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+</style>
+
+<body>
+    <div class="bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/4/4d/T--CSMU_NCHU_Taiwan--safety.png">
+      <div class="my-main-container">
+        <div class="main-content">
+          <div class="m-text-area">
+            <h1>APP</h1>
+            <div id="app-intro" class="m-block" >
+                <h2 class="m-subtitle">Introduction</h2>
+                <img src="http://2017.igem.org/wiki/images/1/1a/T--CSMU_NCHU_Taiwan--app-line.png" style="width: 60%; transform: translate(35%, -150%);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="app-how" class="m-block" >
+                <h2 class="m-subtitle">How does it work?</h2>
+                <img src="http://2017.igem.org/wiki/images/1/1a/T--CSMU_NCHU_Taiwan--app-line.png" style="width: 60%; transform: translate(35%, -150%);">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div id="app-open" class="m-block" >
+                <h2 class="m-subtitle">Is it open source?</h2>
+                <img src="http://2017.igem.org/wiki/images/1/1a/T--CSMU_NCHU_Taiwan--app-line.png" style="width: 60%; transform: translate(35%, -150%);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="app-what" class="m-block" >
+                <h2 class="m-subtitle">What is "toxintalk.com"?</h2>
+                <img src="http://2017.igem.org/wiki/images/1/1a/T--CSMU_NCHU_Taiwan--app-line.png" style="width: 60%; transform: translate(35%, -150%);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#">
+                  <span>See more <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="path-tags">
+        <ul>
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Software"><p>Software tools</p></a>
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Software/App">
+            <img src="http://2017.igem.org/wiki/images/2/26/T--CSMU_NCHU_Taiwan--app-tag.png" style="position: fixed; top: 250px; width: 170px;">
+            <br>
+            <span>APP</span>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.top').on('click', function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+      });
+  });
+
+  </script>
+
+</html>
