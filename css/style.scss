@@ -235,7 +235,7 @@ ul.menu{
       height: 25px;
       border-radius: 50%;
       position: absolute;
-      background-color: #fff;
+      background-color: transparent;
       top: 5px;
       left: 27px;
       border: 5px solid #385e66;
@@ -261,7 +261,11 @@ ul.menu{
         font-weight: 700;
         text-align: left;
         font-size: 16px;
+        color: #385e66;
       }
+    }
+    .path-word-sm{
+      font-size: 12px;
     }
     .path-btn{
       cursor: pointer;
@@ -271,6 +275,64 @@ ul.menu{
       }
     }
   }
+
+
+.path-tags{
+  position: fixed;
+  left: 20%;
+  top: 200px;
+}
+.path-tags ul{
+  color: #006837;
+  list-style: none;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+}
+
+.path-tags span{
+    color: #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.hp-img-block{
+  position: relative;
+  height: 550px;
+  overflow: hidden
+}
+
+.hp-img-block.r-border{
+  border-right: 2px dashed #603813;
+}
+
+.hp-img-block.b-border{
+  border-bottom: 2px dashed #603813;
+}
+
+.hp-img-block span{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fadd3a;
+  padding: 1px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.hp-img-block a,
+.hp-img-block a:visited,
+.hp-img-block a:hover,
+.hp-img-block a:focus{
+    text-decoration: none;
+    color: #000;
+}
 
 // For pdf page
 
@@ -312,6 +374,14 @@ ul.menu{
     font-family: 'Arizonia' !important;
     text-align: center;
     margin-bottom: 1rem;
+  }
+  h2{
+    font-size: 36px;
+    font-weight: 700;
+    // font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem;
+
   }
   p{
     font-size: $lg-font;
@@ -493,6 +563,10 @@ ul.menu{
   font-family: 'Ubuntu';
   font-weight: 500;
 }
+h2, h3, h4, h5, h6, p{
+  color: #000;
+  font-family: 'Ubuntu';
+}
 
 // home page
 #home-img{
@@ -553,3 +627,12 @@ img.center{
   display: block;
   margin: 0 auto;
 }
+
+h2, h3, h4, h5, h6, p{
+  color: #000;
+font-family: 'Ubuntu';
+}
+h2{
+  font-size:24px;
+}
+
