@@ -1,0 +1,179 @@
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Safety</title>
+  </head>
+    <style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.brown-btn {
+  background-color: #603813; }
+
+.hp-title {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Arizonia' !important;
+  margin-bottom: 1rem; }
+
+.hp-bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: 200vh;
+  background-color: #fdf8e3; }
+  .hp-bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.hp-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.hp-main-content{
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  margin-top: 600px;
+  min-height: 300vh;
+  z-index: 10;
+}
+
+.img-container {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .img-container img {
+    width: 100%; }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none; }
+
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.text-area {
+  margin-bottom: 80px; }
+  .text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+</style>
+    <body>
+    <div class="bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/f/fd/T--CSMU_NCHU_Taiwan--parts.png">
+      <div class="my-main-container">
+        <div class="main-content">
+          <div class="text-area">
+            <h1>Parts</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum veritatis quaerat obcaecati, nobis assumenda reprehenderit nisi minus tenetur. Quae, debitis? ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam suscipit officiis fugiat accusamus quia eaque adipisci, odio rem saepe odit sint quasi, officia consequuntur praesentium laboriosam magni corporis. Quos, vero.</p>
+            <img src="">
+            <img src="">
+          </div>
+          <div class="pdf-area">
+            <span class="pdfbtn" id="parts-btn-1">Basic Parts<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="parts-1">
+              <img class="center" src="http://2017.igem.org/wiki/images/d/dd/T--CSMU_NCHU_Taiwan--basic_part.png" alt="" style="width: 90%; margin-top: -30px;">
+            </div>
+            <span class="pdfbtn" id="parts-btn-2">Component Parts<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="parts-2">
+              <img class="center" src="http://2017.igem.org/wiki/images/9/94/T--CSMU_NCHU_Taiwan--composit.png" alt="" style="width: 90%; margin-top: -30px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+  </body>
+  <script type="text/javascript">
+    $('#parts-btn-1').on('click', function(){
+      $('#parts-1').slideToggle("slow");
+    });
+    $('#parts-btn-2').on('click', function(){
+      $('#parts-2').slideToggle("slow");
+    });
+    $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
+</script>
+</html>
