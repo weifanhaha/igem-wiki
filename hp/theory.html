@@ -1,0 +1,491 @@
+
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html>
+<!--
+<div class="clear"></div>
+
+<div class="column half_size">
+
+<h1>Education and Public Engagement</h1>
+<h3>Best Education and Public Engagement Special Prize</h3>
+<p>Over the last few years, we have seen teams produce some truly outstanding work in the areas of education and public engagement. Innovative educational tools and public engagement activities have the ability to discuss the science behind synthetic biology, spark new scientific curiosity and establish a public dialogue about synthetic biology from voices/views outside the lab.
+
+<br><br>
+To compete for the <a href="http://2017.igem.org/Judging/Awards">Best Education and Public Engagement prize</a>, please describe your work on this page and also fill out the description on the <a href="http://2017.igem.org/Judging/Judging_Form">judging form</a>.
+<br><br>
+You must also delete the message box on the top of this page to be eligible for this prize.
+</p>
+</div>
+
+
+
+
+<div class="column half_size">
+<h5>Inspiration</h5>
+<p>Here are a few examples of excellent Education and Public Engagement work:</p>
+<ul>
+<li><a href="http://2016.igem.org/Team:SCAU-China/Engagement">2016 SCAU-China</a></li>
+<li><a href="http://2016.igem.org/Team:Imperial_College/Engagement">2016 Imperial College</a></li>
+<li><a href="http://2015.igem.org/Team:UFMG_Brazil/Public_Engagement">2015 UFMG Brazil</a></li>
+<li><a href="http://2015.igem.org/Team:William_and_Mary/Practices"> 2015 William and Mary</a></li>
+</ul>
+
+</div>
+
+
+<div class="clear"></div>
+-->
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Theory</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.brown-btn {
+  background-color: #603813; }
+
+.hp-title {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Arizonia' !important;
+  margin-bottom: 1rem; }
+
+.hp-bg-container {
+  overflow: hidden;
+  position: relative;
+
+  background-color: #fdf8e3; }
+  .hp-bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.hp-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.hp-main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  margin-top: 750px;
+  min-height: 300vh;
+  z-index: 10; }
+
+.img-container {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .img-container img {
+    width: 100%; }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none; }
+
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.text-area {
+  margin-bottom: 80px; }
+  .text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+      .carousel-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides{
+    display: none;
+  }
+
+  .prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white !important;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .prev{
+    left: 0;
+  }
+
+  .next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .next:hover, .prev:hover{
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    bottom: 0;
+  }
+
+  .active, .dot:hover{
+    background-color: #717171;
+  }
+
+</style>
+  <body>
+    <div class="hp-bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/0/02/Csmuxnchu_theory_bg.png">
+      <div class="hp-main-container">
+        <h1 class="hp-title">-Theory Of Knowledge-</h1>
+        <div class="hp-main-content">
+          <div class="text-area">
+            <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
+            <p><br>The aspects related to our project "Aflatoxout" are not just about social interactions. Our team alse regards the competition as a proper research.Therefore, we emphasize on theory of knowledge, the study on "how we know what we claim to know". By discussing with our advisors and experts from different fields frequently and throughly, our team is able to apply the knowledge with greater awareness and credibility.</p>
+
+          </div>
+          <div class="pdf-area">
+            <span class="pdfbtn brown-btn" id="public-btn-1">Yu Shuen-Feng Peanuts Tourist Factory<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-1">
+              <img src="http://2017.igem.org/wiki/images/d/d6/T--CSMU_NCHU_Taiwan--theory1-1.jpeg" alt="" style="width: 40%" class="center">
+              <img src="http://2017.igem.org/wiki/images/e/e8/T--CSMU_NCHU_Taiwan--theory1-2.jpeg" alt="">
+              <img src="http://2017.igem.org/wiki/images/d/da/Csmnxnchu_theory1.png" alt="">
+
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-2">Poultry Association Republic of China<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-2">
+              <img src="http://2017.igem.org/wiki/images/b/b8/T--CSMU_NCHU_Taiwan--theory2-1.jpeg" alt="" style="width: 40%" class="center">
+              <img src="http://2017.igem.org/wiki/images/2/28/CUMUXNCHU_theory2.png" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-3">GRAS/Food Grade Hetrologous Protein Production Platform<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-3">
+            <img src="http://2017.igem.org/wiki/images/9/97/T--CSMU_NCHU_Taiwan--theory3-1.jpeg" alt="">
+              <img src="http://2017.igem.org/wiki/images/3/35/CUMUXNCHU_theory3.png" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-4">Charoen Pokphand Enterprise (Taiwan)<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-4">
+            <img src="http://2017.igem.org/wiki/images/a/a5/T--CSMU_NCHU_Taiwan--theory4-1.jpeg" alt="" style="margin-bottom: 10px;">
+            <img src="http://2017.igem.org/wiki/images/4/47/T--CSMU_NCHU_Taiwan--theory4-2.jpeg" alt="">
+              <img src="http://2017.igem.org/wiki/images/0/0e/Csmuxnchu_theory4.png" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-5">Taiwan Advance Bio-Pharmaceutical Inc.<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-5">
+            <div class="carousel-container">
+                  <div class="slide-5">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="http://2017.igem.org/wiki/images/4/4b/T--CSMU_NCHU_Taiwan--theory5-1.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-5">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="http://2017.igem.org/wiki/images/a/ac/T--CSMU_NCHU_Taiwan--theory5-2.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-5">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="http://2017.igem.org/wiki/images/2/24/T--CSMU_NCHU_Taiwan--theory5-3.jpeg" style="width:100%">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1, 'slide-5')">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 'slide-5')">&#10095;</a>
+                  <br>
+              </div>
+              <img src="http://2017.igem.org/wiki/images/a/ae/Csmuxnchu_theory5.png" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-6">iShoo &amp; Trans Conference<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-6">
+              <img src="http://2017.igem.org/wiki/images/9/9b/T--CSMU_NCHU_Taiwan--theory6-1.jpeg" alt="" style="margin-bottom:10px;">
+              <img src="http://2017.igem.org/wiki/images/b/b2/T--CSMU_NCHU_Taiwan--theory6-2.jpeg" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-7">King of Black Swine<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-7">
+              <div class="carousel-container">
+                  <div class="slide-7">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/4/46/T--CSMU_NCHU_Taiwan--theory7-1.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-7">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/d/dd/T--CSMU_NCHU_Taiwan--theory7-2.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-7">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/b/bc/T--CSMU_NCHU_Taiwan--theory7-3.jpeg" style="width:100%">
+                  </div>
+                  <div class="slide-7">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/9/92/T--CSMU_NCHU_Taiwan--theory7-4.jpeg" style="width:100%">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1, 'slide-7')">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 'slide-7')">&#10095;</a>
+                  <br>
+              </div>
+              <img src="http://2017.igem.org/wiki/images/e/ed/Csmuxnchu_theory7.png" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-8">Sinphar Group<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-8">
+              <div class="carousel-container">
+                  <div class="slide-8">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="http://2017.igem.org/wiki/images/0/04/T--CSMU_NCHU_Taiwan--theory8-1.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-8">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="http://2017.igem.org/wiki/images/a/a4/T--CSMU_NCHU_Taiwan--theory8-2.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-8">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="http://2017.igem.org/wiki/images/1/1b/T--CSMU_NCHU_Taiwan--theory8-3.jpeg" style="width:100%">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1, 'slide-8')">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 'slide-8')">&#10095;</a>
+                  <br>
+              </div>
+              <img src="http://2017.igem.org/wiki/images/c/c2/Csmuxnchu_theory8.png" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-9">Milk House<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-9">
+              <div class="carousel-container">
+                  <div class="slide-9">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/c/c5/T--CSMU_NCHU_Taiwan--theory9-1.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-9">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/3/36/T--CSMU_NCHU_Taiwan--theory9-2.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-9">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/d/dd/T--CSMU_NCHU_Taiwan--theory9-3.jpeg" style="width:100%">
+                  </div>
+                  <div class="slide-9">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="http://2017.igem.org/wiki/images/e/e5/T--CSMU_NCHU_Taiwan--theory9-4.jpeg" style="width:100%">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1, 'slide-9')">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 'slide-9')">&#10095;</a>
+                  <br>
+              </div>
+              <img src="http://2017.igem.org/wiki/images/1/1c/Csmuxnchu_theory9.png" alt="">
+            </div>
+            <span class="pdfbtn brown-btn" id="public-btn-10">Taiwan Health Foundation<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="img-container" id="public-10">
+              <div class="carousel-container">
+                  <div class="slide-10">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="http://2017.igem.org/wiki/images/4/4c/T--CSMU_NCHU_Taiwan--theory10-1.jpeg" style="width:100%">
+                  </div>
+
+                  <div class="slide-10">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="http://2017.igem.org/wiki/images/1/16/T--CSMU_NCHU_Taiwan--theory10-2.jpeg" style="width:40%" class="center">
+                  </div>
+
+                  <div class="slide-10">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="http://2017.igem.org/wiki/images/0/0d/T--CSMU_NCHU_Taiwan--theory10-3.jpeg" style="width:100%">
+                  </div>
+                  <div class="slide-10">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="http://2017.igem.org/wiki/images/6/62/T--CSMU_NCHU_Taiwan--theory10-4.jpeg" style="width:100%">
+                  </div>
+                  <div class="slide-10">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="http://2017.igem.org/wiki/images/a/a7/T--CSMU_NCHU_Taiwan--theory10-5.jpeg" style="width:40%" class="center">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1, 'slide-10')">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 'slide-10')">&#10095;</a>
+                  <br>
+              </div>
+              <img src="http://2017.igem.org/wiki/images/e/ef/Csmuxnchu_theory10.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+$(document).ready(function(){
+
+      for( var i = 1; i < 11; i++){
+        $('#public-btn-' + i).click( toggleContainer(i) );
+      }
+
+      $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
+
+});
+
+function toggleContainer(i){
+   return function(){
+      if($('#public-'+i).is(":visible")){
+        $('#public-'+i).slideToggle(500);
+      }
+      else{
+        $('.img-container:visible').slideToggle(500);
+        $('#public-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+
+ var slideIndex = 1;
+ showSlides(slideIndex,"slide-5");
+ showSlides(slideIndex,"slide-7");
+ showSlides(slideIndex,"slide-8");
+ showSlides(slideIndex,"slide-9");
+ showSlides(slideIndex,"slide-10");
+
+
+
+  function plusSlides(n, slidename){
+    showSlides(slideIndex += n, slidename);
+  }
+
+  function currentSlide(n, slidename) {
+    showSlides(slideIndex = n, slidename);
+  }
+
+  function showSlides(n, slidename){
+    var i;
+    var slides = document.getElementsByClassName(slidename);
+    // var dots = document.getElementsByClassName("dot");
+    if ( n > slides.length) { slideIndex = 1;}
+    if ( n < 1) { slideIndex = slides.length;}
+
+    for ( i = 0 ; i < slides.length; i++){
+      slides[i].style.display = "none";
+    }
+
+    // for (i = 0; i < dots.length; i++){
+    //   dots[i].className = dots[i].className.replace("active","");
+    // }
+    slides[slideIndex-1].style.display="block";
+    // dots[slideIndex-1].className += " active";
+  }
+
+</script>
+
+</script>
+</html>
