@@ -1,0 +1,379 @@
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>IHP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+img.right {
+    float: right;
+  }
+
+.bg-container {
+  position: relative;
+  max-height: 200vh; }
+  .bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+}
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.m-text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+.m-text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+
+.m-block img {
+  width: 100%; }
+
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+  .path .path-word-sm {
+    font-size: 12px; }
+#HQ_page .path .pathWord p {
+      font-weight: 700;
+      text-align: left !important;
+      font-size: 16px;
+}
+#HQ_page .m-text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+ .m-text-area h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight:700;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: #603813 !important; }
+
+
+
+.path-tags{
+  position: fixed;
+  left: 1%;
+  top: 270px;
+}
+.path-tags ul{
+  color: #006837;
+  list-style: none;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+}
+
+.path-tags span{
+    color: #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 20px;
+}
+.m-block span{
+  position: absolute;
+  bottom: 80px;
+  right: 350px;
+  background-color: #fadd3a;
+  padding: 1px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.m-block a,
+.m-block a:visited,
+.m-block a:hover,
+.m-block a:focus{
+    text-decoration: none;
+    color: #000;
+}
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+.hp-bg-container {
+  position: relative;
+  max-height: 200vh;
+  background-color: #fdf8e3; }
+  .hp-bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.hp-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 100vh;
+}
+
+.hp-main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 0px;
+  margin-top: 750px;
+  min-height: 0vh;
+  z-index: 10; }
+
+.hp-title {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Arizonia' !important;
+  margin-bottom: 1rem; }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+   }
+
+.ul-container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+   }
+
+.ul-container ul.medal li {
+
+  list-style: none; }
+  .ul-container ul.medal li:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 2em;
+    background-size: 1em;
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat; }
+
+.ul-container ul {
+  text-align: left;
+  font-family: 'Ubuntu';
+  padding: 20px 20px;
+  margin-top: -20px;
+  margin-left: 0;
+  border: #556b7e solid 2px;
+  font-size: 22px; }
+  .ul-container ul.ul-brown {
+
+    border: #603813 solid 2px; }
+  .ul-container ul li {
+margin-left: 30px;
+margin-top: 50px;
+margin-bottom: 20px;
+    padding: 10px;
+    list-style: disc; }
+    .ul-container ul li a {
+      text-decoration: none;
+      color: #000; }
+      .ul-container ul li a:visited, .ul-container ul li a:hover, .ul-container ul li a:focus {
+        color: #000;
+        text-decoration: none; }
+    .ul-container ul li span {
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer; }
+    .ul-container ul li i {
+      padding-left: 10px; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.brown-btn {
+  background-color: #603813;
+  height:45px;
+ }
+
+</style>
+
+<body>
+    <div class="hp-bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/9/9a/T--CSMU_NCHU_Taiwan--ihp-head.png">
+      <div class="hp-main-container">
+        <h1 class="hp-title">-Integrated Human Practices-</h1>
+         <div class="hp-main-content">
+          <div class="pdf-area">
+           <span class="pdfbtn brown-btn" id="media-btn-1"></span>
+            <div class="ul-container" id="media-1">
+              <ul class="ul-brown">
+                <div class="m-text-area">
+                 <h2>Project evolution </h2>
+                <p>Over the past few months, our project evolved because of Human Practice. We visited several specialists, potential customers, legislators and attended to conferences in order to understand the demand for our project, the problems in different aspects and the development of our entrepreneurship. Most importantly, we wish to create safe, affordable and efficient ways to solve the aflatoxin problem. This motivated us to interview people from different fields to seek better ideas. All the feedback we received were thoughtfully reviewed throughout the project design, and propelled our work to a better project.<br><br></p>
+                <p>The top priority of the project has always been to design a safe product, click to see more about the safety consideration implemented with project design and its evolution.
+                  <a target="_blank" href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Safety">
+               <img class="right" src="http://2017.igem.org/wiki/images/6/60/Csmuxnchu_seemore_btn.png" style="width: 13%" alt=""></a></p>
+                </div>
+
+              </ul>
+            </div>
+           </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="long-bg" style="background-color:#fdf8e3; height: 150vh;">
+    </div>
+    <div id="iph-content-img" class="ihp-content" style="background-color:#fdf8e3;">
+      <img src="http://2017.igem.org/wiki/images/3/31/T--CSMU_NCHU_Taiwan--ihp-content.png" alt="" style="width: 100%">
+    </div>
+          <div class="path-tags">
+        <ul>
+<a href="">
+          <span>Evolution</span>
+<img src="http://2017.igem.org/wiki/images/8/83/Csmuxnchu_IHP_tag_brown.png" style="position: relative; top: -10px; left: -90px; width: 140px;">
+
+            <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/HP/Gold_Integrated/STS"><p style="font-size:19px">STS </p></a>
+            <br>
+
+
+        </ul>
+      </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.top').on('click', function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+      });
+      var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+
+            s_general_pos = $("#iph-content-img").offset().top -100
+
+            // overview
+
+            if(scroll_pos > s_general_pos -200){
+              $('.path-tags').css('position', 'absolute');
+              $('.path-tags').css('top', s_general_pos);
+            }
+            else{
+              $('.path-tags').css('position', 'fixed');
+              $('.path-tags').css('top', '270px');
+            }
+          });
+});
+
+
+function toggleContainer(i){
+   return function(){
+      if($('#media-'+i).is(":visible")){
+        $('#media-'+i).slideToggle(500);
+      }
+      else{
+         $('.ul-container:visible').slideToggle(500);
+        $('#media-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+
+  </script>
+
+</html>
