@@ -1,0 +1,317 @@
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Degradtion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  background-image: url(http://2017.igem.org/wiki/images/3/34/T--CSMU_NCHU_Taiwan--long-model.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.my-main-container {
+  width: 100%;
+  padding: 50px 7%;
+ }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.m-text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+.m-text-area p {
+    font-size: 22px !important;
+    font-family: 'Ubuntu' !important;
+    font-weight: 500; }
+
+.m-block img {
+  width: 100%; }
+
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+  .path .path-word-sm {
+    font-size: 12px; }
+#HQ_page .path .pathWord p {
+      font-weight: 700;
+      text-align: left !important;
+      font-size: 16px;
+}
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+ .text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.m-text-area {
+  padding-left: 225px; }
+  .m-text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.path-tags{
+  position: fixed;
+  left: 15%;
+  top: 200px;
+}
+.path-tags ul{
+  color: #385e66;
+  list-style: none;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+}
+
+.path-tags span{
+    color: #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 20px;
+}
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+.m-text-area h3 {
+    font-size: 28px;
+    text-align: left;
+    font-weight:700;
+    margin-bottom: 2rem !important;
+    margin-top: 1rem;
+    color: #385e66 !important; }
+.m-text-area p2 {
+    font-size: 15px;
+     }
+.ul-style li{
+list-style-type: disc;
+font-size:28px;
+}
+</style>
+
+<body>
+    <div class="bg-container" style="max-height:700vh; " >
+      <!-- <img src="http://2017.igem.org/wiki/images/1/1b/T--CSMU_NCHU_Taiwan--modeling.png"> -->
+      <div class="my-main-container">
+        <div class="main-content">
+          <div class="m-text-area">
+            <h1>Degradation Model</h1>
+            <div id="model-intro" class="m-block" >
+                <h2 class="m-subtitle">Overview</h2>
+                <img src="http://2017.igem.org/wiki/images/0/06/Csmuxnchu_model_line_green.png" style="width: 60%; transform: translate(35%, -150%);">
+
+                <p>After conducting the previous modeling, we now obtain the possible structure and the binding position of the fusion protein. The next step is to inspect on the fusion protein’s enzyme activity. We want to know the degrading efficiency under some circumstances, hence by constructing a degradation model, and expect to learn how well does the fusion protein work. Finally, we sincerely send our gratitude to OUC-China on assisting us using Gillespie algorithm to process Stochastic simulation.<br></p>
+
+
+            </div>
+            <div id="model-protein" class="m-block" >
+                <h2 class="m-subtitle">Result</h2>
+                <img src="http://2017.igem.org/wiki/images/0/06/Csmuxnchu_model_line_green.png" style="width: 60%; transform: translate(35%, -150%);">
+
+                <h3>Reaction formula</h3>
+               <div class="center"><img src="http://2017.igem.org/wiki/images/1/12/Csmuxnchu_model2_1.png" style="width: 40%" alt="" ></div>
+                <br><br>
+                <h3>ODE equation</h3>
+               <img src="http://2017.igem.org/wiki/images/e/ee/Csmuxnchu_model2_02.png" style="width: 100% " alt="">
+                <br><br>
+                <h3>Fit the experimental data:</h3>
+                <p>1.&nbsp;&nbsp;Estimation method: Estimating non-mixed effects model with Lsqnonlin.</p>
+                <p>2.&nbsp;&nbsp;Estimated parameters:
+<img src="http://2017.igem.org/wiki/images/f/f1/Csmuxnchu_model2_03.png" alt="" style="width: 20%"></p>
+
+                <br><br>
+                <ul class="ul-style">
+                    <li>&emsp;Raw data:</li>
+                </ul>
+                <br>
+                <img src="http://2017.igem.org/wiki/images/0/0a/Csmuxnchu_model2_04.png" alt="" style="width: 80%" >
+                <br><br>
+                <img src="http://2017.igem.org/wiki/images/3/39/Csmuxnchu_model2_05.png" alt="" style="width:80%" >
+                <br>
+               <p><strong>Fig. I</strong> Experimental data of degradation of aflatoxin.</p>
+                <br>
+                <br>
+                <img src="http://2017.igem.org/wiki/images/c/c5/Csmuxnchu_model2_06.png" alt="" style="width:80%" >
+                <br>
+               <p><strong>Fig. II</strong> Data comparison between experimental data and simulation.</p>
+                <br>
+
+                <img src="http://2017.igem.org/wiki/images/3/36/Csmuxnchu_model2_07.png" alt="" style="width:80%" >
+                <img src="http://2017.igem.org/wiki/images/4/43/Csmuxnchu_model2_08.png" alt="" style="width:80%" >
+                <br>
+               <p><strong>Fig. III</strong> Estimated parameter values and their standard errors. Note that the standard errors are extremely higher than the parameter values, demonstrating that though parameter values shown here are best estimated, they are not accurate for lacking adequate experimental data.</p>
+                <br>
+                <h3>Stochastic simulation</h3>
+                <p>1.&nbsp;&nbsp;Simulation method: Gillespie algorithm</p>
+                <p>2.&nbsp;&nbsp;Number of samples: 30000 (300shown)</p>
+
+                <img src="http://2017.igem.org/wiki/images/8/85/Csmuxnchu_model2_09.png" alt="" style="width:80%" >
+                <br>
+               <p><strong>Fig. IV</strong> Stochastic simulation results of degradation of aflatoxin by MSMEG_5998. Red lines represent the stochastic simulations, and the black line represents the mean level of degradation.</p>
+                <br>
+               <p>3.&nbsp;&nbsp;Comparison between experiments and simulations</p>
+                <img src="http://2017.igem.org/wiki/images/6/69/Csmuxnchu_model2_10.png" alt="" style="width:80%" >
+
+
+                <br>
+               <p><strong>Fig. V</strong> Comparison between experimental data and simulation results. Simulation data is the mean level of the stochastic simulations, R^2 is calculated to be 0.9962.</p>
+                <br>
+
+            </div>
+            <div id="model-docking" class="m-block" >
+                <h2 class="m-subtitle">Discussion</h2>
+                <img src="http://2017.igem.org/wiki/images/0/06/Csmuxnchu_model_line_green.png" style="width: 60%; transform: translate(35%, -150%);">
+                <p>1.&nbsp;&nbsp;According to the raw data, the fusion protein is able to degrade Aflatoxin B1, which matches the prediction from the results we learned in the docking model.</p>
+                <p>2.&nbsp;&nbsp;Via the stimulation, the team is able to learn after a certain period of time that how much Aflatoxin B1 will be remaining. According to the results, the fusion protein is able to degrade 50% of the toxin within 3 hours and reach a 70% degradation in 7 hours. It is an amazing information to our team that how great the ability of degradation of syn-MSMEG5998 is.</p>
+                <p>3.&nbsplSince the cofactor, F420 is not easily accessible and the control variables are complicated, it is difficult to construct an enzyme model by fully working in wet lab. Fortunately, with the modeling techniques, the team is able to systematically conduct analysis under limited data and resource; therefore modeling enables us to predict results for wet lab and assist the whole project.</p>
+
+
+             </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="path-tags">
+        <ul>
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Model" style="color:black;">
+
+            Structure &Docking Model
+
+          </a>
+
+          <br>
+          <a href="#">
+            <img src="http://2017.igem.org/wiki/images/b/be/T--CSMU_NCHU_Taiwan--model-tag.png" style="position: fixed; top: 240px;  width: 200px; height:40px">
+            <br>
+            <span>Degradation Model</span>
+          </a>
+          <li id="intro-btn" class="tag-btn">- Overview</li>
+          <li id="intro-btn" class="tag-btn">- Result</li>
+          <li id="docking-btn"class="tag-btn">- Discussion</li>
+            <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Model/Parts"><p style="font-size:17px;">Parts Model</p></a>
+        </ul>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.top').on('click', function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+      });
+
+      $("ul>li#intro-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-intro").offset().top
+        }, 500);
+      });
+      $("#protein-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-protein").offset().top
+        }, 500);
+      });
+      $("#docking-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-docking").offset().top
+        }, 500);
+      });
+
+
+  });
+
+  </script>
+
+
+</html>

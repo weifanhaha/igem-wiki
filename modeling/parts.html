@@ -1,0 +1,347 @@
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html>
+
+<!--
+<div class="clear"></div>
+
+
+<div class="column half_size">
+<h1>Software</h1>
+<h3>Best Software Tool Special Prize</h3>
+<p>Regardless of the topic, iGEM projects often create or adapt computational tools to move the project forward. Because they are born out of a direct practical need, these software tools (or new computational methods) can be surprisingly useful for other teams. Without necessarily being big or complex, they can make the crucial difference to a project's success. This award tries to find and honor such "nuggets" of computational work.
+
+
+<br><br>
+To compete for the <a href="http://2017.igem.org/Judging/Awards">Best Software Tool prize</a>, please describe your work on this page and also fill out the description on the <a href="http://2017.igem.org/Judging/Judging_Form">judging form</a>.
+<br><br>
+You must also delete the message box on the top of this page to be eligible for this prize.
+</p>
+
+
+</div>
+
+<div class="column half_size">
+<h5> Inspiration </h5>
+<p>
+Here are a few examples from previous teams:
+</p>
+<ul>
+<li><a href="http://2016.igem.org/Team:BostonU_HW">2016 BostonU HW</a></li>
+<li><a href="http://2016.igem.org/Team:Valencia_UPV">2016 Valencia UPV</a></li>
+<li><a href="http://2014.igem.org/Team:Heidelberg/Software">2014 Heidelberg</a></li>
+<li><a href="http://2014.igem.org/Team:Aachen/Project/Measurement_Device#Software">2014 Aachen</a></li>
+</ul>
+
+</div> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>software</title>
+  </head>
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  background-image: url(http://2017.igem.org/wiki/images/3/34/T--CSMU_NCHU_Taiwan--long-model.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.my-main-container {
+  width: 100%;
+  padding: 50px 7%;
+ }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.m-text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+.m-text-area p {
+    font-size: 22px !important;
+    font-family: 'Ubuntu' !important;
+    font-weight: 500; }
+
+.m-block img {
+  width: 100%; }
+
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+  .path .path-word-sm {
+    font-size: 12px; }
+#HQ_page .path .pathWord p {
+      font-weight: 700;
+      text-align: left !important;
+      font-size: 16px;
+}
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+ .text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.m-text-area {
+  padding-left: 225px; }
+  .m-text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.path-tags{
+  position: fixed;
+  left: 15%;
+  top: 200px;
+}
+.path-tags ul{
+  color: #385e66;
+  list-style: none;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+}
+
+.path-tags span{
+    color: #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 20px;
+}
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+.m-text-area h3 {
+    font-size: 28px;
+    text-align: left;
+    font-weight:700;
+    margin-bottom: 2rem !important;
+    margin-top: 1rem;
+    color: #385e66 !important; }
+.m-text-area p2 {
+    font-size: 15px;
+     }
+.ul-style li{
+list-style-type: disc;
+font-size:28px;
+}
+</style>
+
+<body>
+    <div class="bg-container" style="max-height:none;">
+      <!-- <img src="http://2017.igem.org/wiki/images/1/1b/T--CSMU_NCHU_Taiwan--modeling.png"> -->
+      <div class="my-main-container">
+        <div class="main-content">
+          <div class="m-text-area">
+            <h1>Parts model</h1>
+            <div id="model-intro" class="m-block" >
+                <h2 class="m-subtitle">Overview</h2>
+                <img src="http://2017.igem.org/wiki/images/0/06/Csmuxnchu_model_line_green.png" style="width: 60%; transform: translate(35%, -150%);">
+
+                <p>This year,  our parts modeling focuses on predicting the result of the productivity of MSMEG_5998(BBa_K2382001) and Thioredoxin-MSMEG_5998 fusion protein(BBa_K2382009). Since our anti-aflatoxin protein could be used widely in many applications, such as antidote, and feed additive(see more in our human practice page), it is an indispensable important part to our project to have this data when we mass-produce our anti-aflatoxin protein in future work.<br></p>
+
+
+            </div>
+            <div id="parts-Material" class="Material and Method" >
+                <h2 class="m-subtitle">Material and Method</h2>
+                <img src="http://2017.igem.org/wiki/images/0/06/Csmuxnchu_model_line_green.png" style="width: 60%; transform: translate(35%, -150%);">
+                <p>We transformed the plasmids that contained MSMEG_5998(BBa_K2382001) and Thioredoxin-MSMEG_5998 fusion protein(BBa_K2382009) respectively into competent cell E.coli BL21. After cultured overnight, measure the ABS600 and diluting the LB medium to O.D.=0.1. Then incubate at 37℃, 150 rpm until the O.D. of the samples reach 0.4 to 0.6 . Add 80ul 100mM IPTG( final concentration : 0.4mM ) to 125 ml flask and return to 37°C. From then on, after measure the O.D. values, transfer 1 ml from the induced sample and centrifuge at maximum speed for 60 seconds at RT and remove supernatant at 0, 1, 2, 3, 4, 5, 6, 7, 8 hours and 0, 0.5, 1.0, 1.5, 2.0 ,2.5 , 3.0, 3.5, 4 hours.
+Then we use Western Blot mehtod to amalyze the quantaty of MSMEG_5998 at each time spot.
+<br></p>
+
+
+            </div>
+            <div id="parts-Result" class="Result" >
+                <h2 class="m-subtitle">Result</h2>
+                <img src="http://2017.igem.org/wiki/images/0/06/Csmuxnchu_model_line_green.png" style="width: 60%; transform: translate(35%, -150%);">
+
+
+                <br>
+                <img src="http://2017.igem.org/wiki/images/7/7d/MSMEG5998od0-4.png" alt="" style="width: 100%" >
+                <br><br>
+
+               <p><strong>Fig. I</strong> The growth curve of BL21 induced by IPTG from 0 to 4 hours. The concentration of BL21 reached stationary phase at 4 hours.</p>
+                <br>
+                <br>
+                <img src="http://2017.igem.org/wiki/images/e/e5/MSMEG5998od0-8.png" alt="" style="width:100%" >
+                <br>
+               <p><strong>Fig. II</strong> The growth curve of BL21 from 0 to 8 hr. The concentration of BL21 reached stationary phase at 4 hours and then declined slightly.</p>
+                <br>
+
+                <img src="http://2017.igem.org/wiki/images/5/50/MSMEG5998western0-8.png" alt="" style="width:100%" >
+                <br>
+                <img src="http://2017.igem.org/wiki/images/7/7e/MSMEG5998western0-4.png" alt="" style="width:100%" >
+                <br>
+               <p><strong>Fig. III</strong> Cell lysates from E. coli BL21 with Synthetic MSMEG5998 from 0 to 8 hours and 0 to 4 hours were analyzed by Western blot. The amount of Synthetic MSMEG5998 increased consistently with time.</p>
+                <br>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div id="parts-Discussion" class="Discussion" >
+                <h2 class="m-subtitle">Discussion</h2>
+                <img src="http://2017.igem.org/wiki/images/0/06/Csmuxnchu_model_line_green.png" style="width: 60%; transform: translate(35%, -150%);">
+                <p>1. According to the data shown above, the growth curve of E.coli BL21 with Synthetic MSMEG_5998 reached the ceiling when the O.D. value was approximately at 2 while the  amount of Synthetic MSMEG_5998 were still increasing.</p>
+                <p>2. Though the amount of Synthetic MSMEG_5998 increased consistently with time, we could not jump to conclusions that it was proper to incubate E.coli as long as possible. Another consideration was the time it would take. Just as our expected, it growed fast at the first 2.5 hours. That’s why we also chose 2.5hr after induced by IPTG when we  extracted Synthetic MSMEG_5998 from total cell lysate in other experiments.</p>
+                <p>3. Based on previous experience, if the E.coli was incubated over 4 hours, the protein that it expressed may be degraded or mis-folded, leading to malfunction. As a result, it was also an important issue for this modeling. However, because of the lack of F420, we did not have the chance to check the enzyme activity of each time spot.  It was still unknown whether the titer of the Synthetic MSMEG_5998 would change or not and awaited further research.</p>
+
+
+             </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="path-tags">
+        <ul>
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Model" style="color:black;">
+
+            Structure &Docking Model
+
+          </a>
+          <br>
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Model" style="color:black;">
+
+            Degradation Model
+
+          </a>
+          <br>
+          <a href="http://2017.igem.org/wiki/index.php?title=Team:CSMU_NCHU_Taiwan/Model/Parts">
+            <img src="http://2017.igem.org/wiki/images/b/be/T--CSMU_NCHU_Taiwan--model-tag.png" style="position: fixed; top: 260px;  width: 200px; height:40px">
+            <br>
+            <span>Parts Model</span>
+          </a>
+          <li id="intro-btn" class="tag-btn">- Overview</li>
+          <li id="Material-btn" class="tag-btn">- Material and Method</li>
+          <li id="Result-btn" class="tag-btn">- Result</li>
+          <li id="Discussion-btn"class="tag-btn">- Discussion</li>
+          <br>
+
+        </ul>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.top').on('click', function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+      });
+
+      $("ul>li#intro-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-intro").offset().top
+        }, 500);
+      });
+      $("#Material-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#parts-Material").offset().top
+        }, 500);
+      });
+      $("#Result-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#parts-Result").offset().top
+        }, 500);
+      });
+
+      $("#Discussion-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#parts-Discussion").offset().top
+        }, 500);
+      });
+
+
+  });
+
+  </script>
+
+
+</html>
