@@ -9,27 +9,159 @@
     <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
+  <style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+
+
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  background-color: #c5d7d9;
+  background-image: url(http://2017.igem.org/wiki/images/2/20/T--CSMU_NCHU_Taiwan--inter_lab.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.my-main-container {
+  width: 100%;
+  padding: 50px 7%;
+ }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.text-area {
+  margin-bottom: 80px; }
+  .text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center; }
+  .text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none; }
+
+.ul-container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+   }
+
+.ul-container ul.medal li {
+  list-style: none; }
+  .ul-container ul.medal li:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 2em;
+    background-size: 1em;
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat; }
+
+.ul-container ul {
+  text-align: left;
+  padding: 20px 50px;
+  margin-left: 0;
+
+  border: #556b7e solid 2px;
+  font-size: 22px; }
+  .ul-container ul li {
+    padding: 10px;
+    list-style: disc; }
+    .ul-container ul li a {
+      text-decoration: none;
+      color: #000; }
+      .ul-container ul li a:visited, .ul-container ul li a:hover, .ul-container ul li a:focus {
+        color: #000;
+        text-decoration: none; }
+    .ul-container ul li span {
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer; }
+    .ul-container ul li i {
+      padding-left: 10px; }
+
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+h2 {
+font-family: 'Ubuntu';
+font-size: 30px;
+text-align: center;
+color: #000000 !important;
+}
+
+</style>
+
   <body>
     <div class="bg-container">
-      <img src="http://2017.igem.org/wiki/images/2/20/T--CSMU_NCHU_Taiwan--inter_lab.png">
       <div class="my-main-container">
         <div class="main-content">
           <div class="text-area">
             <h1>Inter Lab</h1>
-            <p>The aim of the interlab this year is to assess how close measurements can be when fluorescence is measured all around the world. <br><br>Participating in the interlab study was a valuable experience, it allowed us to make use of technology we had at our disposal that otherwise wasn’t relevant to our project. It added an extra dimension to our laboratory work, and was a lot of fun!<br><br>When we first began, it seemed like our tubes were empty as reported by a number of other teams. However afterwards we were successful in re-suspending them using TE buffer. After transforming the DNA into E.coli Top10 cells, we followed the plate reader protocol supplied by iGEM HQ using LB broth as our growth medium. This involved first calibrating our plate reader with FITC to make a standard curve, before measuring both fluorescence and absorbance of all of our samples at 2-hour-timepoints over a 6 hour time period</p>
+            <p>The aim of the interlab this year is to assess the relationship between fluorescence and Abs600 when samples were measured all around the world.</p>
 
           </div>
-          <div class="pdf-area">
-            <span class="pdfbtn" id="interlab-btn-1">Test Strip<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="pdf-container" id="interlab-1">
-              <object data="http://2017.igem.org/wiki/images/9/9b/T--CSMU_NCHU_Taiwan--inter_lab_result.pdf" type="application/pdf" width="100%" height="100%">
-                <p>Alternative text - include a link <a href="http://2017.igem.org/wiki/images/9/9b/T--CSMU_NCHU_Taiwan--inter_lab_result.pdf">to the PDF!</a></p>
-              </object>
+
+
+
+           <div class="pdf-area">
+<div class="img-container" id="lab-1">
+<embed src="http://2017.igem.org/wiki/images/9/9b/T--CSMU_NCHU_Taiwan--inter_lab_result.pdf" style="width:100%; height:1000px" frameborder="0"></embed>
             </div>
-            <span class="pdfbtn" id="interlab-btn-2">Antidote<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="ul-container" id="interlab-2">
+          </div>
+<h2>Discussion</h2>
+<div class="ul-container">
               <ul>
-                <li>This year, we finished our interlab study in July. However, the first version of the protocol provided from iGEM HQ did not suggest a clear λex and λem then. We tracked back to the resource of the Fluorescein Sodium Salt in the Measurement Kit, and found that theλex is 460nm and theλem is 515nm in the <a href="http://www.sigmaaldrich.com/catalog/product/sial/30181" style="text-decoration:underline;"> Sigma-Aldrich’s website.</a> Therefore, we adopted these values in our interlab study.</li>
+                <li>This year, we finished our interlab study in July. However, the first version of the protocol provided from iGEM HQ did not suggest a clear λex and λem then. We tracked back to the resource of the Fluorescein Sodium Salt in the Measurement Kit, and found that the λex is 460nm and the λem is 515nm in the <a href="http://www.sigmaaldrich.com/catalog/product/sial/30181" style="text-decoration:underline;"> Sigma-Aldrich’s website.</a> Therefore, we adopted these values in our interlab study.</li>
                 <li>The value of Fluorescence deviated much from the standard curve in high Fluorescein Concentration. It is hypothesized that the Fluorescence will be distorted because of self-absorption effect.</li>
                 <li>It was found that the ratio decreased over time for all samples, except for Test Device 1. Taking the high Fluorescein/Abs600 radio of Test Device 1 into account, there was little variation in readings when using different settings on the plate reader. Given that iGEM HQ has kept the protocol consistent, it is hypothesized that the Fluorescence was high enough to ignore the self-absorption of Fluorescein.</li>
                 <li>As shown in the results, the growth of the E. coli in the six test devices and both controls were not consistent during the 6-hour period. It is implied that the variation of the Fluorescein could be interfered by the count of E. coli not by the ability to produce Fluorescein.</li>

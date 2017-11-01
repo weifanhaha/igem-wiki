@@ -629,8 +629,8 @@ degradation. Molecular microbiology, 2010. <b>78</b>(3): p. 561-575.</li>
           <li id="conclusion-btn" class="tag-btn">- Cloning results</li>
 
           <br>
-          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#strip"><p style="font-size:18px;">Test strip</p></a>
-           <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#kit"><p style="font-size:18px;">Device & APP</p></a>
+          <a id="strip-link" href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#strip"><p style="font-size:18px;">Test strip</p></a>
+           <a id="kit-link" href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#kit"><p style="font-size:18px;">Device & APP</p></a>
            <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Demonstrate"><p style="font-size:18px;">Demonstrate</p></a>
 
 
@@ -687,6 +687,12 @@ degradation. Molecular microbiology, 2010. <b>78</b>(3): p. 561-575.</li>
      $('#strip-btn-1').click( toggleContainer5() );
      $('#kit-btn-1').click( toggleContainer6() );
     $('#reference-btn-1').click( toggleContainer7() );
+    $('#strip-link').on('click',function(){
+      $('#strip-btn-1').click();
+    });
+    $('#kit-link').on('click',function(){
+      $('#kit-btn-1').click();
+    });
       $('.top').on('click', function(){
       $('html, body').animate({scrollTop: '0px'}, 500);
     });
