@@ -1,0 +1,537 @@
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>APP</title>
+  </head>
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+img.right {
+    float: right;
+  }
+img.center{
+ display: block;
+  margin: 0 auto;
+}
+.bg-container {
+  position: relative;
+  max-height: 200vh; }
+  .bg-container > img {
+    width: 100%;
+    margin-top: -45px; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+}
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.m-text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+.m-text-area p {
+    font-size: 22px;
+    margin-left:5px;
+    font-weight: 500; }
+
+.m-block img {
+  width: 100%; }
+
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+  .path .path-word-sm {
+    font-size: 12px; }
+#HQ_page .path .pathWord p {
+      font-weight: 700;
+      text-align: left !important;
+      font-size: 16px;
+}
+#HQ_page .m-text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+ .m-text-area h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight:700;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: #603813 !important; }
+
+
+
+.path-tags{
+  position: fixed;
+  left: 1%;
+  top: 270px;
+}
+.path-tags ul{
+  color: #006837;
+  list-style: none;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+}
+
+.path-tags span{
+    color: #fff;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 20px;
+}
+.m-block span{
+  position: absolute;
+  bottom: 80px;
+  right: 350px;
+  background-color: #fadd3a;
+  padding: 1px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.m-block a,
+.m-block a:visited,
+.m-block a:hover,
+.m-block a:focus{
+    text-decoration: none;
+    color: #000;
+}
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+
+.hp-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    margin-bottom: 1rem;}
+
+
+.hp-bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: none;
+  background-image: url(http://2017.igem.org/wiki/images/6/6a/T--CSMU_NCHU_Taiwan--long-three.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  /*background-color: #fdf8e3; */
+}
+
+.hp-main-container {
+  width: 100%;
+  padding: 50px 7%;
+}
+.bg-img-head{
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img-head> img {
+    width: 100%;
+    margin-top: -45px; }
+
+.hp-main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  min-height: 300vh;
+  z-index: 10; }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+
+   }
+
+.ul-container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+   }
+
+.ul2-container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+display: none;
+   }
+.ul-container ul.medal li {
+
+  list-style: none; }
+  .ul-container ul.medal li:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 2em;
+    background-size: 1em;
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat; }
+
+.ul-container ul {
+  text-align: left;
+  font-family: 'Ubuntu';
+  padding: 20px 20px;
+  margin-top: -20px;
+  margin-left: 0;
+  border: #556b7e solid 2px;
+  font-size: 22px; }
+  .ul-container ul.ul-brown {
+
+    border: #603813 solid 2px; }
+  .ul-container ul li {
+margin-left: 30px;
+margin-top: 50px;
+margin-bottom: 20px;
+    padding: 10px;
+    list-style: disc; }
+    .ul-container ul li a {
+      text-decoration: none;
+      color: #000; }
+      .ul-container ul li a:visited, .ul-container ul li a:hover, .ul-container ul li a:focus {
+        color: #000;
+        text-decoration: none; }
+    .ul-container ul li span {
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer; }
+    .ul-container ul li i {
+      padding-left: 10px; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  font-size:22px;
+text-align: center;
+  display: block;
+  position: relative; }
+.pdfbtn2 {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  font-size:22px;
+text-align: left;
+  display: block;
+  position: relative; }
+  .pdfbtn2 i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+.pdfbtn p{
+
+color: white;
+margin: 0px auto;
+
+}
+.brown-btn {
+  background-color: #603813;
+  height:50px;
+ }
+
+.img-container {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .img-container img {
+    width: 100%; }
+.ul-roman-style{
+ list-style-type :upper-roman;
+ font-size:22px;
+}
+</style>
+
+<body>
+    <div class="hp-bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/9/9a/T--CSMU_NCHU_Taiwan--ihp-head.png">
+      <div class="hp-main-container">
+        <h1 class="hp-title">-Integrated Human Practices-</h1>
+         <div class="hp-main-content">
+          <div class="pdf-area">
+           <span class="pdfbtn brown-btn" id="media-btn-1">Science, Technology and Society</span>
+            <div class="ul-container" id="media-1">
+              <ul class="ul-brown">
+                <div class="m-text-area">
+                 <h2>A Novel Protocol with Reflexivity, Anticipation, Inclusion, Responsiveness</h2>
+                  <img src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" class="center" alt="" style="width: 30%; margin-bottom: 20px;">
+                <p>Responsible Research and Innovation (RRI) is a training and dissemination toolkit opening dialogues, involving society in science and innovation “very upstream” in the processes of Research & Innovation to align its outcomes with the values of society. In other words, RRI toolkit's achievement  resembles human practices to building the bridge between science and society. In the beginning of our iGEM journey, we were confused about human practice, not knowing what to do. Fortunately, by means of browsing previous teams’ wiki pages and meeting with other iGEM teams in Taiwan, we eventually grasped the concept after many times of team brainstorming. However, we thought that many other iGEM teams might face the same problem of catching the core value of human practice, just like us. That's the reason our team adapted it for us and future iGEM teams, preventing them from the time-consuming trial and error. No matter when they use this RRI Toolkit, they can not only get real-time significant feedback inside and outside the lab, but also reflect on their projects discovering different aspects of the relationship with many stakeholders which they neglect before. In short, by employing RRI Toolkit in your subject as a guideline, you can draw a clear and practical blueprint to execute activities for human practices. <br></p>
+                <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width=100% alt="">
+
+
+              <p><h2>Why We Adapted It?</h2></p>
+              <p>Extremely versatile protocol as RRI Toolkit is, sometimes it suffers from an implementation gap, leads to societal controversies or fails to answer societal needs. For instance, iGEM is a very distinctive competition. There are many important issues every team has to demonstrate that they have investigated, addressed and integrated them into the design of their project, such as ethics, sustainability, social
+justice, safety, security, environmental impact, or intellectual property rights. However, the original RRI Toolkit is failed to cover all these issues. On top of that, each iGEM team is focusing on a specific field, which varies from foundational genetic research to applied technologies. It means that they have different issues to be taken into considerations. Thus, we modified RRI Toolkit to become a special format which involves the values of human practices in iGEM competition. Future teams can conveniently make good use of the modifications to evaluated on whether they completely take all conditions that their project may influence into account or not.</p>
+             <br>
+             <p>In the following document, we decided to use these dimensions of responsible innovation along with these different aspects to create a protocol for iGEM teams to reflect and act upon. </p>
+
+
+                  <div class="pdf-area">
+                   <span class="pdfbtn2 brown-btn" id="content-btn-1">Four Dimensions Of Responsible Innovation and Aspects<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+
+                        <div class="img-container" id="content-1">
+                           <embed src="http://2017.igem.org/wiki/images/5/52/FOUR_DIMENSIONS_OF_RESPONSIBLE_INNOVATION.pdf" style="width:100%; height:800px" frameborder="0"></embed>
+
+                    </div>
+                  </div>
+
+
+
+
+               <br>
+                <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width=100% alt="">
+                 <br>
+                <img src="http://2017.igem.org/wiki/images/3/3d/Csmuxnchu_IHP_sts_basis.png" class="center" alt="" style="width: 30%; margin-bottom: 20px;margin-top:20px;">
+                 <p>Our series of questions on based on the main ideas shown in figure 1 and 2, including the four dimensions- anticipation, inclusion, reflexivity and responsiveness, the idea of 3Ps, and different aspects involved in these concepts.<br><br></p>
+
+                 <div class="pdf-area">
+                   <span class="pdfbtn2 brown-btn" id="figure-btn-1">Figures 1<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+
+                        <div class="img-container" id="figure-1">
+                           <embed src="http://2017.igem.org/wiki/images/b/b6/Csmuxnchu_sts_fig1.pdf" style="width:100%; height:800px" frameborder="0"></embed>
+
+                    </div>
+                  </div>
+
+                  <p>3Ps- Product, Process, Purpose</p>
+
+
+                 <div class="pdf-area">
+                   <span class="pdfbtn2 brown-btn" id="figure-btn-2">Figures 2<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+
+                        <div class="img-container" id="figure-2">
+                           <embed src="http://2017.igem.org/wiki/images/6/6d/Csmuxnchu_sts_fig2.pdf" style="width:100%; height:800px" frameborder="0"></embed>
+
+                    </div>
+                  </div>
+
+                   <br>
+                   <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width=100% alt="">
+
+                     <h2>RRI Toolket for iGEM teams</h2>
+                     <br>
+                     <div class="pdf-area">
+                   <span class="pdfbtn2 brown-btn" id="question-btn-1">Questions<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+
+                        <div class="img-container" id="question-1">
+                           <embed src="http://2017.igem.org/wiki/images/5/51/Csmuxnchu_sts_question.pdf" style="width:100%; height:800px" frameborder="0"></embed>
+
+                    </div>
+                  </div>
+
+                 <div class="pdf-area">
+                   <span class="pdfbtn2 brown-btn" id="question-btn-2">Ours answers<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+
+                        <div class="img-container" id="question-2">
+                           <embed src="http://2017.igem.org/wiki/images/a/ae/Csmuxnchu_ans.pdf" style="width:100%; height:800px" frameborder="0"></embed>
+
+                    </div>
+                  </div>
+                  <br>
+                  <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width=100% alt="">
+                  <br>
+
+                     <h2>Plan and Evolution</h2>
+                  <p>During our iGEM journey, our project evolved because of Human Practice. In order to meet the criteria mentioned in RRI Tools, we visited several specialists from different industries, academicians, potential customers, legislator, and medical doctors in the early design phase of our product. These activities which we designed to fill in the blanks in RRI Tools for iGEM team, really helped us define the problem and design devices that target audiences need. See more details on how our project was evolved because of this plan in the <a href='http://2017.igem.org/Team:CSMU_NCHU_Taiwan/HP/Silver' target='_blank'>HP-Silver</a> and <a href='http://2017.igem.org/Team:CSMU_NCHU_Taiwan/HP/Gold_Integrated' target='_blank'>Gold_Integrated page</a>. <br></p>
+                  <p><b>Public Engagement : </b><br>The government (health bureau, legislators, etc.), the professional bodies(GRAS Food-grade Hetrologous Protein Production forum, Food Industry Research and Development Institute) ,and the industries (Sinphar group, TABP INC.).</p>
+                  <p><b>Open Access : </b><br>Detailed protocol and parts registry for future iGEM teams, APP on our <a href='https://developer.android.com/studio/index.html' target='_blank'>Github</a>.</p>
+                  <p><b>Science Education : </b><br>Students in elementary school, high school, and college.</p>
+                  <p><b>Governance : </b><br>Consulting with famous star-up teams in TRANS conference and other iGEM teams in Asia-Pacific iGEM Conference.</p>
+                  <p><b>Ethics : </b><br>FIRDI, Good Liver Foundation.</p>
+                  <br>
+                  <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width=100% alt="">
+
+
+
+                   <img src="http://2017.igem.org/wiki/images/0/07/Csmuxnchu_sts_reference.png" class="center" alt="" style="width: 30%; margin-bottom: 20px; margin-top:20px;">
+                   <p>1.&emsp;Owen, R., Stilgoe, J., Macnaghten, P., Gorman, M., Fisher, E., & Guston, D. (2013). A Framework for Responsible Innovation. Responsible Innovation, 27-50. doi:10.1002/9781118551424.ch2</p>
+                   <p>2.&emsp;Caixa, F. L. (n.d.). RRI Tools. Retrieved October 13, 2017, from https://www.rri-tools.eu/self-reflection-tool</p>
+                </div>
+
+              </ul>
+            </div>
+           </div>
+          </div>
+
+      </div>
+
+    </div>
+      <div class="path-tags">
+        <ul>
+<a href="">
+
+           <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/HP/Gold_Integrated"><p style="font-size:19px">Evolution</p></a>
+<img src="http://2017.igem.org/wiki/images/8/83/Csmuxnchu_IHP_tag_brown.png" style="position: fixed; top: 298px; width:140px;"></a>
+          <a href="#">
+            <span>STS</span></a>
+            <br>
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.top').on('click', function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+      });
+  });
+   $(document).ready(function(){
+
+      for( var i = 1; i < 3; i++){
+        $('#figure-btn-' + i).click( toggleContainer(i) );
+      }
+      for( var j = 1; j < 3; j++){
+        $('#question-btn-' + j).click( toggleContainer2(j) );
+      }
+ $('#content-btn-1').click( toggleContainer3() );
+      $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
+
+});
+
+
+function toggleContainer(i){
+   return function(){
+      if($('#figure-'+i).is(":visible")){
+        $('#figure-'+i).slideToggle(500);
+      }
+
+      else{
+         $('.img-container:visible').slideToggle(500);
+        $('#figure-'+i).slideToggle(650);
+      }
+
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+function toggleContainer2(j){
+   return function(){
+      if($('#question-'+j).is(":visible")){
+        $('#question-'+j).slideToggle(500);
+      }
+
+      else{
+         $('.img-container:visible').slideToggle(500);
+        $('#question-'+j).slideToggle(500);
+      }
+
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+function toggleContainer3(){
+   return function(){
+      if($('#content-1').is(":visible")){
+        $('#content-1').slideToggle(500);
+      }
+
+      else{
+         $('.img-container:visible').slideToggle(500);
+        $('#content-1').slideToggle(500);
+      }
+
+  }
+}
+  </script>
+
+</html>

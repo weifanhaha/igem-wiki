@@ -9,10 +9,143 @@
     <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-  <style type="text/css">
-    @media screen and (min-width: 432px){ 
 
-  .carousel-container{
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.brown-btn {
+  background-color: #603813; }
+
+.hp-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    margin-bottom: 1rem;}
+
+
+.hp-bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: none;
+  background-image: url(http://2017.igem.org/wiki/images/6/6a/T--CSMU_NCHU_Taiwan--long-three.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  /*background-color: #fdf8e3; */
+}
+
+.hp-bg-container> img {
+    width: 100%;
+    margin-top: -45px; }
+
+.hp-main-container {
+  width: 100%;
+  padding: 50px 7%;
+}
+
+.hp-main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  min-height: 300vh;
+  z-index: 10; }
+
+.img-container {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .img-container img {
+    width: 100%; }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none; }
+
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+
+.my-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+  overflow: hidden; }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.text-area {
+  margin-bottom: 80px; }
+  .text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+
+   .carousel-container{
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -78,33 +211,24 @@
     animation-name: fade;
     animation-duration: 1.5s;
   }
+</style>
 
-  @-webkit-keyframes fade {
-    form {opacity: .4}
-    to {opacity: 1}
-  }
 
-  @keyframes fade{
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-}
-  </style>
-  <body>
-    <div class="hp-bg-container">
-      <img src="http://2017.igem.org/wiki/images/c/cb/T--CSMU_NCHU_Taiwan--government.png">
+<body>
+    <div class="hp-bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/4/47/T--CSMU_NCHU_Taiwan--government-head-bg.png">
       <div class="hp-main-container">
         <h1 class="hp-title">-Government-</h1>
         <div class="hp-main-content">
           <div class="text-area">
             <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio aliquid distinctio ex. Quae, provident, iure. Officia, quidem quos nam esse sequi nisi ab ullam deleniti. Fugit ut iste, aperiam quam repudiandae sit quo, nihil officiis illo nemo, temporibus, aspernatur porro cupiditate numquam magnam fuga voluptas ipsam voluptatibus facere pariatur?</p>
+            <p>Since the project is closely bonded with food safety, our team tried to learn the government’s opinion and thoughts on the feasibility when applying concepts to real life under real systems.</p>
+
           </div>
           <div class="pdf-area">
             <span class="pdfbtn brown-btn" id="govern-btn-1">Food Industry Research &amp; Development Institute<i class="fa fa-caret-down" aria-hidden="true"></i></span>
             <div class="img-container" id="govern-1">
-                <div class="carousel-container">
+<div class="carousel-container">
                   <div class="mySlides ">
                     <div class="numbertext">1 / 3</div>
                     <img src="http://2017.igem.org/wiki/images/5/55/T--CSMU_NCHU_Taiwan--SlideTest1.jpeg" style="width:100%">
@@ -127,20 +251,21 @@
                   <span class="dot" onclick="currentSlide(2)"></span>
                   <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
-              </div>  
-
-              <img class="center" src="http://2017.igem.org/wiki/images/d/d6/T--CSMU_NCHU_Taiwan--government01.png" alt="" style="width: 90%; margin-top: -30px;">
+                </div>
+<img class="center" src="http://2017.igem.org/wiki/images/d/d6/T--CSMU_NCHU_Taiwan--government01.png" alt="" style="width: 90%; margin-top: -30px;">
             </div>
             <span class="pdfbtn brown-btn" id="govern-btn-2">Congressman of Taiwan<i class="fa fa-caret-down" aria-hidden="true"></i></span>
             <div class="img-container" id="govern-2">
-              <img class='center' src="http://2017.igem.org/wiki/images/5/5f/T--CSMU_NCHU_Taiwan--congressman.jpeg" style="width:30%" alt="">
+              <img class='center' src="http://2017.igem.org/wiki/images/7/77/T--CSMU_NCHU_Taiwan--goverment.jpeg" style="width:80%" alt="">
               <img style="width: 90%;" class="center" src="http://2017.igem.org/wiki/images/d/d6/T--CSMU_NCHU_Taiwan--government02.png" alt="">
+
             </div>
 
           </div>
         </div>
       </div>
     </div>
+
     <div class="top">
       <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
     </div>
@@ -148,6 +273,7 @@
 
   </body>
   <script type="text/javascript">
+
 $(document).ready(function(){
 
       for( var i = 1; i < 3; i++){
@@ -157,7 +283,12 @@ $(document).ready(function(){
       $('.top').on('click', function(){
       $('html, body').animate({scrollTop: '0px'}, 500);
     });
-     
+
+     var url = location.href;
+      var temp = url.split('#');
+      var btn = '#' + temp[1];
+      $(btn).click();
+
 });
 function toggleContainer(i){
    return function(){
@@ -168,8 +299,6 @@ function toggleContainer(i){
         $('.img-container:visible').slideToggle(500);
         $('#govern-'+i).slideToggle(500);
       }
-      $('.hp-bg-container').css('max-height','none')
-      $('.main-content').css('min-height','200vh')
   }
 }
 

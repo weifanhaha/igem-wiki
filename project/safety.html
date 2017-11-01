@@ -1,53 +1,46 @@
+
 {{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
-<html lang="en">
+<html>
+<!--
+<div class="clear"></div>
+
+<div class="column half_size">
+
+<h1>Education and Public Engagement</h1>
+<h3>Best Education and Public Engagement Special Prize</h3>
+<p>Over the last few years, we have seen teams produce some truly outstanding work in the areas of education and public engagement. Innovative educational tools and public engagement activities have the ability to discuss the science behind synthetic biology, spark new scientific curiosity and establish a public dialogue about synthetic biology from voices/views outside the lab.
+
+<br><br>
+To compete for the <a href="http://2017.igem.org/Judging/Awards">Best Education and Public Engagement prize</a>, please describe your work on this page and also fill out the description on the <a href="http://2017.igem.org/Judging/Judging_Form">judging form</a>.
+<br><br>
+You must also delete the message box on the top of this page to be eligible for this prize.
+</p>
+</div>
+
+
+
+
+<div class="column half_size">
+<h5>Inspiration</h5>
+<p>Here are a few examples of excellent Education and Public Engagement work:</p>
+<ul>
+<li><a href="http://2016.igem.org/Team:SCAU-China/Engagement">2016 SCAU-China</a></li>
+<li><a href="http://2016.igem.org/Team:Imperial_College/Engagement">2016 Imperial College</a></li>
+<li><a href="http://2015.igem.org/Team:UFMG_Brazil/Public_Engagement">2015 UFMG Brazil</a></li>
+<li><a href="http://2015.igem.org/Team:William_and_Mary/Practices"> 2015 William and Mary</a></li>
+</ul>
+
+</div>
+
+
+<div class="clear"></div>
+-->
   <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
     <title>Inter Lab</title>
   </head>
-
-
-
-<!--
-<div class="column full_size">
-
-
-<h1> Safety </h1>
-<p>Please visit <a href="http://2017.igem.org/Safety">the main Safety page</a> to find this year's safety requirements & deadlines, and to learn about safe & responsible research in iGEM.</p>
-
-<p>On this page of your wiki, you should write about how you are addressing any safety issues in your project. The wiki is a place where you can <strong>go beyond the questions on the safety forms</strong>, and write about whatever safety topics are most interesting in your project. (You do not need to copy your safety forms onto this wiki page.)</p>
-
-</div>
-
-
-<div class="column full_size">
-<h5>Safe Project Design</h5>
-
-<p>Does your project include any safety features? Have you made certain decisions about the design to reduce risks? Write about them here! For example:</p>
-
-<ul>
-<li>Choosing a non-pathogenic chassis</li>
-<li>Choosing parts that will not harm humans / animals / plants</li>
-<li>Substituting safer materials for dangerous materials in a proof-of-concept experiment</li>
-<li>Including an "induced lethality" or "kill-switch" device</li>
-</ul>
-
-</div>
-
-<div class="column half_size">
-<h5>Safe Lab Work</h5>
-
-<p>What safety procedures do you use every day in the lab? Did you perform any unusual experiments, or face any unusual safety issues? Write about them here!</p>
-
-</div>
-
-<div class="column half_size">
-<h5>Safe Shipment</h5>
-
-<p>Did you face any safety problems in sending your DNA parts to the Registry? How did you solve those problems?</p>
-</div>
--->
 
 <style type="text/css">
 
@@ -62,13 +55,76 @@ body {
   padding: 0;
   font-family: 'Ubuntu' !important; }
 
+img.center {
+  display: block;
+  margin: 0 auto; }
 
-.bg-container {
+img.right{
+  display:block;
+  margin:5px auto;
+}
+
+
+.hp-title {
   position: relative;
-  max-height: 200vh; }
-  .bg-container > img {
+  top: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Arizonia' !important;
+  margin-bottom: 1rem; }
+
+.hp-bg-container {
+  position: relative;
+  max-height: 200vh;
+  background-color: #fdf8e3; }
+  .hp-bg-container > img {
     width: 100%;
     margin-top: -45px; }
+
+.hp-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 7%;
+  min-height: 200vh;
+}
+
+.hp-main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px 7%;
+  margin-top: 750px;
+  min-height: 300vh;
+  z-index: 10;
+}
+
+
+.img-container {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .img-container img {
+    width: 100%; }
+
+
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
 
 .my-main-container {
   position: absolute;
@@ -100,260 +156,128 @@ body {
     font-size: 22px;
     font-weight: 500; }
 
-.m-block img {
-  width: 100%; }
-
-.path-btns {
-  position: fixed;
-  width: 250px;
-  top: 200px;
-  left: 225px; }
-  .path-btns .path-dot {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: #fff;
-    top: 5px;
-    left: 27px;
-    border: 5px solid #385e66;
-    cursor: pointer; }
-    .path-btns .path-dot.active {
-      background-color: #385e66; }
-    .path-btns .path-dot:hover {
-      transition: all .3s;
-      transform: scale(1.2); }
-
-
-.path {
-  height: 65px;
-  display: flex; }
-  .path .pathSvg {
-    display: block; }
-  .path .pathWord {
-    padding-right: 10%; }
-  .path .path-btn {
-    cursor: pointer;
-    fill: #fff; }
-    .path .path-btn.path-active {
-      fill: #385e66; }
-
-#HQ_page .path .pathWord p {
-      font-weight: 700;
-      text-align: left !important;
-      font-size: 16px;
-}
-#HQ_page  .path .path-word-sm p {
-    font-size: 12px; }
-#HQ_page .text-area p {
-  font-size: 22px;
-  font-family: 'Ubuntu';
-  font-weight: 500; }
-img.center {
-  display: block;
-  margin: 0 auto; }
-
- .text-area h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 2rem !important;
-    margin-top: 2rem;
-    color: black !important; }
 .text-area h3 {
     font-size: 28px;
-    text-align: center;
+    font-weight:600;
+    text-align: left;
     margin-bottom: 2rem !important;
     margin-top: 2rem;
-    color: #385e66 !important; }
+    color: #996633 !important; }
 
 
-.top {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  height: 50px;
-  width: 50px;
-  cursor: pointer; }
-  .top img {
-    width: 100%; }
 </style>
-
-<body>
-    <div class="bg-container" style="max-height:none;">
-      <img src="http://2017.igem.org/wiki/images/4/4d/T--CSMU_NCHU_Taiwan--safety.png">
-      <div class="my-main-container">
-        <div class="main-content">
+  <body>
+    <div class="hp-bg-container" style="max-height:none;">
+      <img src="http://2017.igem.org/wiki/images/2/23/Csmuxnchu_collaboration.png">
+      <div class="hp-main-container">
+        <h1 class="hp-title">-Collaborations-</h1>
+        <div class="hp-main-content">
           <div class="text-area">
-            <h1>Safety</h1>
-            <h2  id = "s-general">General Concern and Regulation of Biosafety</h2>
-            <img class="center" src="http://2017.igem.org/wiki/images/0/05/T--CSMU_NCHU_Taiwan--safety-overview.png" alt="" style="width: 30%; margin-bottom: 25px;">
-            <p>All experiments of our iGEM project were conducted in the Biosafety Level-1 laboratories under the regulation of Environmental Safety and Health Center of Chung Shan Medical University. The emergency exits and basic risk assessment are the first things to check everyday prior to experiments.<br><br></p>
-            <div class="row">
-              <div class="col-sm-6" style="padding-left: 0px; padding-right: 30px;">
-                <img src="http://2017.igem.org/wiki/images/4/48/T--CSMU_NCHU_Taiwan--safety-train.png" alt="" class="center" style="width: 60%; margin-bottom: 25px;">
-                <p>All members of the laboratory were well-trained by the mentors and had ability to conduct experiments in a safe environment. People who entered the laboratory should follow the established laboratory safety principles of our school. Master’s degree students of the lab and our instructor helped us to complete the safety training.<br><br> </p>
+            <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
+            <p>"If you have an apple and I have an apple, and we exchange apples, we both still only have one apple. But if you have an idea and I have an idea, and we exchange ideas, we each now have two ideas."<br></p>
+            <p>This year, we had the honor of collaborating with six other iGEM teams to work together, sharing our ideas from different corners of the world to push forward each other’s project goals.<br></p>
+            <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width=100% alt="">
+             <h3>Mingdao iGEM team</h3>
+             <p>Mingdao iGEM team and our team have had close collaborations because both of us are from Taichung City in Taiwan. In the beginning, we got to know their project design and problems with Salmonella in a meetup. We advised them to clone the synthetic gene expression vector carrying glucose transporter gene from the bacteria and then assemble with the promoter.<br></p>
+             <p>Furthermore, we helped them contact a lab PI, Dr. Cheng-Yang Huang, in Chung Shan Medical University who has handled the bacteria before, and then used primers designed by Mingdao to amplify the gene fragments by PCR. Salmonella is well known as a Biosafety Level 2 organism, so Mingdao could avoid the safety issue of Salmonella through the collaboration.<br></p>
+            <p>On the other hand, we really appreciate Mingdao iGEM team’s help and advice when we received synthetic DNA from IDT. Since it is our team’s first time participating in iGEM, we were not much familiar with Biobrick and subcloning BioBrick parts. Luckily, Dr. Phil Chen, the instructor of Mingdao igem team, and his students have actually completed in total at least 28 BioBrick parts this year. They did us a favor by subcloning BioBrick parts and shared valuable experience in the section about medal criteria.<br></p>
+
+           <br>
+           <div class="row">
+              <div class="col-sm-6" style="padding-left: 0px; padding-right: 10px;">
+               <img alt=""   width="100%" src="http://2017.igem.org/wiki/images/c/c6/Csmuxnchu_collaboration_mindou.png"/>
+
               </div>
               <div class="col-sm-6" style="padding-left: 30px; padding-right: 0px;">
-                <img src="http://2017.igem.org/wiki/images/f/f7/T--CSMU_NCHU_Taiwan--safety-MSDS.png" alt="" class="center" style="width: 60%; margin-bottom: 25px;">
-                <p>Material Safety Data Sheet, MSDS, including every chemical, reagents of the lab are printed and collected in a data folder. The folder is placed in a significant place near the door, which is easy to find and read in case of emergency.<br><br></p>
+                <p><br>Mingdao:<br>The results of colony PCR with VF2 and VR primers on the transformed colonies.<br>Left gel: F420-Dependent Glucose-6-phosphate Dehydrogenase/pSB1C3 (1320 bp)<br>Right gel: T7 promoter & Lac operator and RBS from PET-29a/pSB1C3 (397 bp)<br></p>
               </div>
             </div>
-            <img src="http://2017.igem.org/wiki/images/7/7d/T--CSMU_NCHU_Taiwan--safety-Biohazard.png" alt="" class="center" style="width: 30%; margin-bottom: 25px; height:60%;">
-            <p>All kind of waste produced in the working area of the laboratory are considered biohazard waste, including every experiment and consumptive material. Those biohazard wastes would be collected in a specially labelled red plastic bag and sent to Environmental Safety and Health Center of Chung Shan Medical University for the further disposing process.<br><br></p>
-            <img src="http://2017.igem.org/wiki/images/a/a8/T--CSMU_NCHU_Taiwan--safety-line.png" width=100% alt="">
-            <h2 id = "s-legal">Legal Compliance Implemented in the Project Design</h2>
-            <p>Our team want to turn the aflatoxin-degrading enzymatic antidote into a real product, and the design has been changing along with our <a href='http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Entrepreneurship' target='_blank'>entrepreneurship research</a>, <a href='http://2017.igem.org/Team:CSMU_NCHU_Taiwan/HP/Gold_Integrated' target='_blank'>integrated human practice</a> for new safety concepts. In spite of the fact that safety issues were put into concern, a product should still comply with the local laws and regulations. We reviewed the laws and regulations related to GM products of Republic of China, and summarized the principles of GMO food application (exclusively for GM microorganism):<br></p>
-<p>1.&nbsp;&nbsp;Safety assessments must be done in the product development, and it should include the following items</p>
-<p style="text-indent: 2em;">A.&nbsp;Compositional analyses of key components</p>
-<p style="text-indent: 2em;">B.&nbsp;Toxicity and sensitization of the expressed material</p>
-<p style="text-indent: 2em;">C.&nbsp;Safety assessment of its metabolites</p>
-<p style="text-indent: 2em;">D.&nbsp;Changes in nutrition facts</p>
-<p style="text-indent: 2em;">E.&nbsp;Antibody resistance and its gene transduction</p>
-<p style="text-indent: 2em;">F.&nbsp;Viability and residence of the GM microorganism in the gastrointestinal (GI) system.</p>
-<p>2&nbsp;&nbsp;Self-cloning is a better choice. The inserted genetic material may be made synthetically, but it must better come from an organism of the same or closely related species.</p>
-<p>3.&nbsp;&nbsp;Strains with safe consumption histories are the basis of developing genetically modified abiological foods.</p>
-<p>4.&nbsp;&nbsp;GMO products should meet GRAS standards</p>
-<p>5.&nbsp;&nbsp;All GMO products should be approved by FDA before being released to the market.</p>
-<p><br>Reviewing the antidote project, using yeast as the host for the insert gene is the best choice for us. The selection marker or the newly constructed vector is non-antibody-resistance, and the cell was lysed in the manufacturing process indicating that there is no need to evaluate the viability and residence of the GM microorganism in the GI system. Moreover, yeast is a GRAS organism since there has been a long history for human beings eating them. Those mentioned above are the primary consideration when we designed the product. However, changes in nutrition toxicity and sensitization of the expressed material were not examined due to the time and financial limitations, and those would become the future work that we are going to study.</p>
-            <img src="http://2017.igem.org/wiki/images/a/a8/T--CSMU_NCHU_Taiwan--safety-line.png" alt="">
-            <h2 id = "s-consider">Safety Considerations and Project Evolution Integrated with Human Practice</h2>
-            <img class="center" src="http://2017.igem.org/wiki/images/0/05/T--CSMU_NCHU_Taiwan--safety-overview.png" alt="" style="width: 30%; margin-bottom: 20px;">
-            <p>The following text explains the initial ideal of our aflatoxin-degrading enzymatic drug and its evolution with safety concerns. With the feedback from Integrated Human Practice and Public Engagement, safety issues have driven the appearance, type of content and the host organism to transform. Let’s see the story behind our project!<br><br></p>
-            <p>Our project aims to mass-produce an enzymatic drug that could degrade aflatoxin inside our body. Since we are going to engineer something that would enter our body, the safety issue of this project is a very serious concern and it propels our project to evolve.<br><br></p>
-            <p>At the very initial phase of our brainstorming, we came up with these ideas below：</p>
-            <p>1.&nbsp;&nbsp;The enzyme should have the ability to degrade aflatoxin.</p>
-            <p>2.&nbsp;&nbsp;The enzyme should work well at 37℃ (body temperature).</p>
-            <p>3.&nbsp;&nbsp;The enzyme should not be reported as a toxic protein in the previous research.</p>
-            <p>4.&nbsp;&nbsp;The enzyme should not work in our circulation system for the sake of immune problems.</p>
-            <p>5.&nbsp;&nbsp;The enzyme should be produced in a cost-effective way</p>
-            <h3 id = "s-capsule">Why a capsule?</h3>
-            <p>After choosing the specific functional enzyme from previous researches, we came up with the first prototype of this drug, and it fits all characteristic above.  The drug was designed as a “capsule” for the sake of safety, and it contained the whole microorganism inside to lower the price. It is common sense that most drugs would be more effective through intravenous injection (IV). However, foreign protein or peptide in blood would have a great chance to bring severe immune response to the patient, indicating that the disadvantages might outweigh the advantages. Hence, we want to create an oral drug that would not directly enter our circulation system, and that is the reason why the drug in our project is a “capsule”.<br><br></p>
-            <p>To lower the cost of producing such kind of enzymatic drug, we planned to put the whole microorganism in the capsule in order to prevent protein purification, which was the most costly step in the manufacturing process. Nevertheless, eating genetically modified (GM) microorganism might lead to some safety problems, and we noticed that it was not persuasive enough for people to accept this kind of product via our public engagement. Thus, choosing a suitable vector and host that produce the enzyme became an important issue in our project.<br></p>
-            <h3 id = "s-properties">Setting the ideal properties of the capsule</h3>
-            <p>Our team further set that the ideal content of the capsule should meet the following criteria:</p>
-            <p>1.&nbsp;&nbsp;The host should be dead and they would no longer be able to reproduce in our body or the outside environment.</p>
-            <p>2.&nbsp;&nbsp;The cytoplasm of the host should be safe and toxin-free.</p>
-            <p>3.&nbsp;&nbsp;The product should comply with the law of conduct.</p>
-            <p>4.&nbsp;&nbsp;The product should be Generally Recognized as Safe (GRAS)</p>
-            <p><br><i>E.coli</i> was just a temporary protein-producing platform for research in our project. Although <i>E.coli</i> was common and easy to culture, it was not the ideal host at all. The major reason we did not want to put <i>E.coli</i> in our capsule was that <i>E.coli</i> contained some endotoxin, and it was not generally acceptable.<br><br></p>
-            <p>At the time we successfully purified the enzyme MSMEG5998 and Thioredoxin-MSMEG5998 fusion protein from <i>E.coli</i> and proved their degrading ability, we began to seek for a suitable vector and host to produce the enzyme.To search for a suitable vector and host, our team went to visit several specialists and asked for their opinions.<br><br></p>
-            <h3 id = "s-choosing">Choosing GRAS/Food grade heterologous protein production vector/ host</h3>
-            <p>In August, we visited professor Yeh, C. M at National Chung Hsing University, the chairperson of “GRAS/Food Grade Heterologous Protein Production Platform”, and shared our idea about cloning the enzyme-producing gene into a suitable vector and host. Fortunately, she invited us to participate in the forum of that platform, which was the largest annual event of industrial fermentation, and we learned a lot from it.&nbsp;&nbsp;&nbsp;&nbsp;<a herf="#"><img src="http://2017.igem.org/wiki/images/6/66/T--CSMU_NCHU_Taiwan--see_more.png" alt=""></a><br><br></p>
-            <p>The ultimate goal of the heterologous protein production industry is “Good host produces good protein”. Genetically modified (GM) product does not equal to unsafe products, but safety issues must be noticed prior to everything. According to “Guideline for the Conduct of Food Safety Assessment of Foods Produced Using Recombinant-DNA Microorganisms” from United Nations (UN), a safe host must be generally recognized as safe (GRAS) or food grade. In 2003, Codex Alimentarius Commission of UN suggested that food grade hosts should not use antibody resistance genes as selection markers. Although food and medical applications of GM microorganism are still at a starting stage, regulators are attempted to think ahead and standardized the rule of the whole industry. Our team wanted to create a product that is safe enough for human to eat, thus we chose Lactobacillus as our host to produce the recombinant enzyme we constructed (Thioredoxin-MSMEG5998).</p>
-            <p><img src="http://2017.igem.org/wiki/images/2/27/CSMU_NCHU_GM_product.jpg" width=100% ><br><br></p>
-            <h3 id = "s-yeast">From Lactobacillus to Yeast</h3>
-            <p>After deciding to use Lactobacillus as our host organism, we started to study how to construct an expression vector that is safe with high efficiency. We met local Lactobacillus experts such as professor Yeh, C. M, Dr. Chen, P. H. to discuss our idea.<br></p>
-            <p>&emsp;Lactobacillus was great. People had been eating them for a long time throughout history, and the safety of their cytoplasm are guaranteed. Furthermore, in many cases, the recombinant protein tends to form inclusion bodies in <i>E.coli</i>, while Lactobacillus does not. Nonetheless, there are several drawbacks:</p>
-            <p>1.&nbsp;&nbsp;The copy number of Lactobacillus plasmids is usually low, resulting in a low production rate.</p>
-            <p>2.&nbsp;&nbsp;Safe vectors using non-antibody-resistance selection markers are still hard to find, and most of them are patented.</p>
-            <p>3.&nbsp;&nbsp;Expression system of Lactobacillus is complicated, leading to a higher construction failure rate.<br></p>
-            <p>To overcome the difficulties, we went to Food Industry Research and Development Institute (FIRDI), the largest central food industry research organization in our country, to visit Mr. Liao, C. C. and his research team. Mr. Liao was the director of FIRDI, and he was also one of the most remarkable expert in Lactobacillus research.&nbsp;&nbsp;&nbsp;&nbsp;<a herf="#"><img src="http://2017.igem.org/wiki/images/6/66/T--CSMU_NCHU_Taiwan--see_more.png" alt=""></a><br><br></p>
-            <p>Although Lactobacillus sounds rather perfect, it is still controversial since food and drug industry applications of Lactobacillus remain unrecognized. And the high construction failure rate made it a big problem for our team for the sake of time limitation. However, yeast tends to be much better in this project, as they had wide application in bread, beer and industrial heterologous protein production. Mr. Liao suggested us to focus on making a minimum viable product (MVP) in this iGEM project in order to realize the idea with the minimum amount of time. Hence, our project evolved to the final version: using yeast as our host of recombinant enzyme gene.<br></p>
-            <p><img src="http://2017.igem.org/wiki/images/4/40/INING_food_test.jpeg" width=100% ><br><br></p>
-            <h3 id = "s-safer">A safer design-non-antibody-resistance selection marker vector</h3>
-            <p>At the end of August, we went to visit the R&D team of Sinphar Group, one of the largest pharmaceutical factories in Taiwan. This visit helped us to further understand the pre-marketing risk assessment, safety concerns and difficulties of an enzymatic drug development. According to the pharmaceutical professionals’ statement, a drug or health-care food product should do minimum harm to our body. And it strengthened our determination towards choosing a safe vector to carry our aflatoxin-degrading enzyme gene.&nbsp;&nbsp;&nbsp;&nbsp;<a herf="#"><img src="http://2017.igem.org/wiki/images/6/66/T--CSMU_NCHU_Taiwan--see_more.png" alt=""></a><br><br></p>
-            <p><img src="http://2017.igem.org/wiki/images/c/ca/NCHUXCSMU_hp_med.jpg" width=100% ><br><br></p>
-            <h3 id = "s-final">Yeast-the final host of our project</h3>
-            <p>Saccharomyces cerevisiae, a kind of common yeast strain, became the ultimate host for the enzyme in our project. The cytoplasm of S. cerevisiae is safe, for human beings have been eating them for thousands of years in bread and other food. The newly constructed vector used certain amino acids as selection markers, indicating that there were no antibody-resistance problems in yeast. In addition, yeast was much easier to culture in the laboratory. The above reasons is why S. cerevisiae was chosen as  ideal host of the aflatoxin-degrading enzyme gene.<br><br></p>
+            <br><br>
+            <div class="row">
+              <div class="col-sm-6" style="padding-left: 0px; padding-right: 10px;">
+               <img alt="" " width="100%" src="http://2017.igem.org/wiki/images/8/80/Csmuxnchu_collaboration_mindou2.png">
+
+              </div>
+              <div class="col-sm-6" style="padding-left: 30px; padding-right: 0px;">
+                <p><br>CSMU_NCHU_Taiwan:<br>The amplified DNA fragments of glucose transporter genes by PCR from gDNA of Salmonella typhimurium LT2.<br>Lanes 1. crr (510 bp); 2. RBS-crr (528 bp); 3. ptsG (1434 bp); 4. RBS-ptsG (1452bp); 5. 1128 (1497 bp); 6. RBS-1128 (1515 bp); 7. Positive control: <br>STM3098 (423 bp), Appl Environ Microbiol. 2006.<br></p>
+              </div>
+            </div>
+
+
+           <br><br>
+
+           <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width=100% alt="">
+           <h3>OUC-China iGEM team</h3>
+           <p>By means of collaboration hub provided by iGEM HQ, it is convenient to get in touch with OUC-China iGEM team. According to the Collaboration Request, we understood that they were investigating Aquatic organisms’ outbreak caused by water eutrophication and looking for collaboration. As a result, we not only shared our local experiences about eutrophication in Taiwan but also documented several governmental reports, online Data database and academic papers in National Digital Library of Theses and Dissertations in Taiwan for them. Similarly, they shared lots of information and toughed us to model out project by Michaelis - Menten equation.</p>
+         <p><img align="right" src="http://2017.igem.org/wiki/images/6/66/T--CSMU_NCHU_Taiwan--see_more.png" alt="" onclick='location.href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Model/Degradation"' style="cursor: pointer"></p>
+
+         <br><br>
+          <img alt="" width="100%" src="http://2017.igem.org/wiki/images/8/8f/Csmuxnchu_collatoration_OUC.png">
+
+         <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width="100%" alt="">
+         <h3>Tianjin iGEM team</h3>
+         <p>The issue of containing environmental hazards caused by heavy metal pollution is a worldwide problem that must be solved by the power of all mankind. It was our pleasure work with Tianjin igem team to establish their database. We collected and organized a document about many case reports of metal pollution in Taiwan ,and shared a detailed investigation completed by Taiwan Environmental Informational Association(TEIA). It not only contain database within ‘Contaminated Sites Map’ from Environmental Protection Agency and ‘Taiwan Ssurgo Database’ from Taiwan Agriculture Research Institute Council of Agriculture ,but also gave a visualized map to show all information.  Besides, we expressed our protein in yeast this year.  Tianjin iGEM team kindly gave many recommendations to culture yeast and to construct the shuttle vector.<br></p>
+           <img alt="" width="100%" src="http://2017.igem.org/wiki/images/6/66/Csmuxnchu_collabratiom_Tianjin.png">
+           <br><br>
+            <img alt="" width="100%" src="http://2017.igem.org/wiki/images/9/94/Csmuxnchu_collabratiom_Tianjin2.png">
+           <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width="100%" alt="">
+           <h3>NCKU_Tainan iGEM team</h3>
+           <p>We had a face-to-face meeting with them in National Cheng Kung University. They interviewed us about their environmental protection project, and we also showed our project to them. With their suggestions, we found a new method to present our project more clearly through the collaboration, where we felt more connected with other iGEMers. We are sincerely thankful for their interview and hospitality.<br><br></p>
+
+             <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width="100%" alt="">
+             <h3>CCU_Taiwan iGEM team</h3>
+             <p>This year, CCU_Taiwan is joining iGEM for the first time, just like us. Under the same circumstances, we built strong connections and collaborations throughout this summer. We asked them for a favor to measure the concentration of MSMEG5998 in supernatant and pellet to test the solubility of our recombinant enzyme. This experiment played an important role in our project because the results implied the efficiency of Thioredoxin. We encountered some problems that needed to be tackled back then. CCU_Taiwan generously helped us redo the SDS-PAGE experiment and provided us with the data.
+In return, we helped them in plasmid construction. At the beginning, they planned to digest their plasmid with two restriction endonucleases simultaneously and ligated with a new part, but they failed. As a result, we told them our Double Digests protocol, and suggested that they use High-Fidelity (HF®) restriction enzymes rather than fast digest enzyme. Therefore, the problem was then solved.<br></p>
+             <img alt="" width="100%" src="http://2017.igem.org/wiki/images/7/77/Csmuxnchu_collaboration_CCU.png">
+            <p><br>The SDS PAGE Coomassie G-250 staining result revealed that the synthetic MSMEG5998 fusion protein dissolved more in the supernatant (13000Su) compare to the pellet (13000P) of the cell lysate, indicating that the solubility is great. This result matched with our experiment.</p>
+             <br>
+             <img src="http://2017.igem.org/wiki/images/4/41/Csmuxnchu_line_brown.png" width="100%" alt="">
+             <h3>NYMU-Taipei iGEM team</h3>
+             <p>NYMU-Taipei is the first iGEM team in Taiwan to have participated, and their teacher, Prof. Chang, has extensive experience in iGEM competition. We seeked some advice about forming an iGEM team, and how to integrate a project. In return, we gave them some information about some professors in National Taiwan Ocean University whose specialty were focus on question similar to their project.<br></p>
+
+
+
           </div>
         </div>
       </div>
     </div>
-    <div class="long-bg-img" style="background-color:#c5d7d9; height: 100vh;">
-
+<div class="long-bg-img">
+      <img src="http://2017.igem.org/wiki/images/1/1c/T--CSMU_NCHU_Taiwan--long-green.png" alt="" style="width: 100%">
     </div>
-    <div class="path-btns" style="left:0;">
-      <div class="path">
-        <div class="pathSvg">
-          <svg width="80" height = "70">
-            <rect x ="36" y="20" width="6" height="50" style="fill:#385e66"/>
-          </svg>
-        </div>
-        <div id="s-general-btn" class="path-dot"></div>
-        <div class="pathWord path-word-sm">
-          <p>General Concern and Regulation of Biosafety</p>
-        </div>
-      </div>
-      <div class="path">
-        <div class="pathSvg">
-          <svg width="80" height = "70">
-            <rect x ="36" y="20" width="6" height="50" style="fill:#385e66"/>
-          </svg>
-        </div>
-        <div id="s-legal-btn" class="path-dot" style="top: 69px"></div>
-        <div class="pathWord path-word-sm">
-          <p>Legal Compliance Implemented in the Project Design</p>
-        </div>
-      </div>
-      <div class="path">
-        <div class="pathSvg">
-          <svg width="80" height = "70">
-            <rect x ="36" y="20" width="0" height="50" style="fill:#385e66"/>
-          </svg>
-        </div>
-        <div id="s-consider-btn" class="path-dot" style="top: 132px"></div>
-        <div class="pathWord path-word-sm">
-          <p>Safety Considerations</p>
-        </div>
-
-      </div>
+<div class="long-bg-img">
+      <img src="http://2017.igem.org/wiki/images/9/9a/T--CSMU_NCHU_Taiwan--long-orange.png" alt="" style="width: 100%">
     </div>
-<div class="top">
+
+    <div class="top">
       <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
     </div>
+
+
   </body>
   <script type="text/javascript">
-    $("#s-general-btn").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#s-general").offset().top
-      }, 500);
-    });
-    $("#s-legal-btn").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#s-legal").offset().top
-      }, 500);
-    });
-    $("#s-consider-btn").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#s-consider").offset().top
-      }, 800);
-    });
-
-    $(document).ready(function(){
-        $("#s-general-btn").css('background-color', '#385e66');
-        var scroll_pos = 0;
-        $(document).scroll(function() {
-            scroll_pos = $(this).scrollTop();
-
-            s_general_pos = $("#s-general").offset().top -100
-            s_legal_pos = $("#s-legal").offset().top -100
-            s_consider_pos = $("#s-consider").offset().top -100
-
-            // overview
-            if(scroll_pos < s_legal_pos) {
-                $(".path-dot").css('background-color', '#fff')
-                $("#s-general-btn").css('background-color', '#385e66');
-            // legal
-            } else if(scroll_pos < s_consider_pos){
-              if(scroll_pos >= s_legal_pos){
-                $(".path-dot").css('background-color', '#fff')
-                $("#s-legal-btn").css('background-color', '#385e66');}
-            }
-
-            //consider
-            else if( scroll_pos >= s_consider_pos) {
-                $(".path-dot").css('background-color', '#fff')
-                $("#s-consider-btn").css('background-color', '#385e66');
-            }
-        });
-    });
 $(document).ready(function(){
+
+
 
       $('.top').on('click', function(){
       $('html, body').animate({scrollTop: '0px'}, 500);
     });
 
 });
-  </script>
 
+function toggleContainer(i){
+   return function(){
+      if($('#public-'+i).is(":visible")){
+        $('#public-'+i).slideToggle(500);
+      }
+      else{
+        $('.img-container:visible').slideToggle(500);
+        $('#public-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+
+</script>
 </html>

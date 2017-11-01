@@ -31,52 +31,53 @@ max-height: 200vh;
     width: 100%;
     margin-top: -45px; }
 
+.hp-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    margin-bottom: 1rem;}
+
+
 .hp-bg-container {
+  overflow: hidden;
   position: relative;
-  max-height: 200vh;
-  background-color: #fdf8e3; }
-  .hp-bg-container > img {
+  max-height: none;
+  background-image: url(http://2017.igem.org/wiki/images/6/6a/T--CSMU_NCHU_Taiwan--long-three.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  /*background-color: #fdf8e3; */
+}
+
+.hp-main-container {
+  width: 100%;
+  padding: 50px 7%;
+}
+.bg-img-head{
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img-head> img {
     width: 100%;
     margin-top: -45px; }
 
-.my-main-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 50px 7%;
-  min-height: 200vh;
-}
-
-
-.hp-main-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 50px 7%;
-  min-height: 200vh;
-
- }
-
-
-.main-content {
-  background-color: white;
-  width: 80%;
-  margin-left: 10%;
-  padding:50px;
-  margin-top:750px;
-  min-height: 180vh;
-  z-index: 10; }
 .hp-main-content {
   background-color: white;
   width: 80%;
   margin-left: 10%;
   padding: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
   min-height: 300vh;
   z-index: 10; }
+
+
 .text-area {
   margin-bottom: 80px; }
   .text-area h1 {
@@ -107,10 +108,10 @@ max-height: 200vh;
     background-color: #fff;
     top: 5px;
     left: 27px;
-    border: 5px solid #385e66;
+    border: 5px solid #8b6238;
     cursor: pointer; }
     .path-btns .path-dot.active {
-      background-color: #385e66; }
+      background-color: #8b6238; }
     .path-btns .path-dot:hover {
       transition: all .3s;
       transform: scale(1.2); }
@@ -127,7 +128,7 @@ max-height: 200vh;
     cursor: pointer;
     fill: #fff; }
     .path .path-btn.path-active {
-      fill: #385e66; }
+      fill: #8b6238; }
 
 #HQ_page .path .pathWord p {
       font-weight: 700;
@@ -158,27 +159,28 @@ img.center {
     margin-bottom: 2rem !important;
     margin-top: 2rem;
     color: #996633 !important; }
-.hp-title {
-  position: relative;
-  top: 20px;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 700;
-  font-family: 'Arizonia' !important;
-  margin-bottom: 1rem; }
 
 .ul-style li{
 list-style:disc;
 font-size:22px;
 }
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
 </style>
 
 <body>
     <div class="hp-bg-container" style="max-height:none;">
-      <img src="http://2017.igem.org/wiki/images/a/a4/Csmuxnchu_Entrepreneurship_bg.png">
-      <div class="hp-main-container"  >
+      <img src="http://2017.igem.org/wiki/images/0/08/T--CSMU_NCHU_Taiwan--Entrepreneurship--head-bg.png" style="width:100%;">
+      <div class="hp-main-container">
         <h1 class="hp-title">-Entrepreneurship-</h1>
-        <div class="hp-main-content"  style="max-height:none;margin-top:750px;">
+        <div class="hp-main-content">
           <div class="text-area">
 
             <h2  id = "s-general">Introduction</h2>
@@ -269,20 +271,11 @@ Taiwan has several animal feed companies such as Charoen Pokphand Enterprise (iG
         </div>
       </div>
     </div>
-    <div class="long-bg-img">
-      <img src="http://2017.igem.org/wiki/images/6/6a/T--CSMU_NCHU_Taiwan--long-three.png" alt="" style="width: 100%">
-    </div>
-    <div class="long-bg-img">
-      <img src="http://2017.igem.org/wiki/images/6/6a/T--CSMU_NCHU_Taiwan--long-three.png" alt="" style="width: 100%">
-    </div>
-    <div class="long-bg-img">
-      <img src="http://2017.igem.org/wiki/images/1/1c/T--CSMU_NCHU_Taiwan--long-green.png" alt="" style="width: 100%">
-    </div>
     <div class="path-btns" style="left:0;">
       <div class="path">
         <div class="pathSvg">
           <svg width="80" height = "70">
-            <rect x ="36" y="20" width="6" height="50" style="fill:#385e66"/>
+            <rect x ="36" y="20" width="6" height="50" style="fill:#8b6238"/>
           </svg>
         </div>
         <div id="s-general-btn" class="path-dot"></div>
@@ -293,7 +286,7 @@ Taiwan has several animal feed companies such as Charoen Pokphand Enterprise (iG
       <div class="path">
         <div class="pathSvg">
           <svg width="80" height = "70">
-            <rect x ="36" y="20" width="6" height="50" style="fill:#385e66"/>
+            <rect x ="36" y="20" width="6" height="50" style="fill:#8b6238"/>
           </svg>
         </div>
         <div id="s-legal-btn" class="path-dot" style="top: 69px"></div>
@@ -304,13 +297,16 @@ Taiwan has several animal feed companies such as Charoen Pokphand Enterprise (iG
       <div class="path">
         <div class="pathSvg">
           <svg width="80" height = "70">
-            <rect x ="36" y="20" width="0" height="50" style="fill:#385e66"/>
+            <rect x ="36" y="20" width="0" height="50" style="fill:#8b6238"/>
           </svg>
         </div>
         <div id="s-consider-btn" class="path-dot" style="top: 132px"></div>
         <div class="pathWord path-word-sm">
           <p>Analysis</p>
         </div>
+      </div>
+      <div class="top">
+        <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
       </div>
     </div>
   </body>
@@ -333,6 +329,9 @@ Taiwan has several animal feed companies such as Charoen Pokphand Enterprise (iG
 
     $(document).ready(function(){
         $("#s-general-btn").css('background-color', '#385e66');
+              $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
         var scroll_pos = 0;
         $(document).scroll(function() {
             scroll_pos = $(this).scrollTop();
@@ -354,18 +353,18 @@ Taiwan has several animal feed companies such as Charoen Pokphand Enterprise (iG
 
             if(scroll_pos < s_legal_pos) {
                 $(".path-dot").css('background-color', '#fff');
-                $("#s-general-btn").css('background-color', '#385e66');
+                $("#s-general-btn").css('background-color', '#8b6238');
             // legal
             } else if(scroll_pos < s_consider_pos){
               if(scroll_pos >= s_legal_pos){
                 $(".path-dot").css('background-color', '#fff');
-                $("#s-legal-btn").css('background-color', '#385e66');}
+                $("#s-legal-btn").css('background-color', '#8b6238');}
             }
 
             //consider
             else if( scroll_pos >= s_consider_pos) {
                 $(".path-dot").css('background-color', '#fff');
-                $("#s-consider-btn").css('background-color', '#385e66');
+                $("#s-consider-btn").css('background-color', '#8b6238');
             }
         });
     });
