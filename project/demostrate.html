@@ -1,0 +1,485 @@
+{{:Team:CSMU_NCHU_Taiwan/Templates/Header}}
+<html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>software</title>
+  </head>
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+
+img.right {
+    float: right;
+  }
+
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  background-color: #c5d7d9;
+  background-image: url(http://2017.igem.org/wiki/images/5/5a/T--CSMU_NCHU_Taiwan--DemonstrateBg.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.my-main-container {
+  width: 100%;
+  padding: 50px 7%;
+ }
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  min-height: 180vh;
+  z-index: 10; }
+
+.m-text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+.m-text-area p {
+    font-size: 22px !important;
+    font-family: 'Ubuntu' !important;
+    font-weight: 500; }
+
+.m-block img {
+  width: 100%; }
+
+.path-btns {
+  position: fixed;
+  width: 250px;
+  top: 200px;
+  left: 225px; }
+  .path-btns .path-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 27px;
+    border: 5px solid #385e66;
+    cursor: pointer; }
+    .path-btns .path-dot.active {
+      background-color: #385e66; }
+    .path-btns .path-dot:hover {
+      transition: all .3s;
+      transform: scale(1.2); }
+
+
+.path {
+  height: 65px;
+  display: flex; }
+  .path .pathSvg {
+    display: block; }
+  .path .pathWord {
+    padding-right: 10%; }
+  .path .path-btn {
+    cursor: pointer;
+    fill: #fff; }
+    .path .path-btn.path-active {
+      fill: #385e66; }
+  .path .path-word-sm {
+    font-size: 12px; }
+#HQ_page .path .pathWord p {
+      font-weight: 700;
+      text-align: left !important;
+      font-size: 16px;
+}
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+ .text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.m-text-area {
+  padding-left: 225px; }
+  .m-text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important; }
+
+.path-tags{
+  position: fixed;
+  left: 15%;
+  font-size: 22px;
+  top: 200px;
+}
+.path-tags ul{
+  color: #000000;
+  list-style: none;
+font-weight:600;
+  font-size: 16px;
+}
+
+.path-tags li{
+  cursor: pointer;
+font-size:16px;
+}
+
+.path-tags span{
+    color: #fff;
+    font-weight:600;
+    font-size:22px;
+    position: relative;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+
+    font-size: 15px;
+}
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+.m-text-area h3 {
+    font-size: 28px;
+    text-align: center;
+    font-weight:700;
+    margin-bottom: 2rem !important;
+    margin-top: 1rem;
+    color: #000000 !important; }
+.m-text-area h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+    color: black !important;
+    font-size:35px;
+    font-weight:bold;
+     }
+
+
+.img-container {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .img-container img {
+    width: 100%; }
+
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #102E4A;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+.ul-style li{
+
+ font-size:22px;
+list-style-type:none;
+list-style-image:url(' http://2017.igem.org/wiki/images/f/f1/Csmuxnchu_checkcheck.png ');
+
+
+}
+
+
+.ul-container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  display: none; }
+
+.ul-container ul.medal li {
+
+  list-style: none; }
+  .ul-container ul.medal li:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 2em;
+    background-size: 1em;
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat; }
+
+.ul-container ul {
+  text-align: left;
+  font-family: 'Ubuntu';
+  padding: 20px 20px;
+  margin-top: -20px;
+  margin-left: 0;
+  border: #556b7e solid 2px;
+  font-size: 22px; }
+  .ul-container ul.ul-brown {
+
+    border: #102E4A solid 2px; }
+  .ul-container ul li {
+margin-left: 30px;
+margin-top: 50px;
+margin-bottom: 20px;
+    padding: 10px;
+    list-style: disc; }
+    .ul-container ul li a {
+      text-decoration: none;
+      color: #000; }
+      .ul-container ul li a:visited, .ul-container ul li a:hover, .ul-container ul li a:focus {
+        color: #000;
+        text-decoration: none; }
+    .ul-container ul li span {
+      background-color: #fadd3a;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer; }
+    .ul-container ul li i {
+      padding-left: 10px; }
+
+.ul-style-num ul2 li{
+list-style-type:decimal;
+letter-spacing: 3;
+
+}
+</style>
+
+<body>
+    <div class="bg-container" style="max-height:none;">
+      <div class="my-main-container">
+        <div class="main-content">
+          <div class="m-text-area">
+            <h1>Demonstrate</h1>
+<p>This year, we have two main products in our project AFLATOXOUT:<br>
+<b>1.</b> An enzyme that could degrade Aflatoxin<br>
+<b>2.</b> Aflatoxin detection system that is extremely easy to use<br>
+As a whole, the result of our lab work has proven our research hypothesis. We found that enzyme MSMEG_5998 could degrade aflatoxin in our lab result, plus, we designed a fusion protein by using enzyme MSMEG_5998 for better degrading function.
+</p>
+            <div id="model-protein" class="m-block" >
+                 <h3>Aflatoxin degrading enzyme</h3>
+<p>After undergoing numerous lab tests on fusion protein thioredoxin-MSMEG_5998 (<a href="http://parts.igem.org/Part:BBa_K2382009"target=_blank>BBa_K2382009</a>), we finally identified the key characteristics of our fusion protein, and we listed them below:<br><br>
+<b>1.</b>  It can be successfully expressed by E.coli using <a href="http://parts.igem.org/Part:BBa_K2382006"target=_blank>BBa_K2382006</a> in pSB1C3, and the His-Tag at the C terminal end helps its purification. (See Fig. 2)<br>
+<b>2.</b>  It has the ability to degrade aflatoxin with the assistance of FGD (<a href="http://parts.igem.org/Part:BBa_K2382002"target=_blank>BBa_K2382002</a>)<br>
+<b>3.</b>  Its aflatoxin degrading ability is greater than the original Australian MSMEG_5998 (<a href="http://parts.igem.org/Part:BBa_K2382001"target=_blank>BBa_K2382001</a>) with the assistance of FGD. (See Fig. 7)<br><br>We want to develop our enzyme into an antidote that could degrade Aflatoxin inside human body. Therefore, we did a series of experiments to evaluate how aflatoxin harm our liver cell. Then, we treated the HepG2 cell with aflatoxin and thioredoxin-MSMEG_5998 fusion protein. Eventually, we got the results below:<br><br>
+<b>1.</b> Aflatoxin could cause DNA damages in human cell. (See Fig. 5)<br>
+<b>2.</b> Aflatoxin could activate p53 pathway, which means aflatoxin could make normal cells become cancer. (See Fig. 6)<br>
+<b>3.</b> When we put aflatoxin, thioredoxin-MSMEG_5998 fusion protein, and HepG2 together in 37℃, pH=7.5, the result showed that we could prevent human cells from the damage caused by aflatoxin. (See Fig. 8)<br>
+<br>
+To sum up, thioredoxin-MSMEG_5998 fusion protein could degrade aflatoxin and reduce the cell damages caused by aflatoxin. All the possible mechanisms of thioredoxin-MSMEG_5998 fusion protein were demonstrated in Fig. 15. Furthermore, it worked well in not only 37℃ (body temperature), but also room temperature. Besides, after the Integrated Human Practice interviews, we saw many potentials in our fusion protein. For example, we could use it to produce drug, health supplements, or food additives that could use in animal husbandry.
+</p>
+<p style=" font-size:16px !important;margin-top: 30px;">Fig. 15: The possible mechanisms of thioredoxin-MSMEG_5998. The green tick signs indicated what we have done experiments to prove the pathway.</p>
+<img src="http://2017.igem.org/wiki/images/b/bf/T--CSMU_NCHU_Taiwan--Demonstrate.png" style="width:95%; margin= 20px auto;">
+<h3>Aflatoxin detection system</h3>
+<p>
+Aflatoxin detection system is a detection system that is cheap, user-friendly. Also, we could share and use the data we collect via our aflatoxin detection system.<br>
+Aflatoxin detection system is made of a kit, a mobile application, and a data processing platform. We successfully produced our kit by using 3D printing technology. Our kit is easy to use, and its user interface is really intuitive to use. You could see more about design in <b><a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#kit"target=_blank>“RESULTS-KIT”</a></b>.<br>
+To add more value to our device, we designed a user-friendly mobile application that could help users upload the test results showed on the test strip and the information of the product that is tested. Users could collect the data on the cloud drive and apply it.<br>
+Moreover, we constructed a social forum on food safety issues, so public could discuss the food safety issues on our platform. For more, click <b><a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Software"target=_blank>“Software”</a></b>.
+</p>
+
+
+             </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="path-tags">
+        <ul>
+<a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#antidote"><p style="font-size:20px;">Antidote</p></a>
+<a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#expression"><p style="font-size:16px;">- Expression results</p></a>
+<a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#aflatoxin"><p style="font-size:16px;">- Aflatoxin damage results</p></a>
+<a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#enzyme"><p style="font-size:16px;">- Enzyme function results</p></a>
+<a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#cloning"><p style="font-size:16px;">- Cloning results</p></a>
+          <br>
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#strip"><p style="font-size:18px;">Test strip</p></a>
+          <a href="http://2017.igem.org/Team:CSMU_NCHU_Taiwan/Results#kit"><p style="font-size:18px;">Device & APP</p></a>
+          <a href="">
+            <span style="top:0px ; font-size:20px">Demonstrate</span>
+            <img src="http://2017.igem.org/wiki/images/a/ab/Csmuxnchu_result_flag.png" style="position: fixed; top: 473px;left:15%; width: 202px; height:40px;">
+          </a>
+
+        </ul>
+      </div>
+    </div>
+    <div class="top">
+      <img src="http://2017.igem.org/wiki/images/5/52/T--CSMU_NCHU_Taiwan--top.png" alt="">
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.top').on('click', function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+      });
+
+      $("ul>li#intro-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-intro").offset().top
+        }, 500);
+      });
+      $("#protein-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-protein").offset().top
+        }, 500);
+      });
+      $("#docking-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-docking").offset().top
+        }, 500);
+      });
+      $("#conclusion-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#model-conslusion").offset().top
+        }, 500);
+      });
+
+  });
+  $(document).ready(function(){
+
+      for( var i = 1; i < 4; i++){
+        $('#result-btn-' + i).click( toggleContainer(i) );
+      }
+       for( var j = 1; j < 4; j++){
+        $('#damage-btn-' + j).click( toggleContainer2(j) );
+      }
+    for( var z = 1; z < 3; z++){
+        $('#function-btn-' + z).click( toggleContainer3(z) );
+      }
+ for( var k = 1; k < 2; k++){
+        $('#cloning-btn-' + k).click( toggleContainer4(k) );
+      }
+     $('#strip-btn-1').click( toggleContainer5() );
+     $('#kit-btn-1').click( toggleContainer6() );
+    $('#reference-btn-1').click( toggleContainer7() );
+      $('.top').on('click', function(){
+      $('html, body').animate({scrollTop: '0px'}, 500);
+    });
+
+});
+
+function toggleContainer(i){
+   return function(){
+      if($('#result-'+i).is(":visible")){
+        $('#result-'+i).slideToggle(500);
+      }
+      else{
+        $('.ul-container:visible').slideToggle(500);
+        $('#result-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+function toggleContainer2(i){
+   return function(){
+      if($('#damage-'+i).is(":visible")){
+        $('#damage-'+i).slideToggle(500);
+      }
+      else{
+        $('.ul-container:visible').slideToggle(500);
+        $('#damage-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+
+function toggleContainer3(i){
+   return function(){
+      if($('#function-'+i).is(":visible")){
+        $('#function-'+i).slideToggle(500);
+      }
+      else{
+        $('.ul-container:visible').slideToggle(500);
+        $('#function-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+function toggleContainer4(i){
+   return function(){
+      if($('#cloning-'+i).is(":visible")){
+        $('#cloning-'+i).slideToggle(500);
+      }
+      else{
+        $('.ul-container:visible').slideToggle(500);
+        $('#cloning-'+i).slideToggle(500);
+      }
+      $('.hp-bg-container').css('max-height','none')
+      $('.main-content').css('min-height','200vh')
+  }
+}
+function toggleContainer5(){
+   return function(){
+      if($('#strip-1').is(":visible")){
+        $('#strip-1').slideToggle(500);
+      }
+      else{
+        $('.ul-container:visible').slideToggle(500);
+        $('#strip-1').slideToggle(500);
+      }
+
+  }
+}
+function toggleContainer6(){
+   return function(){
+      if($('#kit-1').is(":visible")){
+        $('#kit-1').slideToggle(500);
+      }
+      else{
+        $('.ul-container:visible').slideToggle(500);
+        $('#kit-1').slideToggle(500);
+      }
+
+  }
+}
+function toggleContainer7(){
+   return function(){
+      if($('#reference-1').is(":visible")){
+        $('#reference-1').slideToggle(500);
+      }
+      else{
+        $('.ul-container:visible').slideToggle(500);
+        $('#reference-1').slideToggle(500);
+      }
+
+  }
+}
+  </script>
+
+
+</html>

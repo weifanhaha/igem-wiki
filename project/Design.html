@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
+
     <style type="text/css">
 
 * {
@@ -21,25 +22,29 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu' !important; }
-
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
 
 .bg-container {
   overflow: hidden;
   position: relative;
-  max-height: 200vh; }
-  .bg-container > img {
-    width: 100%;
-    margin-top: -45px; }
+  background-color: #c5d7d9;
+  background-image: url(http://2017.igem.org/wiki/images/d/da/T--CSMU_NCHU_Taiwan--DesignBg.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
 
 .my-main-container {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   padding: 50px 7%;
-  min-height: 200vh;
-  overflow: hidden; }
+ }
 
 .main-content {
   background-color: white;
@@ -81,8 +86,8 @@ body {
 
 .pdf-container {
   width: 100%;
-  text-align: center;
-  height: 90vh;
+  text-align: left;
+  height: 100vh;
   display: none; }
 #HQ_page .path .pathWord p {
       font-weight: 700;
@@ -96,52 +101,103 @@ body {
 img.center {
   display: block;
   margin: 0 auto; }
+p.center {
+  margin: 0 auto; }
 
 #HQ_page .text-area h2 {
     text-align: center;
     margin-bottom: 2rem !important;
     margin-top: 2rem;
-    color: black !important; }
-    .top {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  height: 50px;
-  width: 50px;
-  cursor: pointer; }
-  .top img {
-    width: 100%; }
+    color: black !important;
+    font-size:28px;
+    font-weight:bold;
+}
+.fig{
+    font-size:18px !important;
+}
+
+
 </style>
   <body>
     <div class="bg-container">
-      <img src="http://2017.igem.org/wiki/images/a/af/T--CSMU_NCHU_Taiwan--design.png">
       <div class="my-main-container">
         <div class="main-content">
           <div class="text-area">
             <h1>Design</h1>
-            <img class = "center" src="http://2017.igem.org/wiki/images/1/16/T--CSMU_NCHU_Taiwan--design-antidote.png" alt="" style="width:30%;">
-            <h2>Thioredoxin ... </h2>
-            <p>In our project, ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum veritatis quaerat obcaecati, nobis assumenda reprehenderit nisi minus tenetur. Quae, debitis? ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam suscipit officiis fugiat accusamus quia eaque adipisci, odio rem saepe odit sint quasi, officia consequuntur praesentium laboriosam magni corporis. Quos, vero.</p>
-            <img src="" alt="">
+            <img class = "center" src="http://2017.igem.org/wiki/images/1/16/T--CSMU_NCHU_Taiwan--design-antidote.png" alt="" style="width:30%">
+            <h2>Thioredoxin fusion system</h2>
+            <p style="text-indent:2em">In our project, we used <i>E. coli</i> to express two heterogeneous enzymes from mycobacterium smegmatis. However, we didn’t know whether they were toxic to <i>E. coli</i> and whether they would become inclusion bodies because of insolubility when <i>E. coli</i> produced them. Therefore, we found the thioredoxin fusion proteins system. When the gene of thioredoxin in <i>E. coli</i> (TrxA) were co-expressed, the target proteins were inserted into the active-site loop of thioredoxin, and therefore the fusion proteins can be more soluble<sub>[1]</sub>.</p>
+<p style="text-indent:2em">In addition, between the thioredoxin domain and the target gene domain, we designed some linkers to ligase two domains. The first part, which could be translated to the peptide sequence, “DDDDK”, was designed as the cleavage site of enterokinase. There were some restriction sites in the second part. The third one, which could be translated to glycine-glycine, was a flexible linker<sub>[2]</sub>.</p>
+<p class="fig">Fig. 1: BBa_K2382004 showed the gene design of the Thioredoxin fusion system construction.</p>
+            <img class = "center" src="http://2017.igem.org/wiki/images/e/ed/Csmuxnchu_description_fig1.png" alt="" style="width:95%">
             <img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
-            <h2>Aflatoxin ... </h2>
-            <p>In our project, ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum veritatis quaerat obcaecati, nobis assumenda reprehenderit nisi minus tenetur. Quae, debitis? ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam suscipit officiis fugiat accusamus quia eaque adipisci, odio rem saepe odit sint quasi, officia consequuntur praesentium laboriosam magni corporis. Quos, vero.</p>
-            <img src="" alt="">
+            <h2>Aflatoxin-degrading enzyme: F420-dependent reductase group A</h2>
+            <p style="text-indent:2em">F420-dependent reductases (FDR) can be divided into two classes (A and B) and be found in some species of bacteria<sub>[3]</sub>. FDR-A enzymes, has up to 100 times more activity than the other. In this class, MSMEG5998 has the best specific activity to AFB1 (10350 nmol/min/mol enzyme) and AFG1 (103210 nmol/min/mol enzyme). Therefore, we looked for the coding sequence of MSMEG5998, which was registered in NCBI in mycobacterium smegmatis and put the sequence of thioredoxin before it to form a fusion protein. For the purpose of purification through nickel-resin column, we added a 18-bp sequence which can code 6 histidines. In addition, we chose T7 promoter which contains lac operator to express this protein because it can be induced by IPTG. For the terminator, we chose BBa_B0015 because it was commonly used in <i>E. coli</i>. The gene design are shown in <font color="#005882">Fig. 2.</font></p>
+<p class="fig">Fig. 2: BBa_K2382006 showed the gene design of the Thioredoxin-MSMEG5998 fusion protein construction.</p>
+            <img class = "center" src="http://2017.igem.org/wiki/images/e/ee/T--CSMU_NCHU_Taiwan--Design2.png" alt="" style="width:95%">
             <img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
-            <h2>The activator ... </h2>
-            <p>In our project, ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum veritatis quaerat obcaecati, nobis assumenda reprehenderit nisi minus tenetur. Quae, debitis? ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam suscipit officiis fugiat accusamus quia eaque adipisci, odio rem saepe odit sint quasi, officia consequuntur praesentium laboriosam magni corporis. Quos, vero.</p>
-            <img src="" alt="">
-            <img src="" alt="">
+            <h2>The activator of F420: F420-dependent glucose-6-phosphate dehydrogenase</h2>
+            <p style="text-indent:2em">F420-dependent glucose-6-phosphate dehydrogenase (FGD) can catalyze D-glucose-6-phosphate (G6P) to become D-6-phsphogluconolactone. The chemical reaction are shown in <font color="#005882">Fig. 3</font><sub>[4]</sub>. This enzyme can be found in many organisms. In order to coordinate with MSMEG5998 and make the two enzymes react more naturally, we chose fgd gene also in mycobacterium smegmatis (strain MC(2) 155).To increase the solubility when <i>E. coli</i> produce this enzyme, we used the same design as Thioredoxin-MSMEG5998 fusion protein to form Thioredoxin-FGD fusion protein and the design is demonstrated in <font color="#005882">Fig. 4</font>.</p>
+<p class="fig">Fig. 3: The chemical reaction of G6P and oxidized F420 were catalyzed by FGD.</p>
+            <img class = "center" src="http://2017.igem.org/wiki/images/c/ce/T--CSMU_NCHU_Taiwan--Design3.jpeg" alt="" style="width:80%">
+<p class="fig">Fig. 4: BBa_K2382005 showed the gene design of the Thioredoxin-FGD fusion protein construction.</p>
+            <img class = "center" src="http://2017.igem.org/wiki/images/9/92/T--CSMU_NCHU_Taiwan--Design4.png" alt="" style="width:95%">
             <img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
-
+<h2>The function of our proteins in aflatoxin-induced DNA repair pathway</h2>
+            <p style="text-indent:2em">When mammalian cells respond to DNA damage from environmental toxins or radiations, the two key signaling components, ATM and ATR were activated and therefore phosphorylated two protein kinases, Chk1 and Chk2<sub>[5]</sub>. All of them will reduce cyclin-dependent kinase (CDK) activity through activation of p53. Finally, inhibition of CDKs, such as p21 slows down or arrests cell-cycle progression. Therefore, we can know whether aflatoxin B1 induces DNA damage in HepG2 cells indirectly through the increasing expression of some markers in p53 pathway<sub>[6]</sub>. In our hypothesis, the modified aflatoxin-degrading enzyme, MSMEG_5998 can directly alleviate the genotoxicity of aflatoxin and indirectly inhibit the activation of p53 pathway by degrading the toxin when co-treatment in HepG2 cells. The model of our hypothesis is demonstrated in <font color="#005882">Fig. 5</font>.</p>
+<p class="fig">Fig. 5: Our hypothesis were demonstrated in this figure.</p>
+            <img class = "center" src="http://2017.igem.org/wiki/images/d/d2/T--CSMU_NCHU_Taiwan--Design5.png" alt="" style="width:95%">
+<img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
+<img class = "center" src="http://2017.igem.org/wiki/images/b/b1/T--CSMU_NCHU_Taiwan--design-teststrip.png" alt="" style="width:30%;margin:20px auto;">
+            <p style="text-indent:2em">Numerous methods for determining the level of Aflatoxin B1 in food and products have been established. As is well known, high performance liquid chromatography (HPLC) using a fluorescent detector is the most widely adopted means of monitoring Aflatoxin B1. However, HPLC has many disadvantages, including its cost, the complexity of operation of the machines involved, and the extensive preparation of samples. Since a simple and efficient technique for the routine monitoring of food such as grains, peanuts and related products is in an urgent demand, we chose immunostrip as the way to detect aflatoxin.</p>
+<p style="text-indent:2em">Traditionally, this type of test strip required a special antibody that binds to aflatoxin, called “monoclonal antibody”. However, it would take a lot of time to produce it in the processes of immunization, fusion and cloning, production of ascites, and characterization of the monoclonal antibody. What’s more, not only is the cost to keep an animal hotel high, but also hybridoma is not stable enough to maintain the quality and quantity of monoclonal antibody. Not to mention the vulnerable Van der Waals force with nanoparticle probe, if the samples are not properly treated before tested, the immunostrip will not detect anything. Therefore, to change the situations of these disadvantages, we made lots of improvement on it.</p>
+<img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
+<h2>scFv- RFP fusion system</h2>
+<p style="text-indent:2em">In our project, we designed a fusion protein to replace the traditional monoclonal antibody applied on the immunostrip. The fusion protein that we designed is composed of three domains,scFv, rigid linker, RFP  and His-Tag <font color="#005882">(Fig. 1)</font>.</p>
+<p class="fig">Fig. 1: Using RAPTOR X to simulate the structure and folding of fusion protein. The left side is an anti-aflatoxin scFv, and the right side is an RFP with 6X His-Tag, linked by a rigid protein linker. The simulation result demonstrates that the rigid linker can maintain the distance between two domains, and keeps them from interrupting each other or misfolding.</p>
+<img class = "center" src="http://2017.igem.org/wiki/images/e/eb/T--CSMU_NCHU_Taiwan--Design6.jpeg" alt="" style="width:60%">
+<img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
+<h2>scFv</h2>
+<p style="text-indent:2em">First, we designed an scFv, Single Chain Variable Fragment, to replace the traditional full-length antibody. Compared with full-length antibody,  scFv is not actually a fragment of an antibody, but instead is a fusion protein of the variable regions of the heavy (VH) and light chains (VL) of immunoglobulins, connected with a short linker peptide of 10 to about 25 amino acids. For instance, GS linker, the most commonly used protein linker in scFv design, to maintain the flexibility and protein folding. Consequently, it prevents the obstacle for <i>E. coli</i> to produce scFv in this host, since glycosylations are required for the effector functions and are mainly located in the Fc fragment. Nevertheless, this part of the antibody is not present in scFv molecules. The scFv used here exhibited the highest sensitivity against all four major kinds of aflatoxins in a previous research<sub>[7]</sub>.</p>
+<img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
+<h2>EAAAK rigid linker</h2>
+<p style="text-indent:2em">Second, at the C terminal of the scFv, we use an EAAAK rigid linker to link to maintain the distance between scFv and Red Fluorescent Protein(RFP), preventing unnecessary cross-interaction. This EAAAK rigid linker repeats amino acid “EAAAK” for three times, and it forms  α- helix in its structure<sub>[8]</sub>, exhibiting a rigid and stable property.</p>
+<img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
+<h2>RFP with 6X His-Tag</h2>
+<p style="text-indent:2em">Third, right after the rigid linker is a RFP with 6X His-Tag at the end. Since the antibody itself does not exhibit colors, traditional immunostrip shows the result with the aid of gold nanoparticles<font color="#005882">(Fig. 2)</font>.However, the result could be interfered because of many reasons. We add an RFP and a 6X His-Tag in this fusion protein to make it exhibit red color and  improve purification respectively. With this newly designed fusion protein, there’s no need for the immunostrip to use gold nanoparticles, leading to a new generation of aflatoxin detection.</p>
+<p style="text-indent:2em">We used a constitutive promoter(BBa_J23101), a common ribosome binding site(BBa_B0034) and a double terminator (BBa_B0015) constructed  in pSB1C3, to express this fusion protein in our project. And this makes of our composite part BBa_K2382010.<font color="#005882">(Fig. 3)</font></p>
+<p style="text-indent:2em">However, only strip is not enough because samples with Aflatoxin need to be extracted first. In the lab, we have to crush sample to increase reaction surface area, and using water or organic liquid to extract Aflatoxin B1. So, we also design the kit for helping people to finish this work.</p>
+<p class="fig">Fig. 2: The traditional immunostrip use gold nanoparticle to exhibit red color on the antibodies. The red lines on the strip indicate the position of Control line and Test  line with the aid of gold nanoparticles.</p>
+<img class = "center" src="http://2017.igem.org/wiki/images/e/e5/T--CSMU_NCHU_Taiwan--Design7.jpeg" alt="" style="width:70%">
+<p class="fig">Fig. 3: The scFv compose three domains, scFv, rigid linker, RFP  and His-Tag.  This figure describes the design of BBa_K2382010, which can succefully express this fusion protein in pSB1C3.</p>
+<img class = "center" src="http://2017.igem.org/wiki/images/4/4a/T--CSMU_NCHU_Taiwan--Design8.png" alt="" style="width:95%">
+<img src="http://2017.igem.org/wiki/images/b/b9/T--CSMU_NCHU_Taiwan--design-line.png" alt="">
+<img class = "center" src="http://2017.igem.org/wiki/images/f/fe/T--CSMU_NCHU_Taiwan--design-kits.png" alt="" style="width:30%;margin:20px auto;text-align:center !important;">
+<h2>A small device that accelerates aflatoxin detection</h2>
+<h2>Overview</h2>
+<p style="text-indent:2em">Detection of aflatoxin is an important part of our AFLATOXOUT project. To make the processes of detecting aflatoxin faster, easier and cheaper, we designed a small kit to help us detect aflatoxin. By using the color changes of the test strip installed on the kit, we would know whether the food was contaminated by aflatoxin or not.</p>
+<p style="text-indent:2em">We utilized 3D printing technology to develop our kit. The kit is printed with a Polylactic Acid (PLA), an eco-friendly plastic, and it could be degraded naturally.<br><br>The graph below shows the appearance of the kit.</p>
+<img class = "center" src="http://2017.igem.org/wiki/images/6/6d/T--CSMU_NCHU_Taiwan--Design9.png" alt="" style="width:60%">
+<h2>Component introduction</h2>
+<p>The kit is a composite of 4 components. The following description shows the functions of each part.</p>
+<img src="http://2017.igem.org/wiki/images/4/4b/T--CSMU_NCHU_Taiwan--Design10.png" alt="" style="width:55%">
+<align:"right"><img src="http://2017.igem.org/wiki/images/e/e4/T--CSMU_NCHU_Taiwan--Design12.gif" alt="" style="width:35%;margin-left:20px;">
+<p>1.Lid<br>The lid works as a part applying force to drive the grinder. User can rotate the lid with the handle and make the grinder work. It also prevents food debris from spilling.<br>2.Grinde<br>Grinder is the place where we put the food that is going to be tested. It breaks the food into smaller particles or powder in order to improve solubility.<br>3.Solvent<br>The special solvent could extract aflatoxin from the food powder. It is sealed with plastic membrane. Once combined with the mixing tank, the membrane would be punctured and the solvent would flow into the tank.<br>4.Mixing tank<br>The mixing tank is the place where the food powder mixed with the solvent. There’s a window on the side of the mixing tank where we can install the test strip.</p>
 
           </div>
           <div class="pdf-area">
             <span class="pdfbtn" id="design-btn-1">Reference<i class="fa fa-caret-down" aria-hidden="true"></i></span>
             <div class="pdf-container" id="design-1">
-              <object data="" type="application/pdf" width="100%" height="100%">
-                <p>Alternative text - include a link <a href="">to the PDF!</a></p>
-              </object>
+<ul>
+<li>1. LaVallie, E.R. and J.M. McCoy, Gene fusion expression systems in <i>Escherichia coli</i>. Current Opinion in Biotechnology, 1995. 6(5): p. 501-506.</li>
+<li>2. Chen, X., J. Zaro, and W.-C. Shen, Fusion Protein Linkers: Property, Design and Functionality. Advanced drug delivery reviews, 2013. 65(10): p. 1357-1369.</li>
+<li>3. Lapalikar, G.V., et al., F420H2-dependent degradation of aflatoxin and other furanocoumarins is widespread throughout the Actinomycetales. PLoS One, 2012. 7(2): p. e30114.</li>
+<li>4. Oyugi, M.A., et al., Mechanistic insights into F420-dependent glucose-6-phosphate dehydrogenase using isotope effects and substrate inhibition studies. Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics, 2017.</li>
+<li>5. Jackson, S.P. and J. Bartek, The DNA-damage response in human biology and disease. Nature, 2009. 461(7267): p. 1071-1078.</li>
+<li>6. Boehme, K., et al., Activation of P53 in HepG2 cells as surrogate to detect mutagens and promutagens in vitro. Toxicology Letters, 2010. 198(2): p. 272-281.</li>
+<li>7. Li, X., et al., Molecular characterization of monoclonal antibodies against aflatoxins: a possible explanation for the highest sensitivity. Anal Chem, 2012. 84(12): p. 5229-35.</li>
+<li>8. Chen, X., Zaro, J. L., & Shen, W. (2013). Fusion protein linkers: Property, design and functionality. Advanced Drug Delivery Reviews, 65(10), 1357-1369. doi:10.1016/j.addr.2012.09.039</li>
+</ul>
             </div>
           </div>
         </div>
@@ -153,9 +209,8 @@ img.center {
   </body>
   <script type="text/javascript">
     $('#design-btn-1').on('click', function(){
-      $('#design-1').css('height','250vh')
+      $('#design-1').css('height','80vh')
       $('#design-1').slideToggle("slow");
-      $('.bg-container').css('max-height','500vh')
       $('.main-content').css('min-height','200vh')
     });
     $('.top').on('click', function(){
