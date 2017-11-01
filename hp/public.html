@@ -5,12 +5,139 @@
     <title>Engagement</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
     <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-    <style type="text/css">
-    @media screen and (min-width: 432px){ 
+
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu' !important; }
+
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+.pdfbtn {
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #556b7e;
+  color: white;
+  display: block;
+  position: relative; }
+  .pdfbtn i {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.brown-btn {
+  background-color: #603813; }
+
+.hp-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    margin-bottom: 1rem;}
+
+.hp-bg-container {
+  overflow: hidden;
+  position: relative;
+  max-height: none;
+  background-image: url(http://2017.igem.org/wiki/images/6/6a/T--CSMU_NCHU_Taiwan--long-three.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  /*background-color: #fdf8e3; */
+}
+
+.hp-main-container {
+  width: 100%;
+  padding: 50px 7%;
+}
+.bg-img-head{
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img-head> img {
+    width: 100%;
+    margin-top: -45px; }
+
+.hp-main-content {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  min-height: 300vh;
+  z-index: 10; }
+
+.img-container {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .img-container img {
+    width: 100%; }
+
+.pdf-container {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: none; }
+
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .top img {
+    width: 100%; }
+
+#HQ_page .text-area p {
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 500; }
+
+.text-area {
+  margin-bottom: 80px; }
+  .text-area h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Arizonia' !important;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .text-area p {
+    font-size: 22px;
+    font-weight: 500; }
+video {
+            position:relative;
+            width: 78%;
+            height:auto;
+            margin-top:60px;
+            margin-left:10vw;
+            margin-right:10vw;
+           }
+@media screen and (min-width: 432px){
 
   .carousel-container{
     max-width: 1000px;
@@ -95,158 +222,160 @@ img.center {
 
 }
 
-  </style>
+</style>
   <body>
     <div class="hp-bg-container">
-      <img src="http://2017.igem.org/wiki/images/b/b1/T--CSMU_NCHU_Taiwan--public.png">
+      <div class="bg-img-head">
+        <img src="http://2017.igem.org/wiki/images/f/f5/T--CSMU_NCHU_Taiwan--public-head.png">
+      </div>
       <div class="hp-main-container">
         <h1 class="hp-title">-Public Engagement &amp;Education-</h1>
-        <div class="hp-main-content">
-          <div class="text-area">
-            <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio aliquid distinctio ex. Quae, provident, iure. Officia, quidem quos nam esse sequi nisi ab ullam deleniti. Fugit ut iste, aperiam quam repudiandae sit quo, nihil officiis illo nemo, temporibus, aspernatur porro cupiditate numquam magnam fuga voluptas ipsam voluptatibus facere pariatur?</p>
+      </div>
+      <div class="hp-main-content">
+        <div class="text-area">
+          <img class="center" src="http://2017.igem.org/wiki/images/3/38/T--CSMU_NCHU_Taiwan--intro.png" alt="" style="width: 30%; margin-bottom: 20px;">
+          <p><br><br>“Aflatoxout” is not only a food safety researching project, but the team would love to, as the phrase stated “go beyond the lab”. We believe the first step in our human practice is “Public engagement and education (PE&E)”. The team reached out to different areas of the society, in hope to spread our concepts and to listen to what the society could inform us about.</p>
 
+        </div>
+        <div class="pdf-area">
+          <span class="pdfbtn brown-btn" id="public-btn-1">Youth Education<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+          <div class="img-container" id="public-1">
+            <div class="carousel-container">
+                <div class="y-slide">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="http://2017.igem.org/wiki/images/9/95/T--CSMU_NCHU_Taiwan--s1-1.jpeg" style="width:100%">
+                </div>
+
+                <div class="y-slide">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="http://2017.igem.org/wiki/images/a/a3/T--CSMU_NCHU_Taiwan--s1-2.jpeg" style="width:100%">
+                </div>
+
+                <div class="y-slide">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="http://2017.igem.org/wiki/images/e/e2/T--CSMU_NCHU_Taiwan--s1-3.jpeg" style="width:40%" class="center">
+                </div>
+                <div class="y-slide">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="http://2017.igem.org/wiki/images/e/e1/T--CSMU_NCHU_Taiwan--s1-4.jpeg" style="width:100%">
+                </div>
+                <div class="y-slide">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="http://2017.igem.org/wiki/images/c/c1/T--CSMU_NCHU_Taiwan--s1-5.jpeg" style="width:40%" class="center">
+                </div>
+                <div class="y-slide">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="http://2017.igem.org/wiki/images/e/e3/T--CSMU_NCHU_Taiwan--test.jpeg" style="width:100%">
+                </div>
+                <div class="y-slide">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="http://2017.igem.org/wiki/images/0/01/T--CSMU_NCHU_Taiwan--s1-7.jpeg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 'y-slide')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'y-slide')">&#10095;</a>
+                <br>
+            </div>
+            <img src="http://2017.igem.org/wiki/images/2/21/T--CSMU_NCHU_Taiwan--public01.png" alt="">
           </div>
-          <div class="pdf-area">
-            <span class="pdfbtn brown-btn" id="public-btn-1">Youth Education<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="img-container" id="public-1">
-              <div class="carousel-container">
-                  <div class="y-slide">
-                    <div class="numbertext">1 / 7</div>
-                    <img src="http://2017.igem.org/wiki/images/9/95/T--CSMU_NCHU_Taiwan--s1-1.jpeg" style="width:100%">
-                  </div>
+          <span class="pdfbtn brown-btn" id="public-btn-2">Syntetic Biology Workshop<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+          <div class="img-container" id="public-2">
+            <div class="carousel-container">
+                <div class="syn-slide">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/d/db/T--CSMU_NCHU_Taiwan--s2-1.jpeg" style="width:100%">
+                </div>
 
-                  <div class="y-slide">
-                    <div class="numbertext">2 / 7</div>
-                    <img src="http://2017.igem.org/wiki/images/a/a3/T--CSMU_NCHU_Taiwan--s1-2.jpeg" style="width:100%">
-                  </div>
+                <div class="syn-slide">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/2/29/T--CSMU_NCHU_Taiwan--s2-2.jpeg" style="width:100%">
+                </div>
 
-                  <div class="y-slide">
-                    <div class="numbertext">3 / 7</div>
-                    <img src="http://2017.igem.org/wiki/images/e/e2/T--CSMU_NCHU_Taiwan--s1-3.jpeg" style="width:40%" class="center">
-                  </div>
-                  <div class="y-slide">
-                    <div class="numbertext">4 / 7</div>
-                    <img src="http://2017.igem.org/wiki/images/e/e1/T--CSMU_NCHU_Taiwan--s1-4.jpeg" style="width:100%">
-                  </div>
-                  <div class="y-slide">
-                    <div class="numbertext">5 / 7</div>
-                    <img src="http://2017.igem.org/wiki/images/c/c1/T--CSMU_NCHU_Taiwan--s1-5.jpeg" style="width:40%" class="center">
-                  </div>
-                  <div class="y-slide">
-                    <div class="numbertext">6 / 7</div>
-                    <img src="http://2017.igem.org/wiki/images/e/e3/T--CSMU_NCHU_Taiwan--test.jpeg" style="width:100%">
-                  </div>
-                  <div class="y-slide">
-                    <div class="numbertext">7 / 7</div>
-                    <img src="http://2017.igem.org/wiki/images/0/01/T--CSMU_NCHU_Taiwan--s1-7.jpeg" style="width:100%">
-                  </div>
-                  <a class="prev" onclick="plusSlides(-1, 'y-slide')">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 'y-slide')">&#10095;</a>
-                  <br>
-              </div>  
-              <img src="http://2017.igem.org/wiki/images/2/21/T--CSMU_NCHU_Taiwan--public01.png" alt="">
+                <div class="syn-slide">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/3/33/T--CSMU_NCHU_Taiwan--s2-3.jpeg" style="width:100%">
+                </div>
+                <div class="syn-slide">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/b/b7/T--CSMU_NCHU_Taiwan--s2-4.jpeg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 'syn-slide')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'syn-slide')">&#10095;</a>
+                <br>
             </div>
-            <span class="pdfbtn brown-btn" id="public-btn-2">Syntetic Biology Workshop<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="img-container" id="public-2">
-              <div class="carousel-container">
-                  <div class="syn-slide">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/d/db/T--CSMU_NCHU_Taiwan--s2-1.jpeg" style="width:100%">
-                  </div>
+            <img src="http://2017.igem.org/wiki/images/5/5b/T--CSMU_NCHU_Taiwan--public02.png" alt="">
+          </div>
+          <span class="pdfbtn brown-btn" id="public-btn-3">Street Interview<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+          <div class="img-container" id="public-3">
+            <div class="carousel-container">
+                <div class="street-slide">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/0/0d/T--CSMU_NCHU_Taiwan--s3-1.png" style="width:100%">
+                </div>
 
-                  <div class="syn-slide">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/2/29/T--CSMU_NCHU_Taiwan--s2-2.jpeg" style="width:100%">
-                  </div>
+                <div class="street-slide">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/8/83/T--CSMU_NCHU_Taiwan--s3-2.jpeg" style="width:100%">
+                </div>
 
-                  <div class="syn-slide">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/3/33/T--CSMU_NCHU_Taiwan--s2-3.jpeg" style="width:100%">
-                  </div>
-                  <div class="syn-slide">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/b/b7/T--CSMU_NCHU_Taiwan--s2-4.jpeg" style="width:100%">
-                  </div>
+                <div class="street-slide">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/b/b5/T--CSMU_NCHU_Taiwan--s3-3.png" style="width:100%">
+                </div>
+                <div class="street-slide">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="http://2017.igem.org/wiki/images/9/9e/T--CSMU_NCHU_Taiwan--s3-4.png" style="width:100%">
+                </div>
 
-                  <a class="prev" onclick="plusSlides(-1, 'syn-slide')">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 'syn-slide')">&#10095;</a>
-                  <br>
-              </div>  
-              <img src="http://2017.igem.org/wiki/images/5/5b/T--CSMU_NCHU_Taiwan--public02.png" alt="">
+                <a class="prev" onclick="plusSlides(-1, 'street-slide')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'street-slide')">&#10095;</a>
+                <br>
             </div>
-            <span class="pdfbtn brown-btn" id="public-btn-3">Street Interview<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="img-container" id="public-3">
-              <div class="carousel-container">
-                  <div class="street-slide">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/0/0d/T--CSMU_NCHU_Taiwan--s3-1.png" style="width:100%">
-                  </div>
+            <img src="http://2017.igem.org/wiki/images/b/b5/T--CSMU_NCHU_Taiwan--public03.png" alt="">
+           <video playinline controls="true">
+          <source src="http://2017.igem.org/wiki/images/c/c0/T--CSMU_NCHU_Taiwan--StreetInterview.mp4" type="video/mp4" >
+          </video>
+          </div>
+          <span class="pdfbtn brown-btn" id="public-btn-4">Booth<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+          <div class="img-container" id="public-4">
+            <div class="carousel-container">
+                <div class="booth-slide">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="http://2017.igem.org/wiki/images/3/37/T--CSMU_NCHU_Taiwan--s4-1.jpeg" style="width:100%">
+                </div>
 
-                  <div class="street-slide">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/8/83/T--CSMU_NCHU_Taiwan--s3-2.jpeg" style="width:100%">
-                  </div>
+                <div class="booth-slide">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="http://2017.igem.org/wiki/images/0/06/T--CSMU_NCHU_Taiwan--s4-2.jpeg" style="width:100%">
+                </div>
 
-                  <div class="street-slide">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/b/b5/T--CSMU_NCHU_Taiwan--s3-3.png" style="width:100%">
-                  </div>
-                  <div class="street-slide">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="http://2017.igem.org/wiki/images/9/9e/T--CSMU_NCHU_Taiwan--s3-4.png" style="width:100%">
-                  </div>
+                <div class="booth-slide">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="http://2017.igem.org/wiki/images/7/7b/T--CSMU_NCHU_Taiwan--s4-3.jpeg" style="width:100%">
+                </div>
+                <div class="booth-slide">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="http://2017.igem.org/wiki/images/7/7d/T--CSMU_NCHU_Taiwan--s4-4.jpeg" style="width:100%">
+                </div>
+                <div class="booth-slide">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="http://2017.igem.org/wiki/images/2/24/T--CSMU_NCHU_Taiwan--s4-5.jpeg" style="width:100%">
+                </div>
+                <div class="booth-slide">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="http://2017.igem.org/wiki/images/4/4f/T--CSMU_NCHU_Taiwan--s4-6.jpeg" style="width:100%">
+                </div>
 
-                  <a class="prev" onclick="plusSlides(-1, 'street-slide')">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 'street-slide')">&#10095;</a>
-                  <br>
-              </div>  
-              <img src="http://2017.igem.org/wiki/images/b/b5/T--CSMU_NCHU_Taiwan--public03.png" alt="">
-             <video playinline controls="true">
-            <source src="http://2017.igem.org/wiki/images/c/c0/T--CSMU_NCHU_Taiwan--StreetInterview.mp4" type="video/mp4" >
-            </video>
+                <a class="prev" onclick="plusSlides(-1, 'booth-slide')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'booth-slide')">&#10095;</a>
+                <br>
             </div>
-            <span class="pdfbtn brown-btn" id="public-btn-4">Booth<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="img-container" id="public-4">
-              <div class="carousel-container">
-                  <div class="booth-slide">
-                    <div class="numbertext">1 / 6</div>
-                    <img src="http://2017.igem.org/wiki/images/3/37/T--CSMU_NCHU_Taiwan--s4-1.jpeg" style="width:100%">
-                  </div>
-
-                  <div class="booth-slide">
-                    <div class="numbertext">2 / 6</div>
-                    <img src="http://2017.igem.org/wiki/images/0/06/T--CSMU_NCHU_Taiwan--s4-2.jpeg" style="width:100%">
-                  </div>
-
-                  <div class="booth-slide">
-                    <div class="numbertext">3 / 6</div>
-                    <img src="http://2017.igem.org/wiki/images/7/7b/T--CSMU_NCHU_Taiwan--s4-3.jpeg" style="width:100%">
-                  </div>
-                  <div class="booth-slide">
-                    <div class="numbertext">4 / 6</div>
-                    <img src="http://2017.igem.org/wiki/images/7/7d/T--CSMU_NCHU_Taiwan--s4-4.jpeg" style="width:100%">
-                  </div>
-                  <div class="booth-slide">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="http://2017.igem.org/wiki/images/2/24/T--CSMU_NCHU_Taiwan--s4-5.jpeg" style="width:100%">
-                  </div>
-                  <div class="booth-slide">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="http://2017.igem.org/wiki/images/4/4f/T--CSMU_NCHU_Taiwan--s4-6.jpeg" style="width:100%">
-                  </div>
-
-                  <a class="prev" onclick="plusSlides(-1, 'booth-slide')">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 'booth-slide')">&#10095;</a>
-                  <br>
-              </div>  
-              <img src="http://2017.igem.org/wiki/images/0/0c/T--CSMU_NCHU_Taiwan--public04.png" alt="">
-            </div>
-            <span class="pdfbtn brown-btn" id="public-btn-5">Card Game<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-            <div class="img-container" id="public-5">
-              <img src="http://2017.igem.org/wiki/images/7/72/T--CSMU_NCHU_Taiwan--public-game.jpeg" alt="" style="width: 80%" class="center">
-              <img src="http://2017.igem.org/wiki/images/0/00/T--CSMU_NCHU_Taiwan--public05.png" alt="">
-            </div>
+            <img src="http://2017.igem.org/wiki/images/0/0c/T--CSMU_NCHU_Taiwan--public04.png" alt="">
+          </div>
+          <span class="pdfbtn brown-btn" id="public-btn-5">Card Game<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+          <div class="img-container" id="public-5">
+            <img src="http://2017.igem.org/wiki/images/7/72/T--CSMU_NCHU_Taiwan--public-game.jpeg" alt="" style="width: 80%" class="center">
+            <img src="http://2017.igem.org/wiki/images/0/00/T--CSMU_NCHU_Taiwan--public05.png" alt="">
           </div>
         </div>
       </div>
@@ -319,3 +448,4 @@ function toggleContainer(i){
 
 </script>
 </html>
+
